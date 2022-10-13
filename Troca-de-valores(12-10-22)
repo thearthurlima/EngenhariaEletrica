@@ -1,0 +1,37 @@
+programa
+{
+	funcao inicio()
+	{
+		real numero1, numero2, numero3, soma
+
+		leia(numero1, numero2, numero3)
+
+
+		se(numero1 > numero2)
+		{
+		//Processamento para troca de valores
+			soma = numero1 + numero2
+			numero1 = soma - numero1
+			numero2 = soma - numero2
+		}
+
+		se(numero2 > numero3)
+		{
+		//Processamento para troca de valores
+			soma = numero2 + numero3
+			numero2 = soma - numero2
+			numero3 = soma - numero3
+		}
+
+		se(numero1 > numero2)
+		{
+		//Processamento para troca de valores
+			soma = numero1 + numero2
+			numero1 = soma - numero1
+			numero2 = soma - numero2
+		}
+		
+		escreva("\nOs números em ordem crescente são: ", numero1 ,", ", numero2, " ", numero3)
+		
+	}
+}
