@@ -9,10 +9,16 @@ programa
 
 		se(salario < 500)
 		{
-			 salarioReajustado = (salario * (1+0.15))
+			 percentualDoReajuste = (salario * (1+0.15))
 		}
-		senao se(salario < 1000
-
+		senao se(salario < 1000)
+		{
+			percentualDoReajuste = (salario * (1+0.1))
+		}
+		senao
+		{
+			percentualDoReajuste
+		}
 
 
 
