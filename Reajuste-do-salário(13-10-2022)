@@ -2,22 +2,22 @@ programa
 {
 	funcao inicio()
 	{
-		real salario, percentualDoReajuste, salarioReajustado
+		real salario, percentualDeReajuste, salarioReajustado
 
 		escreva("Qual o salário?: ")
 		leia(salario)
 
 		se(salario < 500)
 		{
-			 percentualDoReajuste = (salario * (1+0.15))
+			 percentualDeReajuste = 0.15
 		}
 		senao se(salario < 1000)
 		{
-			percentualDoReajuste = (salario * (1+0.1))
+			percentualDeReajuste = 0.1
 		}
 		senao
 		{
-			percentualDoReajuste
+			percentualDeReajuste = 0.05
 		}
 
 
@@ -32,7 +32,5 @@ programa
 
 
 
-
-		escreva(salarioReajustado)
 	}
 }
