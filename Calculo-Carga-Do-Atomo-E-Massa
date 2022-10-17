@@ -1,0 +1,41 @@
+programa
+{
+	inclua biblioteca Matematica
+ --> Mt
+	
+	funcao inicio()
+	{
+		inteiro numeroDeProtons, numeroDeEletrons, numeroDeNeutrons, cargaPositiva, cargaNegativa, cargaDoAtomo, numeroDeMassa
+		const inteiro cargaDoProton = 1, cargaDoEletron = -1
+
+		//Entrada
+		escreva("Quantos prótons este átomo possui? ")
+		leia(numeroDeProtons)
+		escreva("Quantos elétrons este átomo possui? ")
+		leia(numeroDeEletrons)
+		escreva("Quantos nêutrons este átomo possui? ")
+		leia(numeroDeNeutrons)
+
+		//Processamento para obter carga do átomo e seu número de massa
+		cargaPositiva = numeroDeProtons * cargaDoProton
+		cargaNegativa = numeroDeEletrons * cargaDoEletron 
+		cargaDoAtomo = cargaPositiva + cargaNegativa
+		numeroDeMassa = numeroDeProtons + numeroDeNeutrons
+
+		//Saída
+		se(cargaDoAtomo > 0)
+		{
+			escreva ("\nO átomo está carregado positivamente.")
+		}
+		se(cargaDoAtomo < 0)
+		{
+			escreva ("\nO átomo está carregado negativamente.")
+		}
+		se(cargaDoAtomo == 0)
+		{
+			escreva ("\nA carga do átomo é neutra.")
+		}
+		
+		escreva("\nO número de massa do átomo é ", numeroDeMassa, "\n")
+	}
+}
