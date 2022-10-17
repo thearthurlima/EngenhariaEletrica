@@ -1,0 +1,40 @@
+programa
+{
+	inclua biblioteca Matematica --> Mt
+	
+	funcao inicio()
+	{
+
+		//Um móvel parte do repouso e desenvolve uma aceleração constante de 3 m/s² durante 4 segundos. O deslocamento desse móvel foi de:
+		
+		real velocidadeEmMS, velocidadeInicialEmMS, espacoInicial, aceleracaoEmMS2, tempoEmS
+		real delta, instanteNaOrigem1, instanteNaOrigem2
+		cadeia tipoDeMovimento
+
+		leia(velocidadeInicialEmMS, espacoInicial, aceleracaoEmMS2, tempoEmS)
+		
+		//Processamento
+		velocidadeEmMS = velocidadeInicialEmMS + (aceleracaoEmMS2 * tempoEmS)
+		
+		delta = Mt.potencia(velocidadeInicialEmMS, 2.0) - (4 * 0.5 * aceleracaoEmMS2 * espacoInicial)
+		instanteNaOrigem1 = Mt.valor_absoluto((- velocidadeInicialEmMS + Mt.raiz(delta, 2.0)) / (2 * 0.5 * aceleracaoEmMS2))
+		instanteNaOrigem2 = Mt.valor_absoluto((- velocidadeInicialEmMS - Mt.raiz(delta, 2.0)) / (2 * 0.5 * aceleracaoEmMS2))
+
+		logico movimentoEAcelerado = velocidadeEmMS >= 0 e aceleracaoEmMS2 >= 0
+
+		se(movimentoEAcelerado)
+		{
+			tipoDeMovimento = "acelerado"
+		}
+		senao
+		{
+			tipoDeMovimento = "retardado"
+		}
+
+		//Saída
+		escreva ("\nA função horária da velocidade para os valores é: v = ", velocidadeInicialEmMS, " + ", aceleracaoEmMS2, " * ", tempoEmS)
+		escreva("\nA velocidade no instante t é: ", velocidadeEmMS)
+		escreva("\nO movimento é ", tipoDeMovimento)
+		escreva("\nO móvel passa pela origem no instantes t = ", instanteNaOrigem1, " e t = ", instanteNaOrigem2, "\n")
+	}
+}
