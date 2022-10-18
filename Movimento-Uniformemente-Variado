@@ -45,9 +45,13 @@ programa
 		{
 			escreva("\nO móvel passa pela origem no instante t = ", instanteNaOrigem2, "\n")
 		}
-		senao
+		senao se(instanteNaOrigem1 >= 0 e instanteNaOrigem2 < 0)
 		{
 			escreva("\nO móvel passa pela origem no instante t = ", instanteNaOrigem1, "\n")
+		}
+		senao
+		{
+			escreva("\nO móvel não passa pela origem.\n")
 		}
 	}
 }
