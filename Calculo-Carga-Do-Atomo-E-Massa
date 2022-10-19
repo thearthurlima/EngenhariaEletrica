@@ -1,7 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica
- --> Mt
+	inclua biblioteca Matematica --> Mt
 	
 	funcao inicio()
 	{
@@ -35,7 +34,6 @@ programa
 		{
 			escreva ("\nA carga do átomo é neutra.")
 		}
-		
 		escreva("\nO número de massa do átomo é ", numeroDeMassa, "\n")
 	}
 }
