@@ -1,1 +1,115 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T02:40:24.727Z" agent="5.0 (Windows)" version="20.4.0" etag="9Gd3QA_Lz74fJMQhw7OZ" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VhZc9MwEP41Hp5gfBQnecRp0wKhU2ihw6NiK7aI7DWynINfzyqWYzsOOYD0yDQv0a43K2m/b4/YcPrx/FKQNPoEAeWGbQZzwzk3bNuybQe/lGZRaLq9bqEIBQu0UaW4Zb+oVppam7OAZg1DCcAlS5tKH5KE+rKhI0LArGk2Bt7cNSUhbSlufcLb2nsWyEjfwu5U+ivKwqjc2XJ7xZOYlMb6JllEApjVVM6F4fQFgCxW8bxPuQpeGZf794t7Ppy4lx8+Zz/JV+/j3fW314WzwSE/WV1B0ET+X9d24XpKeK7jpe8qF2UABeRJQJUT03C8SMYclxYuf1ApFxpwkktAFQgZQQgJ4UOAVNuNIZHazFIyTYJ3CliURxz8SaEaMM71Hihp+y5KmRQwWWGnHKyAUMacjCj3iD8JlwftAweBjxJIqHIVIBn0XarDXVRab8/YagwyyIVPt9jpbJFEhHSbP7ewU+er8VQjd0khplIs0EBQTiSbNslMdE6EK7sKd1xo6A+ggdOiwZDEqcp6oFnySuJqBmKyhRsKl1nEJL1NyTJAMywnTb7UeYBX9UJOskyjuAPkw0CaUiHpfGtYy6euzu2yuGlxVlUKq0z/qFYlzswjAXHWAuI7Fs+XlPyXlHT3TMmyY+3MSU2Wkhh7p6j2dAMskTUTGI8zPNg6dVYb/j2b3rbYdA0tMu3G41nT7ZHI1DmMS9aT55L7hxbhcgyDNxK4CtUq5XkYIlnQXWI4g3btiiAe5dnudtHAWDFoQGLGVbyuKJ9SyXyyoakQzkLc99xHuKnYTB7ckiUhSm4l3S3JivX3iM2m02w2K7nebcwN3aZ7rG7TaWF6g+gV0NkmX+J7Yh3fsddA6D12y+/uU6SfdQl+8I5fVtPdLd/as0xr9phvHPw0CPT0p4DeXjPlyxhwHIbZpzYIlCes8cnL+ag9CYxykSwHAcjlyySwbRKwNzWhB50EykJYA/ULTQlDMM3hKc4B6//8z5zHngPKStGEgKuY2maRYSeGwfos5ljHwwDF6k1tUQqr993OxW8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-19T02:59:10.426Z" agent="5.0 (Windows)" etag="4dKgXUqFg90RuYBJzenr" version="20.4.0" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2844" dy="1498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-0" target="l8Y6Cg2Txfh98p_N-I4u-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-0" value="Início" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="188" y="35" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-2" target="l8Y6Cg2Txfh98p_N-I4u-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-2" value="&quot;Quantos prótons este átomo possui?&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="98" y="125" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-3" target="l8Y6Cg2Txfh98p_N-I4u-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-3" value="&quot;Quantos elétrons este átomo possui?&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="98" y="295" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-4" target="l8Y6Cg2Txfh98p_N-I4u-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-4" value="&quot;Quantos nêutrons este átomo possui?&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="98" y="465" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-5" target="l8Y6Cg2Txfh98p_N-I4u-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-5" value="numeroDeProtons" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="128" y="205" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-6" target="l8Y6Cg2Txfh98p_N-I4u-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-6" value="numeroDeEletrons" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="128" y="375" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.484;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-7" target="l8Y6Cg2Txfh98p_N-I4u-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-7" value="numeroDeNeutrons" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="128" y="550" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-14" target="l8Y6Cg2Txfh98p_N-I4u-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-14" value="cargaPositiva = numeroDeProtons * cargaDoProton&lt;br&gt;cargaNegativa = numeroDeEletrons * cargaDoEletron &lt;br&gt;cargaDoAtomo = cargaPositiva + cargaNegativa&lt;br&gt;numeroDeMassa = numeroDeProtons + numeroDeNeutrons" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=default;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="54" y="645" width="380" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-16" target="l8Y6Cg2Txfh98p_N-I4u-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-16" target="l8Y6Cg2Txfh98p_N-I4u-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-16" value="cargaDoAtomo &amp;gt; 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="154" y="765" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="1105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-17" value="&quot;O átomo está carregado positivamente.&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="398" y="770" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-18" target="l8Y6Cg2Txfh98p_N-I4u-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-18" target="l8Y6Cg2Txfh98p_N-I4u-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-18" value="cargaDoAtomo &amp;lt; 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="154" y="870" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="1105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-19" value="&lt;span style=&quot;white-space: pre;&quot;&gt;	&quot;&lt;/span&gt;O átomo está carregado negativamente.&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="398" y="875" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-20" target="l8Y6Cg2Txfh98p_N-I4u-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-20" value="cargaDoAtomo == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="154" y="975" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="1105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-21" value="&quot;A carga do átomo é neutra.&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="398" y="980" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8Y6Cg2Txfh98p_N-I4u-35" target="l8Y6Cg2Txfh98p_N-I4u-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-35" value="&quot;O número de massa do átomo é &quot;, numeroDeMassa" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="414" y="1075" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l8Y6Cg2Txfh98p_N-I4u-42" value="fim" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="188" y="1075" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
