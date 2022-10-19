@@ -26,11 +26,11 @@ programa
 		{
 			escreva ("\nO átomo está carregado positivamente.")
 		}
-		se(cargaDoAtomo < 0)
+		senao se(cargaDoAtomo < 0)
 		{
 			escreva ("\nO átomo está carregado negativamente.")
 		}
-		se(cargaDoAtomo == 0)
+		senao
 		{
 			escreva ("\nA carga do átomo é neutra.")
 		}
