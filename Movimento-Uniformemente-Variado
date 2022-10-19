@@ -8,6 +8,7 @@ programa
 		real delta, instanteNaOrigem1, instanteNaOrigem2
 		cadeia tipoDeMovimento
 
+		//Entrada
 		escreva("Entre com a velocidade inicial do móvel (em metros por segundo), o espaço inicial (em metros), \na aceleração (em metros por segundo ao quadrado) e o tempo (em segundos): ")
 		leia(velocidadeInicialEmMS, espacoInicialEmM, aceleracaoEmMS2, tempoEmS)
 		
