@@ -15,10 +15,8 @@ programa
 		velocidadeEmMS = velocidadeInicialEmMS + (aceleracaoEmMS2 * tempoEmS)
 		
 		delta = Mt.potencia(velocidadeInicialEmMS, 2.0) - (4 * 0.5 * aceleracaoEmMS2 * espacoInicialEmM)
-		instanteNaOrigem1 = (- velocidadeInicialEmMS + Mt.raiz(delta, 2.0)) / (2 * 0.5 * aceleracaoEmMS2)
-		instanteNaOrigem2 = (- velocidadeInicialEmMS - Mt.raiz(delta, 2.0)) / (2 * 0.5 * aceleracaoEmMS2)
-
-		logico movimentoEAcelerado = velocidadeEmMS >= 0 e aceleracaoEmMS2 >= 0
+		instanteNaOrigem1 = Mt.arredondar((- velocidadeInicialEmMS + Mt.raiz(delta, 2.0)) / (2 * 0.5 * aceleracaoEmMS2),2)
+		instanteNaOrigem2 = Mt.arredondar((- velocidadeInicialEmMS - Mt.raiz(delta, 2.0)) / (2 * 0.5 * aceleracaoEmMS2),2)
 
 		se(velocidadeEmMS > 0 e aceleracaoEmMS2 > 0)
 		{
@@ -35,11 +33,11 @@ programa
 
 		//Saída
 		escreva ("\nA função horária da velocidade para os valores é: v = ", velocidadeInicialEmMS, " + ", aceleracaoEmMS2, " * t")
-		escreva("\nA velocidade no instante t é: ", velocidadeEmMS)
+		escreva("\nA velocidade no instante t é: ", velocidadeEmMS, " m/s")
 		escreva("\nO movimento é ", tipoDeMovimento, ".")
 		se(instanteNaOrigem1 >= 0 e instanteNaOrigem2 >= 0)
 		{
-			escreva("\nO móvel passa pela origem no instante t = ", instanteNaOrigem1, " e t = ", instanteNaOrigem2, "\n")
+			escreva("\nO móvel passa pela origem no instante t1 = ", instanteNaOrigem1, " e t2 = ", instanteNaOrigem2, "\n")
 		}
 		senao se(instanteNaOrigem1 < 0 e instanteNaOrigem2 >= 0)
 		{
@@ -47,7 +45,7 @@ programa
 		}
 		senao se(instanteNaOrigem1 >= 0 e instanteNaOrigem2 < 0)
 		{
-			escreva("\nO móvel passa pela origem no instante t = ", instanteNaOrigem1, "\n")
+			escreva("\nO móvel passa pela origem no instante t1 = ", instanteNaOrigem1, "\n")
 		}
 		senao
 		{
