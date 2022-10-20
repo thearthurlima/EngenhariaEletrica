@@ -1,0 +1,58 @@
+programa
+{
+	inclua biblioteca Matematica --> Mt
+	funcao inicio()
+	{
+		real correnteDoDiodo, correnteDoCatodo, correnteDoAnodo, correnteDeSaturacao = Mt.potencia(10.0,-6.0)
+		real cargaDeUmEletron = 1.602 * Mt.potencia(10.0,-19.0), tensaoDeAlimentacaoNoCatodo, tensaoDeAlimentacaoNoAnodo = 0
+		real temperaturaEmKelvin = 300.0, constDeBoltzman = 1.38 * Mt.potencia(10.0,-23.0), numDeEuler = 2.7182
+
+		//Entrada
+		escreva("Forneça o valor de v (tensão de alimentação do cátodo).\nObservação: O valor deve estar no intervalo [-0.2,0.65]\n")
+		leia(tensaoDeAlimentacaoNoCatodo)
+
+		//Para valores errados
+		se((tensaoDeAlimentacaoNoCatodo < -0.2) ou (tensaoDeAlimentacaoNoCatodo > 0.65))
+		{
+			escreva("\nO valor fornecido não serve.\nPor favor, insira um valor que esteja no intervalo [-0.2,0.65]\n")
+			retorne
+		}
+		senao se((temperaturaEmKelvin * constDeBoltzman == 0))
+		{
+			escreva("\nO valor da corrente não pode ser calculado para valores de t ou k nulos.\nPor favor, forneça outros valores para estas variáveis.")
+			retorne
+		}
+
+		//Processamento
+		correnteDoCatodo = correnteDeSaturacao * ((Mt.potencia(numDeEuler,(tensaoDeAlimentacaoNoCatodo * cargaDeUmEletron) / (constDeBoltzman * temperaturaEmKelvin))) - 1)
+		correnteDoAnodo = correnteDeSaturacao * ((Mt.potencia(numDeEuler,(tensaoDeAlimentacaoNoAnodo * cargaDeUmEletron) / (constDeBoltzman * temperaturaEmKelvin))) - 1)
+		correnteDoDiodo = correnteDoCatodo - correnteDoAnodo
+		correnteDoDiodo = Mt.arredondar(correnteDoDiodo, 4)
+		
+
+		//Processamento lógico
+		logico diodoEstaCorretamentePolarizado = ((correnteDoCatodo > 0) e (correnteDoAnodo < 0))
+		logico correnteEADeTrabalho = correnteDoDiodo > 0.7
+
+		//Saída
+		se(diodoEstaCorretamentePolarizado)
+		{
+			escreva("\nO diodo está polarizado corretamente.")
+		}
+		senao
+		{
+			escreva("\nO diodo não está polarizado corretamente.")
+		}
+
+		se(correnteEADeTrabalho)
+		{
+			escreva("\nA corrente I é a corrente de tabalho")
+		}
+		senao
+		{
+			escreva("\nA corrente I não é a corrente de tabalho")
+		}
+		escreva("\nA corrente I é: ", correnteDoDiodo, "\n")
+
+	}
+}
