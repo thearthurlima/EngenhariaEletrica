@@ -1,0 +1,24 @@
+programa
+{
+	inclua biblioteca Matematica --> Mt
+	funcao inicio()
+	{
+		real vetor[4]
+		inteiro indice
+
+		para(indice = 0; indice <=3; indice++)
+		{
+			leia(vetor[indice])
+		}
+		
+		para(indice = 0; indice <=3; indice++)
+		{
+			vetor[indice] = Mt.raiz(vetor[indice])
+		}
+
+		para(indice = 0; indice <=3; indice++)
+		{
+			escreva(vetor[indice])
+		}
+	}
+}
