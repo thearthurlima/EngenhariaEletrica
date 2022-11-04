@@ -1,0 +1,40 @@
+programa
+{
+	funcao inicio()
+	{
+		real  matriz[3][2]
+		inteiro indice
+
+		escreva("Entre com a 1º linha da matriz:\n")
+		para(indice = 0; indice < 2; indice++)
+		{
+			leia(matriz[0][indice])
+		}
+		escreva("Entre com a 2º linha da matriz:\n")
+		para(indice = 0; indice < 2; indice++)
+		{
+			leia(matriz[1][indice])
+		}
+		escreva("Entre com a 3º linha da matriz:\n")
+		para(indice = 0; indice < 2; indice++)
+		{
+			leia(matriz[2][indice])
+		}
+
+		escreva("\n")
+		para(indice = 0; indice < 2; indice++)
+		{
+			escreva(matriz[0][indice]," ")
+		}
+		escreva("\n")
+		para(indice = 0; indice < 2; indice++)
+		{
+			escreva(matriz[1][indice]," ")
+		}
+		escreva("\n")
+		para(indice = 0; indice < 2; indice++)
+		{
+			escreva(matriz[2][indice]," ")
+		}
+	}
+}
