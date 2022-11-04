@@ -3,22 +3,22 @@ programa
 	inclua biblioteca Matematica --> Mt
 	funcao inicio()
 	{
-		real vetor[4]
+		real vetor[4], somatorioDosQuadrados = 0.0, moduloDoVetor
 		inteiro indice
 
 		para(indice = 0; indice <=3; indice++)
 		{
 			leia(vetor[indice])
-		}
-		
-		para(indice = 0; indice <=3; indice++)
-		{
-			vetor[indice] = Mt.raiz(vetor[indice])
+			somatorioDosQuadrados+= vetor[indice] * vetor[indice]
 		}
 
-		para(indice = 0; indice <=3; indice++)
+		moduloDoVetor = Mt.raiz(somatorioDosQuadrados, 2.0)
+
+		para(indice = 0; indice < 4; indice++)
 		{
-			escreva(vetor[indice])
+			vetor[indice] = vetor[indice]/moduloDoVetor
 		}
+
+		escreva (moduloDoVetor)
 	}
 }
