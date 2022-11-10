@@ -1,0 +1,47 @@
+programa
+{
+	funcao inicio()
+	{
+		real matrizA[4][4], matrizB[4][4], matrizSoma[4][4], matrizSubtracao[4][4]
+		inteiro linha, coluna
+
+		escreva("Entre com os valore da matriz A:\n")
+		para(linha = 0; linha <4; linha++)
+		{
+			para(coluna = 0; coluna < 4; coluna++)
+			{
+				leia(matrizA[linha][coluna])
+			}
+		}
+
+		escreva("\nEntre com os valore da matriz B:\n")
+		para(linha = 0; linha <4; linha++)
+		{
+			para(coluna = 0; coluna < 4; coluna++)
+			{
+				leia(matrizB[linha][coluna])
+			}
+		}
+
+		matrizSoma[0][0] = matrizA[0][0] + matrizB[0][0]
+
+		para(linha = 0; linha <4; linha++)
+		{
+			para(coluna = 0; coluna < 4; coluna++)
+			{
+				matrizSoma[linha][coluna] = matrizA[linha][coluna] + matrizB[linha][coluna]
+			}
+		}
+
+		escreva("\n")
+		para(linha = 0; linha <4; linha++)
+		{
+			para(coluna = 0; coluna < 4; coluna++)
+			{
+				escreva(matrizSoma[linha][coluna], " ")
+			}
+			escreva("\n")
+		}
+
+	}
+}
