@@ -2,22 +2,24 @@ programa
 {
 	funcao inicio()
 	{
-		real matrizA[4][4], matrizB[4][4], matrizSoma[4][4], matrizSubtracao[4][4]
+		const inteiro LINHAS_DAS_MATRIZES = 2, COLUNAS_DAS_MATRIZES = 2
+		real matrizA[LINHAS_DAS_MATRIZES][COLUNAS_DAS_MATRIZES], matrizB[LINHAS_DAS_MATRIZES][COLUNAS_DAS_MATRIZES]
+		real matrizSoma[LINHAS_DAS_MATRIZES][COLUNAS_DAS_MATRIZES], matrizSubtracao[LINHAS_DAS_MATRIZES][COLUNAS_DAS_MATRIZES]
 		inteiro linha, coluna
 
 		escreva("Entre com os valore da matriz A:\n")
-		para(linha = 0; linha <4; linha++)
+		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
-			para(coluna = 0; coluna < 4; coluna++)
+			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
 			{
 				leia(matrizA[linha][coluna])
 			}
 		}
 
 		escreva("\nEntre com os valore da matriz B:\n")
-		para(linha = 0; linha <4; linha++)
+		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
-			para(coluna = 0; coluna < 4; coluna++)
+			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
 			{
 				leia(matrizB[linha][coluna])
 			}
@@ -25,18 +27,18 @@ programa
 
 		matrizSoma[0][0] = matrizA[0][0] + matrizB[0][0]
 
-		para(linha = 0; linha <4; linha++)
+		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
-			para(coluna = 0; coluna < 4; coluna++)
+			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
 			{
 				matrizSoma[linha][coluna] = matrizA[linha][coluna] + matrizB[linha][coluna]
 			}
 		}
 
 		escreva("\n")
-		para(linha = 0; linha <4; linha++)
+		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
-			para(coluna = 0; coluna < 4; coluna++)
+			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
 			{
 				escreva(matrizSoma[linha][coluna], " ")
 			}
