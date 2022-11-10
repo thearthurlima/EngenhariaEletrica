@@ -1,0 +1,26 @@
+programa
+{
+	funcao inicio()
+	{
+		real  matriz[3][2]
+		inteiro linha, coluna 
+
+		para(linha = 0; linha < 3; linha++)
+		{
+			escreva("Entre com os valores da ", linha+1, "º linha:\n")
+			para(coluna = 0; coluna < 2; coluna++)
+			{
+				leia(matriz[linha][coluna])
+			}			
+		}
+		escreva("\nA matriz gerada é:\n")
+		para(linha = 0; linha < 3; linha++)
+		{
+			para(coluna = 0; coluna < 2; coluna++)
+			{
+				escreva(matriz[linha][coluna], " ")
+			}
+			escreva("\n")			
+		}
+	}
+}
