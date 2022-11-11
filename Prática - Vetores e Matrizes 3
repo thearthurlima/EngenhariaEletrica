@@ -7,7 +7,7 @@ programa
 		real matrizSoma[LINHAS_DAS_MATRIZES][COLUNAS_DAS_MATRIZES], matrizSubtracao[LINHAS_DAS_MATRIZES][COLUNAS_DAS_MATRIZES]
 		inteiro linha, coluna
 
-		escreva("Entre com os valore da matriz A:\n")
+		escreva("Entre com os valores da matriz A:\n")
 		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
 			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
@@ -16,7 +16,7 @@ programa
 			}
 		}
 
-		escreva("\nEntre com os valore da matriz B:\n")
+		escreva("\nEntre com os valores da matriz B:\n")
 		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
 			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
