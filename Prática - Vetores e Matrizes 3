@@ -33,12 +33,30 @@ programa
 			}
 		}
 
-		escreva("\n")
+		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
+		{
+			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
+			{
+				matrizSubtracao[linha][coluna] = matrizA[linha][coluna] - matrizB[linha][coluna]
+			}
+		}
+
+		escreva("\nA matriz gerada pela soma das matrizes A e B é:\n")
 		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
 		{
 			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
 			{
 				escreva(matrizSoma[linha][coluna], " ")
+			}
+			escreva("\n")
+		}
+
+				escreva("\nA matriz gerada pela subtração das matrizes A e B é:\n")
+		para(linha = 0; linha < LINHAS_DAS_MATRIZES; linha++)
+		{
+			para(coluna = 0; coluna < COLUNAS_DAS_MATRIZES; coluna++)
+			{
+				escreva(matrizSubtracao[linha][coluna], " ")
 			}
 			escreva("\n")
 		}
