@@ -6,7 +6,7 @@ programa
 	{
 		const inteiro NUMERO_MAXIMO_DE_ELEMENTOS = 40
 		inteiro indice, indice2, numeroDeElementos
-		real vetor[NUMERO_MAXIMO_DE_ELEMENTOS], menorValor = 0.0, maiorValor = 0.0
+		real valores[NUMERO_MAXIMO_DE_ELEMENTOS], menorValor = 0.0, maiorValor = 0.0
 		real somatorio = 0.0, media, variancia = 0.0, desvioPadrao
 
 		escreva("Este é um programa cuja funcionalidade é ler números reais inseridos pelo usuário e exibir:\n")
@@ -17,44 +17,44 @@ programa
 
 		para(indice = 0; indice < numeroDeElementos; indice++)
 		{
-			leia(vetor[indice])
+			leia(valores[indice])
 		}
 
 		//Processamentos para maior e menor número
-		menorValor = vetor[0]
+		menorValor = valores[0]
 		para(indice = 0; indice < numeroDeElementos; indice++)
 		{
-			se(menorValor <= vetor[indice])
+			se(menorValor <= valores[indice])
 			{
 				menorValor = menorValor
 			}
 			senao
 			{
-				menorValor = vetor[indice]
+				menorValor = valores[indice]
 			}
 		}
-		maiorValor = vetor[0]
+		maiorValor = valores[0]
 		para(indice = 0; indice < numeroDeElementos; indice++)
 		{
-			se(maiorValor >= vetor[indice])
+			se(maiorValor >= valores[indice])
 			{
 				maiorValor = maiorValor
 			}
 			senao
 			{
-				maiorValor = vetor[indice]
+				maiorValor = valores[indice]
 			}
 		}
 
 		//Processamento para média e desvio padrão
 		para(indice = 0; indice < numeroDeElementos; indice++)
 		{
-			somatorio+= vetor[indice]
+			somatorio+= valores[indice]
 		}
 		media = somatorio / numeroDeElementos
 		para(indice = 0; indice < numeroDeElementos; indice++)
 		{
-			variancia += (Mt.potencia(vetor[indice] - media, 2.0)) / numeroDeElementos
+			variancia += (Mt.potencia(valores[indice] - media, 2.0)) / numeroDeElementos
 		}
 		desvioPadrao = Mt.raiz(variancia,2.0)
 		
