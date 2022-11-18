@@ -1,0 +1,55 @@
+programa
+{
+	inclua biblioteca Matematica --> Mt
+	
+	funcao inicio()
+	{
+		const inteiro LINHAS_DA_MATRIZ = 3, COLUNAS_DA_MATRIZ = 2
+		const real EULER = 2.718281828459045235360287
+		inteiro indiceLinha, indiceColuna, indiceDoVetor, numeroDeElementosDaMatriz = (LINHAS_DA_MATRIZ * COLUNAS_DA_MATRIZ), precisao
+		real conjuntoDeValoresDeX[LINHAS_DA_MATRIZ][COLUNAS_DA_MATRIZ], limitanteInferior, limitanteSuperior
+		real conjuntoDeValoresDeY[LINHAS_DA_MATRIZ * COLUNAS_DA_MATRIZ]
+
+		escreva("Vamos definir um intervalo fechado [a,b].\nDefina um valor para a: ")
+		leia(limitanteInferior)
+		escreva("Defina um valor para b: ")
+		leia(limitanteSuperior)
+		escreva("\nAgora você deve fornecer ", LINHAS_DA_MATRIZ * COLUNAS_DA_MATRIZ, " valores para x.\n")
+		
+		para(indiceLinha = 0; indiceLinha < LINHAS_DA_MATRIZ; indiceLinha++)
+		{
+			para(indiceColuna = 0; indiceColuna < COLUNAS_DA_MATRIZ; indiceColuna++)
+			{
+				escreva("Entre com o um valor para x que esteja no intervalo [", limitanteInferior, ", ", limitanteSuperior, "]: ")
+				leia(conjuntoDeValoresDeX[indiceLinha][indiceColuna])
+				enquanto(conjuntoDeValoresDeX[indiceLinha][indiceColuna] < limitanteInferior ou conjuntoDeValoresDeX[indiceLinha][indiceColuna] > limitanteSuperior)
+				{
+					escreva("\nO número fornecido é inválido.\nForneça um valor para x que esteja no intervalo [10,20]: ")
+					leia(conjuntoDeValoresDeX[indiceLinha][indiceColuna])
+				}
+			}
+		}
+
+		para(indiceDoVetor = 0; indiceDoVetor < numeroDeElementosDaMatriz; indiceDoVetor++)
+		{
+			para(indiceLinha = 0; indiceLinha < LINHAS_DA_MATRIZ; indiceLinha++)
+			{
+				para(indiceColuna = 0; indiceColuna < COLUNAS_DA_MATRIZ; indiceColuna++)
+				{
+					conjuntoDeValoresDeY[indiceDoVetor] = 10 * Mt.potencia(conjuntoDeValoresDeX[indiceLinha][indiceColuna],2.0) * Mt.potencia(EULER, -conjuntoDeValoresDeX[indiceLinha][indiceColuna]) //Equação 01
+				}
+				
+			}
+			
+		}
+
+		escreva("\nAgora exibiremos os valores encontrados para y.\nQual precisão você deseja para o arredondamento dos resultados?\nObs.: O número indicado deve ser um número inteiro positivo: ")
+		leia(precisao)
+		
+		para(indiceDoVetor = 0; indiceDoVetor < numeroDeElementosDaMatriz; indiceDoVetor++)
+		{
+			conjuntoDeValoresDeY[indiceDoVetor] = Mt.arredondar(conjuntoDeValoresDeY[indiceDoVetor],precisao)
+			escreva("\n", indiceDoVetor, "º valor para y: ", conjuntoDeValoresDeY[indiceDoVetor])
+		}
+	}
+}
