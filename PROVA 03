@@ -2,12 +2,13 @@ programa
 {
 	inclua biblioteca Matematica --> Mt
 	
-	funcao definirIntervaloDeX(real& limiteInferior, real& limiteSuperior) //REMOVER "ESCREVER" DE DENTRO DA SUB-ROTINAA!!!!!
+	funcao definirIntervaloDeX(real& limiteInferior, real& limiteSuperior)
 	{
 		escreva("Defina um limitante inferior para o intervalo [a, b]: ")
 		leia(limiteInferior)
 		escreva("Defina um limitante superior para o intervalo [a, b]: ")
 		leia(limiteSuperior)
+		
 		enquanto(limiteSuperior < limiteInferior)
 		{
 			escreva("O limitante superior deve ser maior que o valor do limitante inferior (", limiteInferior, ").\nDefina outro limitante superior para o intervalo [a, b]: ")
@@ -18,12 +19,19 @@ programa
 	funcao entradaDoConjuntoXNoIntervalo(real& conjuntoX[][], inteiro NUMERO_DE_LINHAS, inteiro NUMERO_DE_COLUNAS, real limiteInferior, real limiteSuperior)
 	{				
 		escreva("Entre com valores de x que estejam contidos no intervalo [", limiteInferior, " ", limiteSuperior, "]: ")
+		
 		para(inteiro iDaLinha = 0; iDaLinha < NUMERO_DE_LINHAS; iDaLinha++)
 		{
 			para(inteiro iDaColuna = 0; iDaColuna < NUMERO_DE_COLUNAS; iDaColuna++)
 			{
 
+				escreva("\nEntre com o valor de x na posição [", iDaLinha, "][", iDaColuna, "]: ")
 				leia(conjuntoX[iDaLinha][iDaColuna])
+				enquanto(conjuntoX[iDaLinha][iDaColuna] < limiteInferior ou conjuntoX[iDaLinha][iDaColuna] > limiteSuperior)
+				{
+					escreva("\nEntre com um valor de x que esteja contido no intervalo [", limiteInferior, " ", limiteSuperior, "]: ")
+					leia(conjuntoX[iDaLinha][iDaColuna])
+				}
 			}
 		}
 	}
@@ -43,7 +51,34 @@ programa
 		}
 	}
 
+	funcao inteiro obterPrecisaoValida()
+	{
+		inteiro precisao = 0
+		escreva("Entre com um número inteiro positivo para o arredondamento dos valores: ")
+		leia(precisao)
+		enquanto(precisao <= 0)
+		{
+			escreva("\nEntre com um número positivo real para o arredondamento: ")
+			leia(precisao)
+		}
+		retorne(precisao)
+		
+	}
+
 	funcao exibirConjuntoXY(real conjuntoX[][], real conjuntoY[], inteiro NUMERO_DE_LINHAS, inteiro NUMERO_DE_COLUNAS, inteiro precisao)
+	{
+		inteiro indiceDoVetorY = 0
+		
+		para(inteiro iDaLinha = 0; iDaLinha < NUMERO_DE_LINHAS; iDaLinha++)
+		{
+			para(inteiro iDaColuna = 0; iDaColuna < NUMERO_DE_COLUNAS; iDaColuna++)
+			{
+
+				escreva("\ny(",Mt.arredondar(conjuntoX[iDaLinha][iDaColuna],precisao),") = ", Mt.arredondar(conjuntoY[indiceDoVetorY],precisao))
+				indiceDoVetorY++
+			}
+		}
+	}
 	
 	funcao inicio()
 	{
@@ -61,8 +96,8 @@ programa
 
 		calculoDoConjuntoY(conjuntoX, NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS, conjuntoY)
 
-		//inteiro precisao = obterPrecisaoValida
+		inteiro precisao = obterPrecisaoValida()
 
-		//exibirConjuntoXY(conjuntoX, conjuntoY, NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS, precisao)
+		exibirConjuntoXY(conjuntoX, conjuntoY, NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS, precisao)
 	}
 }
