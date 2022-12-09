@@ -1,0 +1,68 @@
+programa
+{
+	inclua biblioteca Matematica --> Mt
+	
+	funcao definirIntervaloDeX(real& limiteInferior, real& limiteSuperior) //REMOVER "ESCREVER" DE DENTRO DA SUB-ROTINAA!!!!!
+	{
+		escreva("Defina um limitante inferior para o intervalo [a, b]: ")
+		leia(limiteInferior)
+		escreva("Defina um limitante superior para o intervalo [a, b]: ")
+		leia(limiteSuperior)
+		enquanto(limiteSuperior < limiteInferior)
+		{
+			escreva("O limitante superior deve ser maior que o valor do limitante inferior (", limiteInferior, ").\nDefina outro limitante superior para o intervalo [a, b]: ")
+			leia(limiteSuperior)
+		}
+	}
+
+	funcao entradaDoConjuntoXNoIntervalo(real& conjuntoX[][], inteiro NUMERO_DE_LINHAS, inteiro NUMERO_DE_COLUNAS, real limiteInferior, real limiteSuperior)
+	{				
+		escreva("Entre com valores de x que estejam contidos no intervalo [", limiteInferior, " ", limiteSuperior, "]: ")
+		para(inteiro iDaLinha = 0; iDaLinha < NUMERO_DE_LINHAS; iDaLinha++)
+		{
+			para(inteiro iDaColuna = 0; iDaColuna < NUMERO_DE_COLUNAS; iDaColuna++)
+			{
+
+				leia(conjuntoX[iDaLinha][iDaColuna])
+			}
+		}
+	}
+	
+	funcao calculoDoConjuntoY(real conjuntoX[][], inteiro NUMERO_DE_LINHAS, inteiro NUMERO_DE_COLUNAS, real& conjuntoY[])
+	{
+		const real EULER = 2.7182
+		inteiro indiceDoVetorY = 0
+
+		para(inteiro iDaLinha = 0; iDaLinha < NUMERO_DE_LINHAS; iDaLinha++)
+		{
+			para(inteiro iDaColuna = 0; iDaColuna < NUMERO_DE_COLUNAS; iDaColuna++)
+			{
+				conjuntoY[indiceDoVetorY] = 10 * Mt.potencia(conjuntoX[iDaLinha][iDaColuna], 2.0) * Mt.potencia(EULER, (conjuntoX[iDaLinha][iDaColuna] * -1))
+				indiceDoVetorY++
+			}
+		}
+	}
+
+	funcao exibirConjuntoXY(real conjuntoX[][], real conjuntoY[], inteiro NUMERO_DE_LINHAS, inteiro NUMERO_DE_COLUNAS, inteiro precisao)
+	
+	funcao inicio()
+	{
+		const inteiro NUMERO_DE_LINHAS = 2
+		const inteiro NUMERO_DE_COLUNAS = 2
+
+		real conjuntoX[NUMERO_DE_LINHAS][NUMERO_DE_COLUNAS]
+		real conjuntoY[NUMERO_DE_LINHAS * NUMERO_DE_COLUNAS]
+
+		real limiteInferior = 0.0, limiteSuperior = 0.0
+
+		definirIntervaloDeX(limiteInferior, limiteSuperior)
+
+		entradaDoConjuntoXNoIntervalo(conjuntoX, NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS, limiteInferior, limiteSuperior)
+
+		calculoDoConjuntoY(conjuntoX, NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS, conjuntoY)
+
+		//inteiro precisao = obterPrecisaoValida
+
+		//exibirConjuntoXY(conjuntoX, conjuntoY, NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS, precisao)
+	}
+}
