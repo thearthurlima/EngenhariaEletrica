@@ -14,7 +14,7 @@ int main()
 	scanf("%d", &linhasDoUsuario);
 	printf("Entre com a quantidade de colunas da matriz: ");
 	scanf("%d", &colunasDoUsuario);
-	
+		
 	for(linha = 0; linha < linhasDoUsuario; linha++)
 	{
 		for(coluna = 0; coluna < colunasDoUsuario; coluna++)
@@ -24,6 +24,8 @@ int main()
 		
 	}
 	
+	printf("\n");
+		
 	for(linha = 0, linhaInvertida = linhasDoUsuario-1; linha < linhasDoUsuario, linhaInvertida >= 0; linha++, linhaInvertida--)
 	{
 		for(coluna = 0; coluna < colunasDoUsuario; coluna++)
