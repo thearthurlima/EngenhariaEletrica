@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale (LC_ALL, "Portuguese");
+	float angulo01, angulo02, angulo03;
+	int formaTriangulo;
+	
+	printf("\nDigite o 1º ângulo do triângulo:\n");
+	scanf("%f", &angulo01);
+	printf("\nDigite o 2º ângulo do triângulo:\n");
+	scanf("%f", &angulo02);
+	printf("\nDigite o 3º ângulo do triângulo:\n");
+	scanf("%f", &angulo03);
+	
+	if (angulo01 + angulo02 + angulo03 == 180)
+	{
+		formaTriangulo = 1;
+	}
+	else
+	{
+		formaTriangulo = 0;
+		printf("\nOs ângulos inseridos não formam um triângulo.\nInsira novas entradas\n");
+		return(0);
+	}
+	
+	return(0);
+}
