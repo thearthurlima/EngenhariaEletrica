@@ -10,10 +10,12 @@ int main()
 	int linha, coluna, linhaInvertida;
 	int linhasDoUsuario, colunasDoUsuario;
 	
-	printf("Entre com a quantidade de linhas da matriz: ");
+	printf("Este programa inverte as linhas de uma matriz real");
+	printf("\nEntre com a quantidade de linhas da matriz: ");
 	scanf("%d", &linhasDoUsuario);
 	printf("Entre com a quantidade de colunas da matriz: ");
 	scanf("%d", &colunasDoUsuario);
+	printf("Entre com os valores da matriz %dx%d: \n\n", linhasDoUsuario, colunasDoUsuario);
 		
 	for(linha = 0; linha < linhasDoUsuario; linha++)
 	{
