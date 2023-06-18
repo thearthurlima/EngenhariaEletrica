@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+
+	#define MAXIMO_DE_LINHAS 100
+	#define MAXIMO_DE_COLUNAS 100
+	
+	int matriz[MAXIMO_DE_LINHAS][MAXIMO_DE_COLUNAS], matrizInvertida[MAXIMO_DE_LINHAS][MAXIMO_DE_COLUNAS];
+	int linha, coluna, linhaInvertida;
+	int linhasDoUsuario, colunasDoUsuario;
+	
+	printf("Entre com a quantidade de linhas da matriz: ");
+	scanf("%d", &linhasDoUsuario);
+	printf("Entre com a quantidade de colunas da matriz: ");
+	scanf("%d", &colunasDoUsuario);
+		
+	for(linha = 0; linha < linhasDoUsuario; linha++)
+	{
+		for(coluna = 0; coluna < colunasDoUsuario; coluna++)
+		{
+			scanf("%d", &matriz[linha][coluna]);
+		}
+		
+	}
+	
+	printf("\n");
+		
+	for(linha = 0, linhaInvertida = linhasDoUsuario-1; linha < linhasDoUsuario, linhaInvertida >= 0; linha++, linhaInvertida--)
+	{
+		for(coluna = 0; coluna < colunasDoUsuario; coluna++)
+		{
+			matrizInvertida[linhaInvertida][coluna] = matriz[linha][coluna];
+		}
+		
+	}
+	
+	for(linha = 0; linha < linhasDoUsuario; linha++)
+	{
+		for(coluna = 0; coluna < colunasDoUsuario; coluna++)
+		{
+			printf("%d", matrizInvertida[linha][coluna]);
+			printf(" ");
+		}
+		printf("\n");
+	}
+	return(0);
+}
