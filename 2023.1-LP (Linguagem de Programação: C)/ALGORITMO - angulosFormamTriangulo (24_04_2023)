@@ -6,21 +6,24 @@ int main()
 	float angulo01, angulo02, angulo03;
 	int formaTriangulo;
 	
-	printf("\nDigite o 1º ângulo do triângulo:\n");
+	printf("Este programa recebe a entrada de três ângulos e calcula se os ângulos fornecidos formam um triângulo.");
+	printf("\nExemplo:\n1º ângulo = 120º;\n2º ângulo = 30º;\n3º ângulo = 30º;\nOs ângulos formam um triângulo.\n\n");
+	printf("Digite o 1º ângulo: ");
 	scanf("%f", &angulo01);
-	printf("\nDigite o 2º ângulo do triângulo:\n");
+	printf("Digite o 2º ângulo: ");
 	scanf("%f", &angulo02);
-	printf("\nDigite o 3º ângulo do triângulo:\n");
+	printf("Digite o 3º ângulo: ");
 	scanf("%f", &angulo03);
 	
 	if (angulo01 + angulo02 + angulo03 == 180)
 	{
 		formaTriangulo = 1;
+		printf("\nOs ângulos inseridos formam um triângulo.");
 	}
 	else
 	{
 		formaTriangulo = 0;
-		printf("\nOs ângulos inseridos não formam um triângulo.\nInsira novas entradas\n");
+		printf("\nOs ângulos inseridos NÃO formam um triângulo.");
 		return(0);
 	}
 	
