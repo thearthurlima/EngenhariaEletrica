@@ -4,79 +4,76 @@
 
 #define MAX 100
 
-int dividirString(char string[MAX], char stringDividida[MAX][MAX], int tamanhoDaString)
+int divideString(char* string, char matriz[MAX][MAX], int* numLinhas)
 {
-	int i;
-	int posicaoDaPalavra = 0, tamanhoDaPalavra = 0;
-	
-	for(i = 0; string[i] != '\0')
-	{
-		tamanhoDaPalavra++
-	}
-	
-	return 0;
+    int i, j;
+    int tamanhoDaString = strlen(string);
+    int linha = 0;
+    int coluna = 0;
+
+    for (i = 0; i < tamanhoDaString; i++) 
+    {
+        if (string[i] == ' ' || i == tamanhoDaString - 1) 
+        {
+            matriz[linha][coluna] = '\0';
+            linha++;
+            coluna = 0;
+        }
+        else if (linha < MAX && coluna < MAX - 1) 
+        {
+            matriz[linha][coluna] = string[i];
+            coluna++;
+        }
+    }
+    *numLinhas = linha;
+    
+    return 0;
 }
 
-int exibeMatriz(char matriz[MAX][MAX])
+int ehPalindromo(char *palavra) 
 {
-	for(int i = 0; i != '\0'; i++)
-	{
-		for(int j = 0; j != '\0'; j++)
-		printf(" %c ", matriz[i][j]);
-	}
+    int tamanhoDaPalavra = strlen(palavra);
+    for (int i = 0; i < tamanhoDaPalavra / 2; i++) 
+    {
+        if (palavra[i] != palavra[tamanhoDaPalavra - i - 1]) 
+        {
+            return 0;  // Nao eh um palindromo
+        }
+    }
+    return 1; //Eh palindromo
 }
 
-int acharPalindromo(char string[MAX], int posicaoDaPalavra, int tamanhoDaPalavra)
+void juntaStringModificada(char *stringModificada, char matriz[MAX][MAX], int numLinhas)
 {
-	int contagem = 0;
-	
-	for(int i = posicaoDaPalavra, j = posicaoDaPalavra + tamanhoDaPalavra-1; i != j ; i++, j--)
-	{
-		if(string[i] == string[j])
-		contagem++;
-	}
-	
-	if(contagem == (tamanhoDaPalavra)/2)
-	return 1;
-	else
-	return 0;
+    for (int i = 0; i < numLinhas; i++) 
+    {
+        if (ehPalindromo(matriz[i])) 
+        {
+            strcat(stringModificada, "*");
+        } 
+        else 
+        {
+            strcat(stringModificada, matriz[i]);
+        }
+        strcat(stringModificada, " ");
+    }
 }
 
-int trocaPalindromo(char string[MAX], int posicaoDaPalavra, int tamanhoDaPalavra, int ehPalindromo)
+int main() 
 {
-	if(ehPalindromo == 1)
-	{
-		string[posicaoDaPalavra] = '*';
-		string[posicaoDaPalavra+1] = '\0';
-	}
-}
+    char string[MAX];
+    char matriz[MAX][MAX];
+    char stringModificada[MAX];
+    int numLinhas;
 
-main ()
-{
-	char string[MAX];
-	char stringAlterada[MAX];
-	char stringDividida[MAX][MAX];
-	int ehPalindromo;
-	int posicaoDaPalavra = 0;
-	int tamanhoDaPalavra = 3;
-	
-	
-	printf("Digite uma string: ");
-	fgets(string, MAX, stdin);
-	int tamanhoDaString = strlen(string);
-	
-	ehPalindromo = acharPalindromo(string, posicaoDaPalavra, tamanhoDaPalavra);
-	
-	if(ehPalindromo == 1)
-	printf("\nEh palindromo!");
-	else
-	printf("\nNao eh palindromo!");
-	
-	dividirString(string, stringDividida, tamanhoDaString);
-	exibeMatriz(stringDividida);
-	
-	trocaPalindromo(string, posicaoDaPalavra, tamanhoDaPalavra, ehPalindromo);
-	/*printf("\nStringAlterada: %s", string);*/
-	
-	return 0;
+    printf("Digite uma string: ");
+    fgets(string, MAX, stdin);
+
+    divideString(string, matriz, &numLinhas);
+
+    juntaStringModificada(stringModificada, matriz, numLinhas);
+
+    printf("\nString modificada: %s\n", stringModificada);
+
+    return 0;
 }
