@@ -1,0 +1,154 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 100
+
+int lerUmaMatriz (char matriz[MAX][MAX], int linhas, int colunas)
+{
+	for(int i = 0; i < linhas; i++)
+	{
+		for(int j = 0; j < colunas; j++)
+		{
+			scanf(" %c", &matriz[i][j]);
+		}
+	}
+
+	return 0;
+}
+
+int imprimirUmaMatriz (char matriz[MAX][MAX], int linhas, int colunas)
+{
+	for(int i = 0; i < linhas; i++)
+	{
+		for(int j = 0; j < colunas; j++)
+		{
+			printf(" %c", matriz[i][j]);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+
+
+/*int procurarPalavraNasColunas (char matriz[MAX][MAX], char palavra[MAX], int linhas, int colunas)
+{
+	int contagem = 0, q;
+	int numeroDeAparicoesColunas = 0;
+	int tamanhoDaPalavra;
+
+	tamanhoDaPalavra = strlen(palavra);
+
+	for(int i = 0; i < linhas; i++)
+	{
+		for(int j = 0, k = 0; j < colunas; j++)
+		{
+			if(matriz[i][j] == palavra[k])
+			{
+				contagem = 0;
+				for(k = 0, q = i; k < linhas; k++, q++)
+				{
+					if(matriz[q][j] == palavra[k])
+					contagem++;
+				}
+				if (contagem == tamanhoDaPalavra-1)
+				numeroDeAparicoesColunas++;
+			}
+		}
+	}
+
+	return numeroDeAparicoesColunas;
+}*/
+
+int censurarPalavraNasLinhas(char matriz[MAX][MAX], char palavra[MAX], int linhas, int colunas)
+{
+	
+	int contagem = 0, s, q;
+	int numeroDeAparicoesLinhas = 0;
+	int tamanhoDaPalavra;
+
+	tamanhoDaPalavra = strlen(palavra);
+
+	for(int i = 0; i <= linhas; i++)
+	{
+		for(int j = 0, k = 0; j <= colunas; j++)
+		{
+			if(matriz[i][j] == palavra[k])
+			{
+				contagem = 0;
+				for(q = j, k = 0; k <= colunas; k++, q++) 
+				{
+					if(matriz[i][q] == palavra[k])
+					contagem++;
+				}
+				if(contagem == tamanhoDaPalavra)
+				{
+					for(int p = j, s = 0; s <= contagem; s++, p++)
+					matriz[i][p] = '*';
+					if(linhas == 2)
+					for(int p = j, s = 0; s <= contagem; s++, p++)
+					matriz[0][p] = '*';
+
+				}
+			}
+		}
+	}
+
+	return 0;
+}
+
+int main ()
+{
+	char matrizDoUsuario[MAX][MAX];
+	char palavra[MAX];
+	int linhas, colunas;
+	int numeroDePalavras, tamanhoDaPalavra, aparicoesLinhas, aparicoesColunas, aparicoesTotais = 0;
+	char caractere;
+
+	printf("Defina o numero de linhas da matriz: ");
+	scanf("%d", &linhas);
+	printf("Defina o numero de colunas da matriz: ");
+	scanf("%d", &colunas);
+
+	printf("Entre com os valores da matriz: ");
+
+	lerUmaMatriz(matrizDoUsuario, linhas, colunas);
+	imprimirUmaMatriz(matrizDoUsuario, linhas, colunas);
+	
+	printf("Digite quantas palavras voce deseja inserir: ");
+	scanf("%d", &numeroDePalavras);
+	
+	for(int i = 0; i <= numeroDePalavras; i++)
+	{
+		fgets(palavra, MAX, stdin);	
+		censurarPalavraNasLinhas(matrizDoUsuario, palavra, linhas, colunas);
+	}
+	
+	imprimirUmaMatriz(matrizDoUsuario, linhas, colunas);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 /*aparicoesLinhas = procurarPalavraNasLinhas(matrizDoUsuario, palavra, linhas, colunas);
+	/*aparicoesColunas = procurarPalavraNasColunas(matrizDoUsuario, palavra, linhas, colunas);
+	aparicoesTotais = aparicoesLinhas + aparicoesColunas;*/
+
+	/*printf("\n Numero de aparicoes linhas: %d", procurarPalavraNasLinhas(matrizDoUsuario, palavra, linhas, colunas));
+	printf("\n Numero de aparicoes colunas: %d", procurarPalavraNasColunas(matrizDoUsuario, palavra, linhas, colunas));
+
+	/*printf("\n A PALAVRA APARECE %d VEZES", aparicoesTotais);*/
+
+	return 0;
+}
