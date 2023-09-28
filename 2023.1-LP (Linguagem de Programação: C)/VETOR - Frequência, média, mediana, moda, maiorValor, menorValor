@@ -1,0 +1,64 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#define MAX 100
+
+/*Dado um vetor com valores digitados pelo usuário, encontre:
+a) Frequência em que cada elemento aparece no vetor;
+b) A média, a mediana (organizar o vetor) e a moda;
+c) Maior e menor valor.*/
+
+int main ()
+{
+	int vetor[MAX], tamanhoDoVetor;
+	
+	printf("Entre com o tamanho do vetor de dados:");
+	scanf("%d", &tamanhoDoVetor);
+	
+	printf("Entre com os %d valores do vetor: ", tamanhoDoVetor);
+
+	for(int i = 0; i < tamanhoDoVetor; i++)
+	{
+		scanf("%d", &vetor[i]);
+	}
+	
+	//a) Frequência que cada elemento aparece: NAO FUNCIONA
+	
+	int frequencia[MAX];
+	
+	
+	
+	for(int i = 0; i < tamanhoDoVetor; i++)
+	{
+		printf("\nElemento %d, frequencia: %d", frequencia[i][0], frequencia[0][i]);
+	}
+	
+	
+	//b) A média, a mediana (organizar o vetor) e a moda:
+	
+	/*int media;
+	float somatorio = 0.0;
+	
+	for(int i = 0; i < tamanhoDoVetor; i++)
+	{
+		somatorio += vetor[i];
+	}
+	
+	media = somatorio/tamanhoDoVetor;
+	
+	for(int i = 0; i < tamanhoDoVetor-1; i++)
+	{
+		if(vetor[i] > vetor[i+1])
+		{
+			auxiliar = vetor[i];
+			vetor[i] = vetor[i+1];
+			vetor [i+1] = auxiliar;
+		}
+	}*/
+	
+	
+	
+	
+	
+}
