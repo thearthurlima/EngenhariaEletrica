@@ -27,6 +27,15 @@ int main()
 			contVogais++;
 			j++;
 		}
+			
+		j = 0;
+		while(consoantes[j] != '\0'){
+			if(string[i] == vogais[j])
+			contConsoantes++;
+			j++;
+		}
+		
+		
 	
 		/*if(string[i] >= 65 && string[i] <= 90) //Maiusculas ficam minúsculas
 			string[i] += 32;
