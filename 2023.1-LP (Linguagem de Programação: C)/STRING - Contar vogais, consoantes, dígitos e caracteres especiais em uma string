@@ -46,9 +46,8 @@ int main()
 			j++;
 		}
 	}
+	contCaracteres = tamanho - contVogais - contConsoantes - contDigitos; //Calcula caracteres especiais
 	
-	contCaracteres = tamanho - contVogais - contConsoantes - contDigitos;
-	
-		printf("\nVogais: %d\nConsoantes: %d\nDigitos: %d\nCaracteres especiais: %d", contVogais, contConsoantes, contDigitos, contCaracteres);
+	printf("\nVogais: %d\nConsoantes: %d\nDigitos: %d\nCaracteres especiais: %d", contVogais, contConsoantes, contDigitos, contCaracteres);
 
 }
