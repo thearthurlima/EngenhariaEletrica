@@ -17,9 +17,9 @@ int main()
 	fgets(string, MAX, stdin); //Pega a string
 	
 	for(i = 0; string[i] != '\0'; i++){
-		if(string[i] >= 65 && string[i] <= 90) //Maísculas ficam minúsculas
+		if(string[i] >= 65 && string[i] <= 90) //Maiusculas ficam minúsculas
 			string[i] += 32;
-		else if(string[i] >= 97 && string[i] <= 122) //Minísculas ficam maiúsculas
+		else if(string[i] >= 97 && string[i] <= 122) //Minúsculas ficam maiusculas
 			string[i] -= 32;
 		else if(string[i] >= 48 && string[i] <= 57) //Números viram asteriscos
 			string[i] = '*';
