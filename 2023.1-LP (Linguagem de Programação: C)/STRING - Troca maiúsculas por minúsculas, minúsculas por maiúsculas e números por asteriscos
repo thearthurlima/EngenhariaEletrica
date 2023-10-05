@@ -1,0 +1,32 @@
+/*Dada uma string fornecida pelo usuário:
+a) As letras minúsculas ficam maísculas;
+b) As letras maiúsculas ficam minúsculas;
+c) Números são substituídos por asterisco.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 100
+
+int main()
+{
+	char string[MAX], i = 0;
+	
+	fgets(string, MAX, stdin); //Pega a string
+	
+	for(i = 0; string[i] != '\0'; i++){
+		if(string[i] >= 65 && string[i] <= 90) //Maísculas ficam minúsculas
+			string[i] += 32;
+		else if(string[i] >= 97 && string[i] <= 122) //Minísculas ficam maiúsculas
+			string[i] -= 32;
+		else if(string[i] >= 48 && string[i] <= 57) //Números viram asteriscos
+			string[i] = '*';
+	}
+	
+	i = 0;
+	while(string[i] != '\0'){ //Exibe a string
+		printf("%c", string[i]);
+		i++;
+	}
+}
