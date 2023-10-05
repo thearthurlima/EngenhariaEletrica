@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 100
+
+int main()
+{
+	char string[MAX], stringaux[MAX], aux1, aux2;
+	int tamanhoDaString = 0, k = 0;
+	
+	fgets(string, MAX, stdin);
+	
+	while(string[k] != '\0')
+	{
+		tamanhoDaString++;
+		k++;
+	}
+	tamanhoDaString--;
+
+	for(int i = 0, j = tamanhoDaString-1; i < tamanhoDaString; i++, j--)
+	{
+		stringaux[i] = string[j];
+	}
+	
+	for(int i = 0; string[i] != '\0'; i++)
+	{
+		string[i] = stringaux[i];
+	}
+	
+	for(int i = 0; string[i] != '\0'; i++)
+	{
+		printf("%c", string[i]);
+	}
+	
+}
