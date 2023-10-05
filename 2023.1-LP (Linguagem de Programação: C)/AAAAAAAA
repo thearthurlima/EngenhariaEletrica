@@ -16,15 +16,16 @@ int main()
 	int i = 0, j = 0, contConsoantes = 0, contVogais = 0, contCarateres = 0, contDigitos = 0;
 	
 	char vogais[] = {"AaEeIiOoUu"};
-	char consoantes[] = {"BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"};
+	char consoantes[] = {"BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyz"};
 	
 	fgets(string, MAX, stdin); //Pega a string
 	
 	for(i = 0; string[i] != '\0'; i++){
-		for(j = 0; vogais[j]; j++){
-		if(vogais[j] == string[i])
-		}
-
+		j = 0;
+		while(vogais[j] != '\0'){
+			if(string[i] == vogais[j])
+			contVogais++;
+			j++;
 		}
 	
 		/*if(string[i] >= 65 && string[i] <= 90) //Maiusculas ficam minúsculas
