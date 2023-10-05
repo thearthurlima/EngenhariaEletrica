@@ -1,36 +1,40 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+//12) Inverte uma matriz dada pelo usuário 
 
-#define MAX 100
-
-int main()
-{
-	char string[MAX], stringaux[MAX], aux1, aux2;
-	int tamanhoDaString = 0, k = 0;
-	
-	fgets(string, MAX, stdin);
-	
-	while(string[k] != '\0')
-	{
-		tamanhoDaString++;
-		k++;
-	}
-	tamanhoDaString--;
-
-	for(int i = 0, j = tamanhoDaString-1; i < tamanhoDaString; i++, j--)
-	{
-		stringaux[i] = string[j];
-	}
-	
-	for(int i = 0; string[i] != '\0'; i++)
-	{
-		string[i] = stringaux[i];
-	}
-	
-	for(int i = 0; string[i] != '\0'; i++)
-	{
-		printf("%c", string[i]);
-	}
-	
-}
+ #include <stdio.h> 
+ #include <stdlib.h> 
+ #include <string.h> 
+  
+ #define MAX 100 
+  
+ int main() 
+ { 
+         char string[MAX], stringaux[MAX]; 
+         int tamanhoDaString = 0, k = 0; 
+  
+         printf("Digite uma string: ");
+         fgets(string, MAX, stdin); 
+  
+         while(string[k] != '\0') //Pega o tmanho da string
+         { 
+                 tamanhoDaString++; 
+                 k++; 
+         } 
+         tamanhoDaString--; 
+  
+         //Inverte a string principal na string auxiliar
+         for(int i = 0, j = tamanhoDaString-1; i < tamanhoDaString; i++, j--) 
+         { 
+                 stringaux[i] = string[j]; 
+         } 
+  
+         for(int i = 0; string[i] != '\0'; i++) //Copia a string invertida na string principal
+         { 
+                 string[i] = stringaux[i]; 
+         } 
+  
+         printf("String invertida: ");
+         for(int i = 0; string[i] != '\0'; i++) //Exibe a string
+         { 
+                 printf("%c", string[i]); 
+         }   
+ }
