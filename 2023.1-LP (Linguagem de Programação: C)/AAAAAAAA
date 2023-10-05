@@ -1,0 +1,40 @@
+/*Dada uma string fornecida pelo usuário, contar número de:
+a) Vogais;
+b) Consoantes;
+c) Dígitos;
+d) Caracteres especiais.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 100
+
+int main()
+{
+	char string[MAX];
+	int i = 0, j = 0, contConsoantes = 0, contVogais = 0, contCarateres = 0, contDigitos = 0;
+	
+	char vogais[] = {"AaEeIiOoUu"};
+	char consoantes[] = {"BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"};
+	
+	fgets(string, MAX, stdin); //Pega a string
+	
+	for(i = 0; string[i] != '\0'; i++){
+		for(j = 0; vogais[j]; j++){
+		if(vogais[j] == string[i])
+		}
+
+		}
+	
+		/*if(string[i] >= 65 && string[i] <= 90) //Maiusculas ficam minúsculas
+			string[i] += 32;
+		else if(string[i] >= 97 && string[i] <= 122) //Minísculas ficam maiusculas
+			string[i] -= 32;
+		else if(string[i] >= 48 && string[i] <= 57) //Números viram asteriscos
+			string[i] = '*';*/
+	}
+	
+		printf("%d", contVogais);
+
+}
