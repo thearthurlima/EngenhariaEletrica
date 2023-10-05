@@ -1,7 +1,7 @@
 /*Dada uma string fornecida pelo usuário:
 a) As letras minúsculas ficam maísculas;
 b) As letras maiúsculas ficam minúsculas;
-c) Números são substituídos por asterisco.*/
+c) Números são substituídos por asteriscos.*/
 
 #include <stdio.h>
 #include <stdlib.h>
