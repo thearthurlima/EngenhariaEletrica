@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 100
+
+int main()
+{
+	char string[MAX], palavra[MAX];
+	int flag = 0, contagem = 0;
+	
+	fgets(string, MAX, stdin);
+	fgets(palavra, MAX, stdin);
+
+	for(int j = 0, flag = 0; j < strlen(string); j++)
+	{
+		for(int i = 0; i < strlen(palavra); i++)
+		{
+			if(string[i] == palavra[i])
+			flag++;
+		}
+		
+		if(flag == strlen(palavra))
+		contagem++;
+	}
+	
+	
+	printf("%d", contagem);
+	
+}
