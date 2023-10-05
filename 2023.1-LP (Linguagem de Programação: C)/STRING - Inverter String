@@ -10,7 +10,7 @@
  { 
          char string[MAX], stringaux[MAX]; 
          int tamanhoDaString = 0, k = 0; 
-  
+
          printf("Digite uma string: ");
          fgets(string, MAX, stdin); 
   
@@ -20,9 +20,8 @@
                  k++; 
          } 
          tamanhoDaString--; 
-  
-         //Inverte a string principal na string auxiliar
-         for(int i = 0, j = tamanhoDaString-1; i < tamanhoDaString; i++, j--) 
+
+         for(int i = 0, j = tamanhoDaString-1; i < tamanhoDaString; i++, j--) //Inverte a string principal na string auxiliar
          { 
                  stringaux[i] = string[j]; 
          } 
