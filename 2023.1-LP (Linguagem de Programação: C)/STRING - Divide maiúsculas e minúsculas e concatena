@@ -1,0 +1,40 @@
+/*Dada uma string do usuário, colocar as letras
+maiusculas na frente e minúsculas atrás.
+Ex.: "aAbBcC" vira "ABCabc".*/ 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 100
+
+int main()
+{
+	char string[MAX], minusculas[MAX], maiusculas[MAX];
+	int i = 0, j = 0;
+	
+	printf("Digite uma string: ");
+	fgets(string, MAX, stdin);
+	
+	while(string[i] != '\0')
+	{
+		if(string[i] >= 'a' && string[i] <= 'z'){
+		minusculas[j] = string[i];
+		j++;
+		}	
+		i++;
+	}
+	
+	i = 0, j = 0;
+	
+	while(string[i] != '\0')
+	{
+		if(string[i] >= 'a' && string[i] <= 'z'){
+		maiusculas[j] = string[i];
+		j++;
+		}	
+		i++;
+	}
+	
+	printf("%s %s, minusculas, maiusculas);
+}
