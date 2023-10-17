@@ -9,8 +9,7 @@
   
  #define MAX 100 
   
- int main() 
- { 
+ int main() { 
          char string[MAX], subString[MAX]; 
          int i = 0, j = 0, flag = 0, contagem = 0, tamanhoDaSubstring = 0; 
   
@@ -20,28 +19,38 @@
          printf("Digite uma substring: "); 
          fgets(subString, MAX, stdin); 
   
-         while(subString[i] != '\0') 
-         { 
+         while(subString[i] != '\0') { 
                  tamanhoDaSubstring++; 
                  i++; 
          } 
-         tamanhoDaSubstring--; 
-  
-         printf("Tamanho da substring: %d", tamanhoDaSubstring); 
-        
-         for(i = 0; string[i] != '\0'; i++) 
-         { 
+         tamanhoDaSubstring--;
+
+        //Retira '\n' da string principal
+        for(i = 0; string[i] != '\0'; i++) {
+            if(string[i] == '\n')
+            {
+                string[i] = '\0';
+                string [i+1] = 0;
+            }
+        }
+        //Retira '\n' da substring
+        for(i = 0; subString[i] != '\0'; i++) {
+            if(subString[i] == '\n'){
+                subString[i] = '\0';
+                subString [i+1] = 0;
+            }
+        }
+
+        //Procura substring na string principal
+        for(i = 0; string[i] != '\0'; i++) { 
                  flag = 0; 
                  j = 0; 
   
-                 while(subString[j] != '\0') 
-                 { 
+                 while(subString[j] != '\0') { 
                          if(string[i+j] == subString[j]) 
                          flag++; 
-  
                          j++; 
                  } 
-  
                  if(flag == tamanhoDaSubstring) 
                  contagem++; 
          } 
