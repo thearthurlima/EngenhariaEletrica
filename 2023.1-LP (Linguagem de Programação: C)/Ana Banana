@@ -1,3 +1,8 @@
+/*Dada uma string fornecida pelo usuário, 
+encontrar uma substring também inserida pelo
+usuário e mostrar quantas vezes a substring 
+aparece na string principal.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,25 +11,37 @@
 
 int main()
 {
-	char string[MAX], palavra[MAX];
-	int flag = 0, contagem = 0;
+	char string[MAX], subString[MAX];
+	int i = 0, j = 0, flag = 0, contagem = 0, tamanhoDaSubstring = 0;
 	
+	printf("Digite uma string: ");
 	fgets(string, MAX, stdin);
-	fgets(palavra, MAX, stdin);
-
-	for(int j = 0, flag = 0; j < strlen(string); j++)
+	
+	printf("Digite uma substring: ");
+	fgets(subString, MAX, stdin);
+	
+	while(subString[i] != '\0')
 	{
-		for(int i = 0; i < strlen(palavra); i++)
+		tamanhoDaSubstring++;
+		i++;
+	}
+	tamanhoDaSubstring--;
+	
+	printf("Tamanho da substring: %d", tamanhoDaSubstring);
+	for(i = 0; string[i] != '\0'; i++)
+	{
+		flag = 0;
+		j = 0;
+	
+		while(subString[j] != '\0')
 		{
-			if(string[i] == palavra[i])
+			if(string[i+j] == subString[j])
 			flag++;
+			
+			i++;
 		}
 		
-		if(flag == strlen(palavra))
+		if(flag == tamanhoDaSubstring)
 		contagem++;
 	}
-	
-	
-	printf("%d", contagem);
-	
 }
