@@ -20,7 +20,7 @@ int main()
 	char consoantes[] = {"BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyz"};
 	char digitos[] = {"1234567890"};
 	
-	printf("Digite uma string: ")
+	printf("Digite uma string: ");
 	fgets(string, MAX, stdin); //Pega a string
 	tamanho = strlen(string)-1; //Pega tamanho da string
 	
