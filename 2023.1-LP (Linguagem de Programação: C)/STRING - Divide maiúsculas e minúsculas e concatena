@@ -10,8 +10,8 @@ Ex.: "aAbBcC" vira "ABCabc".*/
 
 int main()
 {
-	char string[MAX], minusculas[MAX], maiusculas[MAX];
-	int i = 0, j = 0;
+	char string[MAX], minusculas[MAX], maiusculas[MAX], caracteres[MAX], digitos[MAX];
+	int i = 0, j = 0, k = 0, l = 0;
 	
 	printf("Digite uma string: ");
 	fgets(string, MAX, stdin);
@@ -19,22 +19,22 @@ int main()
 	while(string[i] != '\0')
 	{
 		if(string[i] >= 'a' && string[i] <= 'z'){
-		minusculas[j] = string[i];
-		j++;
-		}	
+	    	minusculas[j] = string[i];
+	    	j++;
+		}
+		
+		else if(string[i] >= 'A' && string[i] <= 'Z'){
+	    	maiusculas[k] = string[i];
+		    k++;
+		}
+		
+		else{
+	    	caracteres[l] = string[i];
+		    l++;
+		}
+		
 		i++;
 	}
 	
-	i = 0, j = 0;
-	
-	while(string[i] != '\0')
-	{
-		if(string[i] >= 'a' && string[i] <= 'z'){
-		maiusculas[j] = string[i];
-		j++;
-		}	
-		i++;
-	}
-	
-	printf("%s %s, minusculas, maiusculas);
+	printf("%s%s", maiusculas, minusculas);
 }
