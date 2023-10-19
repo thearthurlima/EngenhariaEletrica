@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX 50
+#define MAX 100
 
 int main() {
 	char string1[MAX], string2[MAX], concatString[2*MAX];
