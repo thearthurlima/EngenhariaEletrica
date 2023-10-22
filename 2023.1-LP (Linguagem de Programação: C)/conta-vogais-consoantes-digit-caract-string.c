@@ -13,11 +13,11 @@ d) Caracteres especiais.*/
 int main()
 {
 	char string[MAX];
-	int contConsoantes = 0, contVogais = 0, contDigitos = 0, contCaracteres = 0;
+	int contConsoantes = 0, contVogais = 0, contDigitos = 0, contCaracteres = 0, contEspacos = 0;
 	int i = 0, j = 0, tamanho;
 	
 	char vogais[] = {"AaEeIiOoUu"};
-	char consoantes[] = {"BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyz"};
+	char consoantes[] = {"BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"};
 	char digitos[] = {"1234567890"};
 	
 	printf("Digite uma string: ");
@@ -45,9 +45,13 @@ int main()
 			contDigitos++;
 			j++;
 		}
-	}
-	contCaracteres = tamanho - contVogais - contConsoantes - contDigitos; //Calcula caracteres especiais
-	
-	printf("\nVogais: %d\nConsoantes: %d\nDigitos: %d\nCaracteres especiais: %d", contVogais, contConsoantes, contDigitos, contCaracteres);
 
+		if(string[i] == 32) //Conta espaços
+			contEspacos++;
+			j++;
+	}
+	
+	contCaracteres = tamanho - contVogais - contConsoantes - contDigitos - contEspacos; //Calcula caracteres especiais
+	
+	printf("\nVogais: %d\nConsoantes: %d\nDigitos: %d\nCaracteres especiais: %d\n", contVogais, contConsoantes, contDigitos, contCaracteres);
 }
