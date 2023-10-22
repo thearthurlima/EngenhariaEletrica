@@ -1,6 +1,6 @@
 /* Dada uma matriz de caracteres fornecida 
    pelo usuário, encontrar uma palavra nas 
-   linhas, colunas e diagonais. */
+   linhas, colunas. (Bônus: diagonais). */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@
 
 #define MAX 100
 
-int lerMatriz(char matriz[MAX][MAX], int l, int c) {
+void lerMatriz(char matriz[MAX][MAX], int l, int c) {
 	int i, j;
 	
 	for(i = 0; i < l; i++) {
@@ -18,7 +18,7 @@ int lerMatriz(char matriz[MAX][MAX], int l, int c) {
 	}
 }
 
-int imprimirMatriz(char matriz[MAX][MAX], int l, int c) {
+void imprimirMatriz(char matriz[MAX][MAX], int l, int c) {
 	int i, j;
 	
 	for(i = 0; i < l; i++) {
@@ -67,12 +67,13 @@ int encontrarNasLinhas(char matriz[MAX][MAX], char palavra[MAX], int tamanho, in
     return contagem;
 }
 
-int encontrarNasDiagonais(char matriz[MAX][MAX], char palavra[MAX], int tamanho, int l, int c) {
+/*int encontrarNasDiagonais(char matriz[MAX][MAX], char palavra[MAX], int tamanho, int l, int c) {
     int i, j, k, z, flag, contagem = 0;
 
-    for (j = 0; j <= c - tamanho; j++) { // Percorre as colunas até um limite seguro
-        for (i = 0; i <= l - tamanho; i++) { // Percorre as linhas até um limite seguro
-            flag = 0; // Reinicia a flag para cada nova coluna
+    // Procura da esquerda superior para a direita inferior
+    for (j = 0; j <= c - tamanho; j++) {
+        for (i = 0; i <= l - tamanho; i++) {
+            flag = 0;
             for (k = 0, z = 0; k < tamanho; k++, z++) {
                 if (matriz[j + k][i + z] == palavra[k]) {
                     flag++;
@@ -83,12 +84,13 @@ int encontrarNasDiagonais(char matriz[MAX][MAX], char palavra[MAX], int tamanho,
             }
         }
     }
-    
+
+    // Procura da esquerda inferior para a direita superior
     for (j = 0; j <= c - tamanho; j++) {
         for (i = tamanho - 1; i < l; i++) {
             flag = 0;
-            for (k = 0; k < tamanho; k++) {
-                if (matriz[i - k][j + k] == palavra[k]) {
+            for (k = 0, z = 0; k < tamanho; k++, z++) {
+                if (matriz[i - k][j + z] == palavra[k]) {
                     flag++;
                 }
             }
@@ -97,26 +99,40 @@ int encontrarNasDiagonais(char matriz[MAX][MAX], char palavra[MAX], int tamanho,
             }
         }
     }
-    
+
     return contagem;
+}*/
+
+void limparBufferEntrada() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF) { }
 }
 
 int main() {
-	char matriz[MAX][MAX], palavra[MAX];
-	int linhas = 3, colunas = 2, tamanho;
+	char matriz[MAX][MAX], palavra[MAX+1];
+	int linhas, colunas, tamanho;
 	
-	/*printf("Numero de linhas da matriz: ")
-	scanf("%d", &linhas)
-	printf("Numero de colunas da matriz: ")
-	scanf("%d", &colunas)*/
+	printf("Numero de linhas da matriz: ");
+	scanf("%d", &linhas);
+	printf("Numero de colunas da matriz: ");
+	scanf("%d", &colunas);
 	
-	fgets(palavra, MAX, stdin);
-	tamanho = strlen(palavra)-1;
+	printf("\nDigite os elementos da matriz: ");
+	
 	
 	lerMatriz(matriz, linhas, colunas);
+	printf("\n");
 	imprimirMatriz(matriz, linhas, colunas);
+	
+	printf("\nDigite a palavra que deseja encontrar na matriz: ");
+	
+    limparBufferEntrada(); // Limpa buffer de entrada
+
+	scanf("%s", palavra);
+	tamanho = strlen(palavra);
+	
 	
 	printf("\n\n    Colunas: %d vez(es)", encontrarNasColunas(matriz, palavra, tamanho, linhas, colunas));
 	printf("\n    Linhas: %d vez(es)", encontrarNasLinhas(matriz, palavra, tamanho, linhas, colunas));
-	printf("\n    Diagonais: %d vez(es)", encontrarNasDiagonais(matriz, palavra, tamanho, linhas, colunas));
+	//printf("\n    Diagonais: %d vez(es)", encontrarNasDiagonais(matriz, palavra, tamanho, linhas, colunas));
 }
