@@ -4,7 +4,6 @@ b) As letras maiusculas ficam minúsculas;
 c) Números são substituídos por asteriscos.*/
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 #define MAX 100
@@ -14,14 +13,15 @@ int main()
 	char string[MAX];
 	int i = 0;
 	
+	printf("Digite uma string: ");
 	fgets(string, MAX, stdin); //Pega a string
 	
 	for(i = 0; string[i] != '\0'; i++){
-		if(string[i] >= 65 && string[i] <= 90) //Maiusculas ficam minúsculas
+		if(string[i] >= 'A' && string[i] <= 'Z') //Maiúsculas ficam minúsculas
 			string[i] += 32;
-		else if(string[i] >= 97 && string[i] <= 122) //Minúsculas ficam maiusculas
+		else if(string[i] >= 'a' && string[i] <= 'z') //Minúsculas ficam maiúsculas
 			string[i] -= 32;
-		else if(string[i] >= 48 && string[i] <= 57) //Números viram asteriscos
+		else if(string[i] >= '0' && string[i] <= '9') //Números viram asteriscos
 			string[i] = '*';
 	}
 	
