@@ -25,9 +25,5 @@ int main()
 			string[i] = '*';
 	}
 	
-	i = 0;
-	while(string[i] != '\0'){ //Exibe a string
-		printf("%c", string[i]);
-		i++;
-	}
+	printf("%s", string); //Exibe a string
 }
