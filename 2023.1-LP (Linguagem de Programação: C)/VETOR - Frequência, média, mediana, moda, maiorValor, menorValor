@@ -3,36 +3,53 @@
 #include <string.h>
 
 #define MAX 100
+#define NUM_MAX 2000
 
 /*Dado um vetor com valores digitados pelo usuário, encontre:
-a) Frequência em que cada elemento aparece no vetor;
-b) A média, a mediana (organizar o vetor) e a moda;
-c) Maior e menor valor.*/
+  a) Frequência em que cada elemento aparece no vetor;
+  b) A média, a mediana (organizar o vetor) e a moda;
+  c) Maior e menor valor.*/
 
 int main ()
 {
-	int vetor[MAX], tamanhoDoVetor;
+	int i, j, flag, vetor[MAX], frequencia[NUM_MAX], tamVetor;
 	
-	printf("Entre com o tamanho do vetor de dados:");
-	scanf("%d", &tamanhoDoVetor);
+	printf("Entre com o numero de elementos do vetor: ");
+	scanf("%d", &tamVetor);
 	
-	printf("Entre com os %d valores do vetor: ", tamanhoDoVetor);
+	printf("Entre com os %d valores do vetor: ", tamVetor);
 
-	for(int i = 0; i < tamanhoDoVetor; i++)
-	{
-		scanf("%d", &vetor[i]);
+	for(i = 0; i < tamVetor; i++) //Lê os elementos do vetor
+		scanf("%d", &vetor[i])
+		
+	for(i = 0; i < tamVetor; i++) {
+		flag = 0;
+		for(j = 0; j < tamVetor; j++) {
+			if(vetor[i] == vetor[i+j])
+			
+		}
 	}
 	
-	//a) Frequência que cada elemento aparece: NAO FUNCIONA
-	
-	int frequencia[MAX];
 	
 	
 	
-	for(int i = 0; i < tamanhoDoVetor; i++)
-	{
-		printf("\nElemento %d, frequencia: %d", frequencia[i][0], frequencia[0][i]);
+	
+	
+	
+	
+	
+	/*for(i = 0; i < NUM_MAX; i++) //Zera todas as posições do vetor frequência
+		frequencia[i] = 0;
+
+	
+	for(i = 0; i < tamVetor; i++) {
+		frequencia[vetor[i]]++;
 	}
+	
+	for(i = 0; i < NUM_MAX; i++) {
+		if(frequencia[i] != 0)
+		printf("\nNumero: %d  -  %d vez(es)", i, frequencia[i]);
+	}*/
 	
 	
 	//b) A média, a mediana (organizar o vetor) e a moda:
@@ -62,3 +79,4 @@ int main ()
 	
 	
 }
+
