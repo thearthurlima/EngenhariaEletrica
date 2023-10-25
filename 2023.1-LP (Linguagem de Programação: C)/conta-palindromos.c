@@ -12,15 +12,15 @@ int main() {
 	fgets(string, MAX, stdin);
 
     for (i = 0; string[i] != '\0'; i++) {
-        if (string[i] != ' ' && string[i] != '\n') {
+        if (string[i] != ' ' && string[i] != '\n') { //Acha a primeira posicao da palavra
             primLetra = i;
-            for (j = i; string[j] != ' ' && string[j] != '\n' && string[j] != '\0'; j++) {
+            for (j = i; string[j] != ' ' && string[j] != '\n' && string[j] != '\0'; j++) { //Quando encontra uma espaco ou quebra de linha ele identifica o final da palavra
                 ultLetra = j;
             }
 
             tamPalavra = ultLetra - primLetra + 1;
 
-            flag = 1; // Coloca flag em 1: Assume que a palavra eh palindromo
+            flag = 1; //Coloca flag em 1: Assume que a palavra eh palindromo
             for (k = 0; k < tamPalavra / 2; k++) {
                 if (string[primLetra + k] != string[ultLetra - k]) {
                     flag = 0; //Coloca flag em 0 se nao for palindromo
@@ -31,7 +31,7 @@ int main() {
                 contagem++;
             }
             
-            i = ultLetra;
+            i = ultLetra; //O for mais externo inicia novamnte agora procurando a proxima palavra
         }
     }
 
