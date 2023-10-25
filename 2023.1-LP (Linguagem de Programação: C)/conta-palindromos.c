@@ -1,41 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
 
 #define MAX 100
 
 int main() {
-    char string[MAX];
+    setlocale(LC_ALL, "Portuguese"); // Define o locale para português
+    
+	char string[MAX];
     int i, j, k, primLetra, ultLetra, tamPalavra, flag, contagem = 0;
 
     printf("Digite uma string: ");
-	fgets(string, MAX, stdin);
+    fgets(string, MAX, stdin);
 
     for (i = 0; string[i] != '\0'; i++) {
-        if (string[i] != ' ' && string[i] != '\n') { //Acha a primeira posicao da palavra
+        if (string[i] != ' ' && string[i] != '\n') {
             primLetra = i;
-            for (j = i; string[j] != ' ' && string[j] != '\n' && string[j] != '\0'; j++) { //Quando encontra uma espaco ou quebra de linha ele identifica o final da palavra
+
+            // Encontra o final da palavra
+            for (j = i; string[j] != ' ' && string[j] != '\n' && string[j] != '\0'; j++) {
                 ultLetra = j;
             }
 
             tamPalavra = ultLetra - primLetra + 1;
+            flag = 1;
 
-            flag = 1; //Coloca flag em 1: Assume que a palavra eh palindromo
+            // Verifica se a palavra é um palíndromo
             for (k = 0; k < tamPalavra / 2; k++) {
                 if (string[primLetra + k] != string[ultLetra - k]) {
-                    flag = 0; //Coloca flag em 0 se nao for palindromo
+                    flag = 0; // Define a flag como 0 se não for palíndromo
                     break;
                 }
             }
+
             if (flag == 1) {
-                contagem++;
+                contagem++; // Aumenta a contagem se for um palíndromo
             }
-            
-            i = ultLetra; //O for mais externo inicia novamnte agora procurando a proxima palavra
+
+            i = ultLetra; // Busca pela próxima palavra
         }
     }
 
-    printf("\nContagem de palindromos: %d", contagem);
+    printf("\nContagem de palíndromos: %d", contagem);
 
     return 0;
 }
