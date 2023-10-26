@@ -4,51 +4,53 @@
 
 #define MAX 100
 
-int main(){
-	char string[MAX], aux;
-	int i, j, k, l, primLetra, ultLetra, tamPalavra = 0, tamMaiorPalavra = 0, primLetraM, ultLetraM;
+int main() {
+    char string[MAX];
+    int i, j, primLetra, ultLetra, tamPalavra = 0, tamMaiorPalavra = 0;
 
-	fgets(string, MAX, stdin);
-	
-	for(i = 0; string[i] != '\0'; i++){ //Acha a primeira e ultima letra de todas as palavras
-		if(string[i] != ' ' && string[i] != '\n'){
-			primLetra = i;
-			for(j = 0; string[i+j] != ' ' && string[i+j] != '\n' && string[i+j] != '\n'; j++){
-				ultLetra = i+j;
-			}
-		tamPalavra = ultLetra-primLetra+1; //Encontra o tamanho da palavra
-		if(tamPalavra > tamMaiorPalavra){ //Acha o tamanho da MAIOR palavra
-			tamMaiorPalavra = tamPalavra;
-			primLetraM = primLetra;
-			ultLetraM = ultLetra;
-		}
+    fgets(string, MAX, stdin);
 
-		i = ultLetra; //Recomeça o loop a partir da ultima letra da palavra +1
-		}
-	}
-	
-	for(i = 0; string[i] != '\0'; i++){ //Acha a primeira e ultima letra de todas as palavras
-		if(string[i] != ' ' && string[i] != '\n'){
-			primLetra = i;
-			for(j = 0; string[i+j] != ' ' && string[i+j] != '\n' && string[i+j] != '\n'; j++){
-				ultLetra = i+j;
-			}
-		tamPalavra = ultLetra-primLetra+1; //Encontra o tamanho da palavra
-		if(tamPalavra == tamMaiorPalavra){ //Se o tamanho da palavra for igual ao tamanho da MAIOR palavra
-			for(k = 1; k <= tamPalavra; k++){ //Organiza em ordem crescente
-				for(l = primLetra; l < ultLetra; l++){
-					aux = string[l];
-					if(aux > string[l+1]){
-						string[l] = string[l+1];
-						string[l+1] = aux;
-					}
-				}
-			}
-		}
-		
-		i = ultLetra; //Recomeça o loop a partir da ultima letra da palavra +1 
-		}
-	}
-	
-	printf("\n%s", string);
+    for (i = 0; string[i] != '\0'; i++) { // Encontra a primeira e última letra da palavra mais longa
+        if (string[i] != ' ' && string[i] != '\n') {
+            primLetra = i;
+            for (j = 0; string[i + j] != ' ' && string[i + j] != '\n'; j++) {
+                ultLetra = i + j;
+            }
+            tamPalavra = ultLetra - primLetra + 1;
+            
+            if (tamPalavra > tamMaiorPalavra) { //Encontra o tamanho da maior palavra
+                tamMaiorPalavra = tamPalavra;
+            }
+
+            i = ultLetra; // Move para a próxima palavra
+        }
+    }
+
+    for (i = 0; string[i] != '\0'; i++) {
+        if (string[i] != ' ' && string[i] != '\n') {
+            primLetra = i;
+            for (j = 0; string[i + j] != ' ' && string[i + j] != '\n'; j++) {
+                ultLetra = i + j;
+            }
+            tamPalavra = ultLetra - primLetra + 1;
+
+            if (tamPalavra == tamMaiorPalavra) { //Se a palavra tiver o tamanho da maior palaavra
+                for (int k = 1; k <= tamPalavra; k++) { // Ordena os caracteres se a palavra tiver o tamanho mais longo
+                    for (int l = primLetra; l < ultLetra; l++) {
+                        if (string[l] > string[l + 1]) { // Troca os caracteres para ordenar em ordem crescente
+                            char aux = string[l];
+                            string[l] = string[l + 1];
+                            string[l + 1] = aux;
+                        }
+                    }
+                }
+            }
+
+            i = ultLetra; // Move para a próxima palavra
+        }
+    }
+
+    printf("\n%s", string);
+
+    return 0;
 }
