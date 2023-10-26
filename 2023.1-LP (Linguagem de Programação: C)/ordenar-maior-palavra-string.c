@@ -35,8 +35,8 @@ int main() {
             tamPalavra = ultLetra - primLetra + 1;
 
             if (tamPalavra == tamMaiorPalavra) { //Se a palavra tiver o tamanho da maior palaavra
-                for (int k = 1; k <= tamPalavra; k++) { // Ordena os caracteres se a palavra tiver o tamanho mais longo
-                    for (int l = primLetra; l < ultLetra; l++) {
+                for (int k = 1; k <= tamPalavra; k++) { // Percorre a palavra o mesmo numero de vezes do tamanho da palavra
+                    for (int l = primLetra; l < ultLetra; l++) { //Percorre a palavra
                         if (string[l] > string[l + 1]) { // Troca os caracteres para ordenar em ordem crescente
                             char aux = string[l];
                             string[l] = string[l + 1];
