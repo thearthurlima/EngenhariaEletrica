@@ -6,7 +6,7 @@ Este repositório contém códigos-fonte escritos para as disciplinas relacionad
     
 ## Índice
 
-|     | Disciplina  | Descrição      |
+|     | Disciplina  | Assuntos       |
 | --- | ----------- | ---------------|
 | [IAPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IAPEE) | Introdução à Programação | **Portugol**, vetores, matrizes, laços de repetição |
 | [LPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE) | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings |
