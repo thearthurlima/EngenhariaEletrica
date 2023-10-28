@@ -8,6 +8,9 @@ int main() {
     char string[MAX];
     int i, j, k, l, primLetra, ultLetra, tamPalavra = 0, tamMaiorPalavra = 0;
 
+	printf("\n	Este programa organiza a maior palavra de uma string em ordem alfabetica.");
+	printf("\n	Exemplo: \"Carla e inteligente\" - \"Carla e eegiilnntt\"");
+	printf("\n\nDigite uma string: ");
     fgets(string, MAX, stdin);
 
     for (i = 0; string[i] != '\0'; i++) { // Encontra a primeira e última letra da palavra mais longa
