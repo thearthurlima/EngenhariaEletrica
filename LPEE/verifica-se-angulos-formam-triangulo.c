@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <locale.h>
-int main()
-{
+
+int main() {
 	setlocale (LC_ALL, "Portuguese");
 	float angulo01, angulo02, angulo03;
-	int formaTriangulo;
 	
-	printf("Este programa recebe a entrada de três ângulos e calcula se os ângulos fornecidos formam um triângulo.");
-	printf("\nExemplo:\n1º ângulo = 120º;\n2º ângulo = 30º;\n3º ângulo = 30º;\nOs ângulos formam um triângulo.\n\n");
+	printf("\n	Este programa recebe a entrada de três ângulos e calcula se os ângulos fornecidos formam um triângulo.");
+	printf("\n	Exemplo:\n	1º ângulo = 120º;\n	2º ângulo = 30º;\n	3º ângulo = 30º;\n	Os ângulos formam um triângulo.\n\n");
+	
 	printf("Digite o 1º ângulo: ");
 	scanf("%f", &angulo01);
 	printf("Digite o 2º ângulo: ");
@@ -15,14 +15,10 @@ int main()
 	printf("Digite o 3º ângulo: ");
 	scanf("%f", &angulo03);
 	
-	if (angulo01 + angulo02 + angulo03 == 180)
-	{
-		formaTriangulo = 1;
+	if (angulo01 + angulo02 + angulo03 == 180) {
 		printf("\nOs ângulos inseridos formam um triângulo.");
 	}
-	else
-	{
-		formaTriangulo = 0;
+	else {
 		printf("\nOs ângulos inseridos NÃO formam um triângulo.");
 		return(0);
 	}
