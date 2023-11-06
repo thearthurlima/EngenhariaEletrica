@@ -36,15 +36,19 @@ int isPalindrome(char string[MAX], int primLetra, int ultLetra) {
 
 void censorWord(char string[MAX], int primLetra, int ultLetra) {
 	char stringAux[MAX];
+	int i, j;
 	
-	for(int i = 0, j = 0; string[i] != '\0'; i++, j++) {
+	for(i = 0, j = 0; string[i] != '\0'; i++, j++) {
 		if(i == primLetra) {
-			stringAux[j] = '*';
-			i = ultLetra;
+			stringAux[i] = '*';
+			i = ultLetra+1;
+			j++;
 		}
 		
 		stringAux[j] = string[i];
 	}
+	
+	stringAux[j] = '\0';
 	
 	printf("\n\n%s", stringAux);
 	
@@ -54,8 +58,5 @@ int main() {
 	char string[] = "arara ovo de arara";
 	
 	censorWord(string, 6, 8);
-	
-	
-	
 	
 }
