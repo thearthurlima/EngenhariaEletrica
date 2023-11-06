@@ -1,82 +1,61 @@
+/*Dada uma string, caso encontre um palíndromo
+  substituir por '*' usando no mínimo 3 funções.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define MAX 100
 
-int dividirString(char string[MAX], char stringDividida[MAX][MAX], int tamanhoDaString)
-{
-	int i;
-	int posicaoDaPalavra = 0, tamanhoDaPalavra = 0;
+/*void acharPalavra(char string[MAX], int posicaoInicial; int *primLetra, int *ultLetra) {
 	
-	for(i = 0; string[i] != '\0')
-	{
-		tamanhoDaPalavra++
+	for(int i = posicaoInicial; string[i] != '\0'; i++) {
+		if(string[i] != ' ' && string[i] != '\n') {
+			primLetra = i;
+			for(int j = 0; string[i + j] != ' ' && string[i + j] != '\n' && string[i + j] != '\0') {
+				ultLetra = j + i;
+			}
+		}
 	}
 	
-	return 0;
-}
+}*/
 
-int exibeMatriz(char matriz[MAX][MAX])
-{
-	for(int i = 0; i != '\0'; i++)
-	{
-		for(int j = 0; j != '\0'; j++)
-		printf(" %c ", matriz[i][j]);
-	}
-}
-
-int acharPalindromo(char string[MAX], int posicaoDaPalavra, int tamanhoDaPalavra)
-{
-	int contagem = 0;
+int isPalindrome(char string[MAX], int primLetra, int ultLetra) {
+	int tamPalavra, flag = 1;
 	
-	for(int i = posicaoDaPalavra, j = posicaoDaPalavra + tamanhoDaPalavra-1; i != j ; i++, j--)
-	{
-		if(string[i] == string[j])
-		contagem++;
+	flag = 1;
+	for(int i = 0; i < tamPalavra / 2; i++) {
+		if(string[primLetra + i] != string[ultLetra - i]) {
+			flag = 0;
+			break;
+		}
 	}
 	
-	if(contagem == (tamanhoDaPalavra)/2)
-	return 1;
-	else
-	return 0;
+	return flag;
 }
 
-int trocaPalindromo(char string[MAX], int posicaoDaPalavra, int tamanhoDaPalavra, int ehPalindromo)
-{
-	if(ehPalindromo == 1)
-	{
-		string[posicaoDaPalavra] = '*';
-		string[posicaoDaPalavra+1] = '\0';
+void censorWord(char string[MAX], int primLetra, int ultLetra) {
+	char stringAux[MAX];
+	
+	for(int i = 0, j = 0; string[i] != '\0'; i++, j++) {
+		if(i == primLetra) {
+			stringAux[j] = '*';
+			i = ultLetra;
+		}
+		
+		stringAux[j] = string[i];
 	}
+	
+	printf("\n\n%s", stringAux);
+	
 }
-
-main ()
-{
-	char string[MAX];
-	char stringAlterada[MAX];
-	char stringDividida[MAX][MAX];
-	int ehPalindromo;
-	int posicaoDaPalavra = 0;
-	int tamanhoDaPalavra = 3;
+int main() {
+	int primLetra, ultLetra;
+	char string[] = "arara ovo de arara";
+	
+	censorWord(string, 6, 8);
 	
 	
-	printf("Digite uma string: ");
-	fgets(string, MAX, stdin);
-	int tamanhoDaString = strlen(string);
 	
-	ehPalindromo = acharPalindromo(string, posicaoDaPalavra, tamanhoDaPalavra);
 	
-	if(ehPalindromo == 1)
-	printf("\nEh palindromo!");
-	else
-	printf("\nNao eh palindromo!");
-	
-	dividirString(string, stringDividida, tamanhoDaString);
-	exibeMatriz(stringDividida);
-	
-	trocaPalindromo(string, posicaoDaPalavra, tamanhoDaPalavra, ehPalindromo);
-	/*printf("\nStringAlterada: %s", string);*/
-	
-	return 0;
 }
