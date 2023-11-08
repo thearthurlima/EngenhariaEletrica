@@ -26,9 +26,8 @@ int ispalindrome(char string[MAX], int posicaoPrimLetra, int posicaoUltLetra) {
 }
 
 void censorword(char string[MAX], int posicaoPrimLetra, int posicaoUltLetra) {
-	int i, j;
-	char stringAux[MAX];
-	
+	int i;
+    	
 	for(i = posicaoPrimLetra; i <= posicaoUltLetra; i++)
 		string[i] = '*';
 }
@@ -60,7 +59,7 @@ void removeextraasterisks (char string[MAX]) {
 
 int main() {
     char string[MAX];
-    int i, ehPalindromo = 0, primLetra = 0, ultLetra = 0;
+    int i, primLetra = 0, ultLetra = 0;
     
 	printf("\n	Este programa troca todos os palindromos de uma string por '*'.");
 	printf("\n	Exemplo: \"um ovo de arara\" - \"um * de *\".\n");
