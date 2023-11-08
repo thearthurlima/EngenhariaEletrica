@@ -8,7 +8,7 @@
   
  int main() 
  { 
-	char string[MAX], stringaux[MAX], aux; 
+	char string[MAX], stringaux[MAX]; 
 	int tamanhoDaString = 0, i = 0, j = 0, k = 0; 
 
 	printf("Digite uma string: ");
