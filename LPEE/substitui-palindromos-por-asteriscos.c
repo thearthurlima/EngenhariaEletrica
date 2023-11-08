@@ -61,7 +61,7 @@ int main() {
     char string[MAX];
     int i, primLetra = 0, ultLetra = 0;
     
-	printf("\n	Este programa troca todos os palindromos de uma string por '*'.");
+	printf("\n	Este programa substitui todos os palindromos de uma string por '*'.");
 	printf("\n	Exemplo: \"um ovo de arara\" - \"um * de *\".\n");
 	printf("\nDigite uma string: ");
     fgets(string, MAX, stdin);
