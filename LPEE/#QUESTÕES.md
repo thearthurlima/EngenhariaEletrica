@@ -1,6 +1,6 @@
 # Exercícios propostos
 
-#### Alguns exercícios propostos pelo professor, ex-alunos e por mim. As questões marcadas com "⚡" já foram questões de prova.
+#### Aqui estão reunidos alguns exercícios propostos pelo professor, ex-alunos e por mim. As questões marcadas com "⚡" já foram questões de prova.
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
 
