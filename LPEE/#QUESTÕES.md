@@ -1,6 +1,26 @@
 # Exercícios propostos
 
-#### Aqui estão reunidos alguns exercícios propostos pelo professor, ex-alunos e por mim. As questões marcadas com "⚡" já foram questões de prova.
+#### Alguns exercícios propostos pelo professor, alunos e por mim. As questões marcadas com "⚡" já foram questões de prova.
+
+| | Resoluções  |
+| --- | ----------- |
+| 1ª |  | 
+| 2ª |  |
+| 3ª |  |
+| 4ª | [imprime-string-quando-caractere-aparece.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c) |
+| 5ª |  [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|
+| 6ª | [conta-vogais-consoantes-digit-caract-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/conta-vogais-consoantes-digit-caract-string.c) |
+| 7ª |  |
+| 8ª | [busca-substring.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/busca-substring.c) |
+| 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c) |
+| 10ª |  |
+| 11ª |  |
+| 12ª | [inverte-maiusculas-minusculas-&-censura-numeros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-maiusculas-minusculas-%26-censura-numeros.c) |
+| 13ª | [separa-maiusculas-minusculas-&-concatena.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/separa-maiusculas-minusculas-%26-concatena.c) |
+| 14ª |  |
+| 15ª | [ordenar-maior-palavra-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar-maior-palavra-string.c) |
+| 16ª | [substitui-maior-palindromo-por-asterisco.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-maior-palindromo-por-asterisco.c) |
+
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
 
@@ -34,21 +54,24 @@ String resultante - xxxx xxxx b xxxx
 
 ### 7) Remover todos os caracteres de uma string, exceto as letras.
 
-### 8) Se houver letras na string, se for minúsculas transformar em maiusculas e se forem maiusculas transformar em minúsculas.
-
-### 9) Achar substring dentro de uma string maior e mostrar quantas vezes a substring aparece.
+### 8) Achar substring dentro de uma string maior e mostrar quantas vezes a substring aparece.
 
 Ex.: ana banana
 
 A substring "ana" aparece 3 vezes
 
-### 10) Imprimir padrões de asteriscos abaixo com número de linhas inserido pelo usuário: 
+### 9) Imprimir padrões de asteriscos abaixo com número de linhas inserido pelo usuário: 
 
 ```bash
+Padrão 1:
+
 *
 * *
 * * *
 * * * *
+```
+```bash
+Padrão 2: 
 
 * * * *
 * * *
@@ -56,17 +79,19 @@ A substring "ana" aparece 3 vezes
 *  
 ```
 ```bash
+Padrão 3: 
+
       *
     * * *
   * * * * *
 * * * * * * *
 ```
 
-### 11) Dada uma matriz de caracteres, achar palíndromos de no máximo 3 caracteres (horizontal, vertical) — e diagonal, se conseguir.
+### 10) Dada uma matriz de caracteres, achar palíndromos de no máximo 3 caracteres (horizontal, vertical) — e diagonal, se conseguir.
 
-### 12) Inverter uma matriz dada pelo usuário.
+### 11) Inverter uma matriz dada pelo usuário.
 
-### 13) Dada uma string fornecida pelo usuário:
+### 12) Dada uma string fornecida pelo usuário:
 
 a) As letras maiusculas ficam minúsculas;
 
@@ -74,11 +99,11 @@ b) As letras minúsculas ficam maiusculas;
 
 c) Números são substituídos por asteriscos.
 
-### 14) Dada uma string do usuário, colocar as letras maiusculas na frente e minusculas atrás.
+### 13) Dada uma string do usuário, colocar as letras maiusculas na frente e minusculas atrás.
 
 Ex: "aAbBcC" - "ABCabc"
 
-### 15) Dada uma string numérica. 
+### 14) Dada uma string numérica. 
 
 a) Achar palíndromos de 3, 5 e 7 caracteres e contar quantos existem.
 
@@ -86,13 +111,10 @@ b) Imprimir a string colocando asterisco onde **não** é palíndromo e organiza
 
 c) Imprimir a string colocando asterisco nos palíndromos e organizando o resto em ordem decrescente.
 
-### ⚡ 16) Dada uma string, encontrar a maior palavra, toda palavra que tiver esse tamanho deve ser organizada alfabeticamente.
+### ⚡ 15) Dada uma string, encontrar a maior palavra, toda palavra que tiver esse tamanho deve ser organizada alfabeticamente.
 
 Ex.: "uma string qualquer" - "uma string aelqqruu"
 
-### ⚡ 17) Dada uma string, encontrar o maior palindromo e substituí-lo por um asterisco.
+### ⚡ 16) Dada uma string, encontrar o maior palindromo e substituí-lo por um asterisco.
 
 Ex.: "arara ovo de arara" - "* ovo de *"
-
-
-
