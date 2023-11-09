@@ -14,7 +14,7 @@
 | 8ª | [busca-substring.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/busca-substring.c) |
 | 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c) |
 | 10ª |  |
-| 11ª |  |
+| 11ª | [inverte-linhas-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-linhas-matriz.c) |
 | 12ª | [inverte-maiusculas-minusculas-&-censura-numeros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-maiusculas-minusculas-%26-censura-numeros.c) |
 | 13ª | [separa-maiusculas-minusculas-&-concatena.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/separa-maiusculas-minusculas-%26-concatena.c) |
 | 14ª |  |
