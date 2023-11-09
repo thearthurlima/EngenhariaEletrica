@@ -6,23 +6,23 @@
 int main() {
 	int i, j, k, l, linhas, escolha = 0;
 	
-	printf("Padrao 1:\n");
+	printf("\n	Padrao 1:\n");
 	for(i = 1; i <= 3; i++) {
-	printf("\n");
+	printf("\n	");
 	for(j = 1; j <= i; j++) {
 		printf("* ");
 	}
 }
-	printf("\n\nPadrao 2:\n");
+	printf("\n\n	Padrao 2:\n");
 	for(i = 3; i > 0; i--) {
-		printf("\n");
+		printf("\n	");
 		for(j = 1; j <= i; j++) {
 			printf("* ");
 		}
 	}
-	printf("\n\nPadrao 3:\n");
+	printf("\n\n	Padrao 3:\n");
     for (i = 3; i > 0; i--) {
-        printf("\n");
+        printf("\n	");
         for (j = 1; j < i; j++) {
             printf("  ");
         }
@@ -32,7 +32,7 @@ int main() {
     }
 	
 	printf("\n\nDigite o numero referente ao padrao que deseja imprimir:");
-	printf("\nPadrao 1 (1)\nPadrao 2 (2)\nPadrao 3 (3)\n");
+	printf("\nPadrao 1 (1)\nPadrao 2 (2)\nPadrao 3 (3)\n\n");
 	scanf("%d", &escolha);
 	
 	while (escolha != 1 && escolha != 2 && escolha != 3) {
