@@ -20,6 +20,9 @@
 | 14ª |  |
 | 15ª | [ordenar-maior-palavra-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar-maior-palavra-string.c) |
 | 16ª | [substitui-maior-palindromo-por-asterisco.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-maior-palindromo-por-asterisco.c) |
+|17ª|[encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|
+|18ª|[soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|
+|19ª| [troca-valores-usando-ponteiros.c]    |
 
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
@@ -118,3 +121,17 @@ Ex.: "uma string qualquer" - "uma string aelqqruu"
 ### ⚡ 16) Dada uma string, encontrar o maior palindromo e substituí-lo por um asterisco.
 
 Ex.: "arara ovo de arara" - "* ovo de *"
+
+### 17) Dada uma string, faça um programa que realize as ações abaixo:
+
+a) Função que retorne o tamanho da string;
+
+b) Função que conte quantas vezes um caractere específico aparece na string; 
+
+c) Função que mostre as posições que o caractere aparece na string.
+
+ OBS.: As funções dos itens **b** e **c** devem chamar a função do item **a**.
+
+### 18) Um programa que some duas matrizes.
+
+### 19) Um programa que use uma função que troque o valor de x por y que estão declaradas na main.
