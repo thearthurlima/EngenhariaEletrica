@@ -18,7 +18,7 @@
 | 12ª | [inverte-maiusculas-minusculas-&-censura-numeros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-maiusculas-minusculas-%26-censura-numeros.c) |**Strings**|
 | 13ª | [separa-maiusculas-minusculas-&-concatena.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/separa-maiusculas-minusculas-%26-concatena.c) |**Strings**, manipulação de strings|
 | 14ª |  ||
-| 15ª | [ordenar-maior-palavra-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar-maior-palavra-string.c) |⚡ **Strings**, manipulação de strings|
+| 15ª | [ordena-maior-palavra-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-maior-palavra-string.c) |⚡ **Strings**, manipulação de strings|
 | 16ª | [substitui-maior-palindromo-por-asterisco.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-maior-palindromo-por-asterisco.c) |⚡ **Strings**, palíndromos, manipulação de strings|
 |17ª|[encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|**Funções**, **Strings** |
 |18ª|[soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|**Funções**, **Matrizes** |
