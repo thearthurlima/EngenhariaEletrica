@@ -10,7 +10,7 @@ int main() {
 	
 	explicarCodigo();
 
-    printf("\nDigite o valor de x: ");
+	printf("\nDigite o valor de x: ");
 	scanf("%d", &x);
 	printf("Digite o valor de y: ");
 	scanf("%d", &y);

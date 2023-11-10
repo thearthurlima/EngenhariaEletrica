@@ -2,27 +2,27 @@
 
 #### Alguns exercícios propostos pelo professor, alunos e por mim. As questões marcadas com "⚡" já foram questões de prova.
 
-| | Resoluções  |
-| --- | ----------- |
-| 1ª |  | 
-| 2ª |  |
-| 3ª |  |
-| 4ª | [imprime-string-quando-caractere-aparece.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c) |
-| 5ª |  [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|
-| 6ª | [conta-vogais-consoantes-digit-caract-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/conta-vogais-consoantes-digit-caract-string.c) |
-| 7ª |  |
-| 8ª | [busca-substring.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/busca-substring.c) |
-| 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c) |
-| 10ª |  |
-| 11ª | [inverte-linhas-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-linhas-matriz.c) |
-| 12ª | [inverte-maiusculas-minusculas-&-censura-numeros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-maiusculas-minusculas-%26-censura-numeros.c) |
-| 13ª | [separa-maiusculas-minusculas-&-concatena.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/separa-maiusculas-minusculas-%26-concatena.c) |
-| 14ª |  |
-| 15ª | [ordenar-maior-palavra-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar-maior-palavra-string.c) |
-| 16ª | [substitui-maior-palindromo-por-asterisco.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-maior-palindromo-por-asterisco.c) |
-|17ª|[encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|
-|18ª|[soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|
-|19ª| [troca-valores-usando-ponteiros.c]    |
+| | Resoluções  | Assuntos |
+| --- | ----------- | --------- |
+| 1ª |  | |
+| 2ª |  ||
+| 3ª |  ||
+| 4ª | [imprime-string-quando-caractere-aparece.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c) |**Strings**|
+| 5ª |  [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|**Strings**, manipulação de string|
+| 6ª | [conta-vogais-consoantes-digit-caract-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/conta-vogais-consoantes-digit-caract-string.c) |**Strings**, vetor de caracteres|
+| 7ª |  ||
+| 8ª | [busca-substring.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/busca-substring.c) |**Strings**, substrings|
+| 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c) ||
+| 10ª |  ||
+| 11ª | [inverte-linhas-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-linhas-matriz.c) |**Matrizes**, manipulação de matrizes|
+| 12ª | [inverte-maiusculas-minusculas-&-censura-numeros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-maiusculas-minusculas-%26-censura-numeros.c) |**Strings**|
+| 13ª | [separa-maiusculas-minusculas-&-concatena.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/separa-maiusculas-minusculas-%26-concatena.c) |**Strings**, manipulação de strings|
+| 14ª |  ||
+| 15ª | [ordenar-maior-palavra-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar-maior-palavra-string.c) |⚡ **Strings**, manipulação de strings|
+| 16ª | [substitui-maior-palindromo-por-asterisco.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-maior-palindromo-por-asterisco.c) |⚡ **Strings**, palíndromos, manipulação de strings|
+|17ª|[encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|**Funções**, **Strings** |
+|18ª|[soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|**Funções**, **Matrizes** |
+|19ª| [troca-valores-usando-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/troca-valores-usando-ponteiros.c)|**Funções**, **Ponteiros**|
 
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
