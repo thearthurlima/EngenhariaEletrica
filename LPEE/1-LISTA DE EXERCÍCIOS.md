@@ -23,6 +23,7 @@
 |17ª|[encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|**Funções**, **Strings** |
 |18ª|[soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|**Funções**, **Matrizes** |
 |19ª| [troca-valores-usando-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/troca-valores-usando-ponteiros.c)|**Funções**, **Ponteiros**|
+|20ª| [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **vetores**, manipulação de vetores|
 
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
@@ -135,3 +136,5 @@ c) Função que mostre as posições que o caractere aparece na string.
 ### 18) Um programa que some duas matrizes.
 
 ### 19) Um programa que use uma função que troque o valor de x por y que estão declaradas na main.
+
+### 20) Usando funções, faça um programa que ordene um vetor de inteiros de forma crescente e decrescente.
