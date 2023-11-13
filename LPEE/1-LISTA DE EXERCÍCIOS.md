@@ -8,9 +8,9 @@
 | 2ª |  ||
 | 3ª |  ||
 | 4ª | [imprime-string-quando-caractere-aparece.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c) |**Strings**|
-| 5ª |  [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|**Strings**, manipulação de string|
+| 5ª |  [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|**Strings**, manipulação de strings|
 | 6ª | [conta-vogais-consoantes-digit-caract-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/conta-vogais-consoantes-digit-caract-string.c) |**Strings**, vetor de caracteres|
-| 7ª |  ||
+| 7ª | [remove-caracteres-string-exceto-letras](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/remove-caracteres-string-exceto-letras.c) | **Strings**, manipulação de strings|
 | 8ª | [busca-substring.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/busca-substring.c) |**Strings**, substrings|
 | 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c) ||
 | 10ª |  ||
