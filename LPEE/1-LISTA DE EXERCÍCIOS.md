@@ -46,7 +46,7 @@ c) encontrar a transposta da matriz
 
 ### 4) Dadas duas strings digitadas pelo usuário, o usuário digita um caractere que pode existir na string 1, caso exista, onde houver esse caractere na string 1, a string 2 é adicionada.
 
-Ex: String 1 - a a b a
+Ex.: String 1 - a a b a
 
 String 2 - xxxx
 
@@ -105,7 +105,7 @@ c) Números são substituídos por asteriscos.
 
 ### 13) Dada uma string do usuário, colocar as letras maiusculas na frente e minusculas atrás.
 
-Ex: "aAbBcC" - "ABCabc"
+Ex.: "aAbBcC" - "ABCabc"
 
 ### 14) Dada uma string numérica. 
 
@@ -138,3 +138,14 @@ c) Função que mostre as posições que o caractere aparece na string.
 ### 19) Um programa que use uma função que troque o valor de x por y que estão declaradas na main.
 
 ### 20) Usando funções, faça um programa que ordene um vetor de inteiros de forma crescente e decrescente.
+
+### ⚡ 21) Dada uma matriz de caracteres, encontrar nas linhas e colunas uma palavra digitada pelo usuário.
+
+Ex.: 
+```bash
+ a  n  a
+ n  a  n
+ a  n  a
+```
+A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
+
