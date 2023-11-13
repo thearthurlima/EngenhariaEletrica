@@ -24,7 +24,7 @@
 | 18ª | [soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|**Funções**, **Matrizes**|
 | 19ª | [troca-valores-usando-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/troca-valores-usando-ponteiros.c)|**Funções**, **Ponteiros**|
 | 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **vetores**, manipulação de vetores|
-| 21ª | [encontrar-palavra-linhas-colunas-&-diagonais-da-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontrar-palavra-linhas-colunas-%26-diagonais-da-matriz.c)|⚡ **Funções**, **Matrizes**|
+| 21ª | [encontrar-palavra-linhas-colunas-&-diagonais-da-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontrar-palavra-linhas-colunas-%26-diagonais-da-matriz.c)|⚡ **Funções**, **Matrizes**, limpeza de buffer de entrada|
 
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
