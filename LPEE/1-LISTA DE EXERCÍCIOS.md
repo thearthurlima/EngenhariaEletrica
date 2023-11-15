@@ -23,8 +23,9 @@
 | 17ª | [encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|**Funções**, **Strings** |
 | 18ª | [soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|**Funções**, **Matrizes**|
 | 19ª | [troca-valores-usando-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/troca-valores-usando-ponteiros.c)|**Funções**, **Ponteiros**|
-| 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **vetores**, manipulação de vetores|
+| 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **Vetores**, manipulação de vetores|
 | 21ª | [encontrar-palavra-linhas-colunas-&-diagonais-da-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontrar-palavra-linhas-colunas-%26-diagonais-da-matriz.c)|⚡ **Funções**, **Matrizes**, limpeza de buffer de entrada|
+|22ª|[le-&-exibe-string-sem-usar-fgets.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/le-%26-exibe-string-sem-usar-fgets.c)| **Funções**, **Strings**|
 
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
@@ -150,3 +151,8 @@ Ex.:
 ```
 A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
 
+### 22) Crie um programa que tenha:
+
+a) Uma função para ler uma string, sem usar fgets, gets, scanf("%s", ...), entre outras funções que já realizam esse procedimento.
+
+b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre outras funções que já realizam esse procedimento. 
