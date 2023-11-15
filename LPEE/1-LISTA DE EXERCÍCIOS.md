@@ -5,7 +5,7 @@
 |    | Resoluções  | Assuntos  |
 | -- | ----------- | --------- |
 | 1ª |  ||
-| 2ª |  ||
+| 2ª | [matriz-transposta-&-ordena-diagonal-principal.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/matriz-transposta-%26-ordena-diagonal-principal.c) |**Funções**, **Matrizes**|
 | 3ª |  ||
 | 4ª | [imprime-string-quando-caractere-aparece.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c)|**Strings**|
 | 5ª | [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|**Strings**, manipulação de strings|
@@ -36,13 +36,13 @@ b) A média, a mediana (organizar o vetor) e a moda
 
 c) Maior e menor valor
 
-### 2) Dada uma matriz com valores digitados pelo usuário, encontre e ordene a diagonal principal:
+### 2) Dada uma matriz de inteiros com valores digitados pelo usuário:
 
-a) de forma crescente
+a) Achar a matriz transposta (sem alterar a matriz original)
 
-b) de forma decrescente
+b) Organizar a diagonal principal da matriz original de forma crescente
 
-c) encontrar a transposta da matriz
+c) Organizar a diagonal principal da matriz original de forma decrescente
 
 ### 3) Dada uma matriz A, verificar se uma matriz B está contida na matriz A. Se sim, mostrar as coordenadas e dizer quantas vezes a matriz aparece.
 
