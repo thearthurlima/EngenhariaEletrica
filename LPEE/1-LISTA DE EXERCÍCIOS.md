@@ -1,6 +1,6 @@
 # Exercícios propostos
 
-#### Alguns exercícios propostos pelo professor, alunos e por mim. As questões marcadas com "⚡" já foram questões de prova.
+### Nesta lista estão alguns exercícios propostos pelo professor da disciplina, por alunos e por mim. As questões marcadas com "⚡" já foram questões de prova ou estão no nível de questões de prova.
 
 |    | Resoluções  | Assuntos  |
 | -- | ----------- | --------- |
@@ -26,7 +26,8 @@
 | 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **Vetores**, manipulação de vetores|
 | 21ª | [encontrar-palavra-linhas-colunas-&-diagonais-da-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontrar-palavra-linhas-colunas-%26-diagonais-da-matriz.c)|⚡ **Funções**, **Matrizes**, limpeza de buffer de entrada|
 |22ª|[le-&-exibe-string-sem-usar-fgets.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/le-%26-exibe-string-sem-usar-fgets.c)| **Funções**, **Strings**|
-
+|23ª|[adicionar-asterisco-em-caractere.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adicionar-asterisco-em-caractere.c)| ⚡ **Funções**, **Vetores**, manipulação de vetores|
+|24ª|||⚡|
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
 
@@ -156,3 +157,20 @@ A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
 a) Uma função para ler uma string, sem usar fgets, gets, scanf("%s", ...), entre outras funções que já realizam esse procedimento.
 
 b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre outras funções que já realizam esse procedimento. 
+
+### ⚡ 23) Crie um programa que leia uma vetor char e adicione uma certa quantidade de asteriscos sempre que um certo caractere aparecer no vetor.
+
+Ex.: Adicionar **4** asteriscos quando o caractere **'2'** 
+
+Entrada: vetor[] = e 2 u f v a 2 m
+
+Saída: vetor[] = e \* \* \* \* u f v a \* \* \* \* m
+
+### ⚡ 24) Crie um programa que leia uma vetor char e adicione um único asterisco sempre que um conjunto de caracteres aparecer no vetor.
+
+Ex.: Adiconar '*' sempre que "eai" aparecer
+
+Entrada: vetor[] = 5 e a i e s f e a i f v
+
+Saída: vetor[] = 5 \* e s f \* f v
+

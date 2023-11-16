@@ -75,7 +75,7 @@ void explicarPrograma() {
 	printf("\n	Este programa lê um vetor char e adiciona uma certa quantidade"
 			"\n	de asteriscos onde houver um certo caractere no vetor.\n"
 			"\n	Ex.: Adicionar 4 asteriscos"
-			"\n	no vetor[] = {e,2,u,f,v,a,2,m}"
+			"\n	no vetor[] = {e, 2, u, f, v, a, 2, m}"
 			"\n	quando encontrar o caractere '2'."
-			"\n	Saída: vetor[] = {e,*,*,*,*,u,f,v,a,*,*,*,*,m}.");
+			"\n	Saída: vetor[] = {e, *, *, *, *, u, f, v, a, *, *, *, *, m}.");
 }
