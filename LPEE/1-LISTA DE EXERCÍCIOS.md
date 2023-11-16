@@ -5,7 +5,7 @@
 |    | Resoluções  | Assuntos  |
 | -- | ----------- | --------- |
 | 1ª |  ||
-| 2ª |  ||
+| 2ª | [matriz-transposta-&-ordena-diagonal-principal.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/matriz-transposta-%26-ordena-diagonal-principal.c) |**Funções**, **Matrizes**|
 | 3ª |  ||
 | 4ª | [imprime-string-quando-caractere-aparece.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c)|**Strings**|
 | 5ª | [concatena-duas-strings.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c)|**Strings**, manipulação de strings|
@@ -23,8 +23,9 @@
 | 17ª | [encontra-caractere-em-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontra-caractere-em-string.c)|**Funções**, **Strings** |
 | 18ª | [soma-duas-matrizes.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-duas-matrizes.c)|**Funções**, **Matrizes**|
 | 19ª | [troca-valores-usando-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/troca-valores-usando-ponteiros.c)|**Funções**, **Ponteiros**|
-| 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **vetores**, manipulação de vetores|
+| 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **Vetores**, manipulação de vetores|
 | 21ª | [encontrar-palavra-linhas-colunas-&-diagonais-da-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontrar-palavra-linhas-colunas-%26-diagonais-da-matriz.c)|⚡ **Funções**, **Matrizes**, limpeza de buffer de entrada|
+|22ª|[le-&-exibe-string-sem-usar-fgets.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/le-%26-exibe-string-sem-usar-fgets.c)| **Funções**, **Strings**|
 
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
@@ -35,13 +36,13 @@ b) A média, a mediana (organizar o vetor) e a moda
 
 c) Maior e menor valor
 
-### 2) Dada uma matriz com valores digitados pelo usuário, encontre e ordene a diagonal principal:
+### 2) Dada uma matriz de inteiros com valores digitados pelo usuário:
 
-a) de forma crescente
+a) Achar a matriz transposta (sem alterar a matriz original)
 
-b) de forma decrescente
+b) Organizar a diagonal principal da matriz original de forma crescente
 
-c) encontrar a transposta da matriz
+c) Organizar a diagonal principal da matriz original de forma decrescente
 
 ### 3) Dada uma matriz A, verificar se uma matriz B está contida na matriz A. Se sim, mostrar as coordenadas e dizer quantas vezes a matriz aparece.
 
@@ -150,3 +151,8 @@ Ex.:
 ```
 A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
 
+### 22) Crie um programa que tenha:
+
+a) Uma função para ler uma string, sem usar fgets, gets, scanf("%s", ...), entre outras funções que já realizam esse procedimento.
+
+b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre outras funções que já realizam esse procedimento. 
