@@ -26,7 +26,7 @@
 | 20ª | [ordena-vetor-ordem-crescente-&-decrescente.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-vetor-ordem-crescente-&-decrescente.c)|**Funções**, **Vetores**, manipulação de vetores|
 | 21ª | [encontrar-palavra-linhas-colunas-&-diagonais-da-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/encontrar-palavra-linhas-colunas-%26-diagonais-da-matriz.c)|⚡ **Funções**, **Matrizes**, limpeza de buffer de entrada|
 |22ª|[le-&-exibe-string-sem-usar-fgets.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/le-%26-exibe-string-sem-usar-fgets.c)| **Funções**, **Strings**|
-|23ª|[adicionar-asteriscos-em-caractere.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adicionar-asterisco-em-caractere.c)| ⚡ **Funções**, **Vetores**, manipulação de vetores|
+|23ª|[adiciona-asteriscos-em-caractere.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adiciona-asteriscos-em-caractere.c)| ⚡ **Funções**, **Vetores**, manipulação de vetores|
 |24ª|||⚡|
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
