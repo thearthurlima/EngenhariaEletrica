@@ -7,7 +7,6 @@ void explicarPrograma();
 int lerVetor(char vetor[MAX], int tamanho);
 int imprimirVetor(char vetor[MAX], int tamanho);
 void colocaAsteriscos(char vetor[MAX], int *tamanho, char caractere, int numAsteriscos);
-void limparBufferEntrada();
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
