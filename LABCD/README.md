@@ -4,7 +4,7 @@
  
 #### 1. Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
 
-[Clique para acessar a resolução](https://github.com/thearthurlima/aurora/tree/main/LABCD-aurora/circ-comb-mux-74151)
+[Clique para acessar a resolução](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD/1-circ-combin-mux-74151)
 
 #### 1.2 (OPCIONAL) Elabore um projeto de sistema digital que possua 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
 
