@@ -53,4 +53,4 @@ Montagem final no simulador:
   ![circ-comb-mux-74151-legendas](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/93dcea3b-1e61-4bb3-921f-1c5a21fe4024) 
 </div>
 
-**Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/aurora/blob/main/LABCD-aurora/circ-comb-mux-74151/circ-comb-mux-74151.txt).**
+**Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt).**
