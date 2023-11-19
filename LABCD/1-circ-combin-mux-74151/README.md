@@ -1,4 +1,4 @@
-## Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
+## 1. Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
 
 <div align="center">
   
