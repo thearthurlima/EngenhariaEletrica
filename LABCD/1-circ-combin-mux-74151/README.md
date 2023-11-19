@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![circ-comb-mux-74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/35af8121-5148-4b62-9650-818d9a10fc1f)
+  ![circ-comb-mux-74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/2b11ba2c-3ebb-4b17-baa1-db8aedb31c34)
 </div>
 
 ### 1. Introdução
@@ -17,7 +17,7 @@ Para implementar o circuito combinacional apresentado, é necessário que se con
 
 <div align="center">
   
-  <img src="https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/143e8a4a-b92c-4776-bbe0-21b1979459c4">
+  ![connection-diagram_function-table-mux-74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/f144d2de-90e1-4df8-86d1-8fedc536c561)
   
   *Disponível em alldatasheet.com*
 </div>
@@ -50,7 +50,10 @@ Montagem final no simulador:
 
 <div align="center">
   
-  ![circ-comb-mux-74151-legendas](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/93dcea3b-1e61-4bb3-921f-1c5a21fe4024) 
+  ![circ-comb-mux-74151-legendado](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/79af8b3f-6dc3-43c6-b0a5-281a1ec95a09)
 </div>
 
+<div align="center">
+
 **Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt).**
+</div>
