@@ -126,7 +126,7 @@ A montagem final no simulador de circuitos:
 
 <div align="center">
 
-**Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt).**
+**Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1.2-circ-combin-mux-74151-%26-74157/1.2-circ-combin-mux-74151-%26-74157.txt).**
 </div>
 
 
