@@ -23,7 +23,7 @@ Datasheet completo: [74LS157 Datasheet (2-to-1 multiplexer)](https://www.alldata
   
 ### 74LS151 - Diagrama de conexão e tabela de funções
 
-![connection-diagram_function-table-mux-74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/143e8a4a-b92c-4776-bbe0-21b1979459c4)
+![connection-diagram_function-table-mux-74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/f144d2de-90e1-4df8-86d1-8fedc536c561)
   
   *Disponível em alldatasheet.com*
 </div>
