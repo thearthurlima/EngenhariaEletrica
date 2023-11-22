@@ -1,9 +1,19 @@
-### 1.2 Elabore um projeto de sistema digital que possua 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
+### 1.2. Elabore um projeto de sistema digital que possua 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
 
 <div align="center">
   
   ![Simulação circuito lógico com 4 variáveis usando mux 74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/1192f100-c4f9-4b67-b1ea-c6fd4c143bc7)
 </div>
+
+## Sumário
+<!-- TOC -->
+- [1. Introdução](#1-introdução)
+- [2. Montagem](#2-montagem)
+  - [Montagem final no simulador](#montagem-final-no-simulador)
+  - [Arquivo .txt](#para-acessar-o-arquivo-txt-para-o-simulador-clique-aqui)
+- [Referências](#referências)
+<!-- /TOC -->
+___
 
 ### 1. Introdução
 
@@ -15,9 +25,15 @@ Um mux com 8 entradas terá 3 chaves de seleção ($\log_2(8) = 3$), sendo chama
 
 Para implementar o circuito combinacional apresentado, é necessário que se conheça o diagrama de conexão (pin-out) e o funcionamento dos circuito integrados que serão utilizados na montagem.
 
-Datasheet completo: [DM74ALS151 Datasheet (8-to-1 multiplexer)](https://www.alldatasheet.com/datasheet-pdf/pdf/50940/FAIRCHILD/74151.html).
+### Datasheets completos:
 
-Datasheet completo: [74LS157 Datasheet (2-to-1 multiplexer)](https://www.alldatasheet.com/datasheet-pdf/pdf/27402/TI/74LS157.html).
+<div align="center">
+
+| Nome | Descição | Datasheet |
+|--|--|--|
+| 74LS151 | Multiplexador 8-para-1 |https://www.alldatasheet.com/datasheet-pdf/pdf/50940/FAIRCHILD/74151.html
+| 74LS157 | Multiplexador 2-para-1 | https://www.alldatasheet.com/datasheet-pdf/pdf/27402/TI/74LS157.html
+</div>
 
 <div align="center">
   
@@ -30,7 +46,7 @@ Datasheet completo: [74LS157 Datasheet (2-to-1 multiplexer)](https://www.alldata
 
 <div align="center">
   
-### 74LS158 - Diagrama de conexão e tabela de funções
+### 74LS157 - Diagrama de conexão e tabela de funções
 
   ![connection-diagram-2-to-1-mux-74LS157](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/4559f4bd-16e4-4dac-9239-e863793cde6d)
   
@@ -45,40 +61,40 @@ Segundo o datasheet e a *function table*, o ***Strobe*** dos dois multimplexador
 <div align="center">
 <p><strong>Tabela-verdade do sistema e pinagem</strong></p>
 
-| **D** | **C** | **B** | **A** | **Y** | **PIN** | *Ligada em* |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:-----------:|
-|   0   |   0   |   0   |   0   |   0   |   D0   |    Baixo    |
-|   1   |   0   |   0   |   0   |   0   |   D1   |    Baixo    |
-|   0   |   1   |   0   |   0   |   0   |   D2   |    Baixo    |
-|   1   |   1   |   0   |   0   |   0   |   D3   |    Baixo    |
-|   0   |   0   |   1   |   0   |   0   |   D4   |    Baixo    |
-|   1   |   0   |   1   |   0   |   0   |   D5   |    Baixo    |
-|   0   |   1   |   1   |   0   |   0   |   D6   |    Baixo    |
-|   1   |   1   |   1   |   0   |   1   |   D7   |    Alto     |
-|   0   |   0   |   0   |   1   |   0   |   D8   |    Baixo    |
-|   1   |   0   |   0   |   1   |   0   |   D9   |    Baixo    |
-|   0   |   1   |   0   |   1   |   0   |   D10  |    Baixo    |
-|   1   |   1   |   0   |   1   |   1   |   D11  |    Alto     |
-|   0   |   0   |   1   |   1   |   0   |   D12  |    Baixo    |
-|   1   |   0   |   1   |   1   |   1   |   D13  |    Alto     |
-|   0   |   1   |   1   |   1   |   1   |   D14  |    Alto     |
-|   1   |   1   |   1   |   1   |   1   |   D15  |    Alto     |
+| **A** | **B** | **C** | **D** |   **Y**   | **PIN** | *Ligada em* |
+|:-----:|:-----:|:-----:|:-----:|:---------:|:------:|:-----------:|
+|   0   |   0   |   0   |   0   |   **0**   |   D0   |    Baixo    |
+|   0   |   0   |   0   |   1   |   **0**   |   D1   |    Baixo    |
+|   0   |   0   |   1   |   0   |   **0**   |   D2   |    Baixo    |
+|   0   |   0   |   1   |   1   |   **0**   |   D3   |    Baixo    |
+|   0   |   1   |   0   |   0   |   **0**   |   D4   |    Baixo    |
+|   0   |   1   |   0   |   1   |   **0**   |   D5   |    Baixo    |
+|   0   |   1   |   1   |   0   |   **0**   |   D6   |    Baixo    |
+|   0   |   1   |   1   |   1   |   **1**   |   D7   |    Alto     |
+|   1   |   0   |   0   |   0   |   **0**   |   D8   |    Baixo    |
+|   1   |   0   |   0   |   1   |   **0**   |   D9   |    Baixo    |
+|   1   |   0   |   1   |   0   |   **0**   |   D10  |    Baixo    |
+|   1   |   0   |   1   |   1   |   **1**   |   D11  |    Alto     |
+|   1   |   1   |   0   |   0   |   **0**   |   D12  |    Baixo    |
+|   1   |   1   |   0   |   1   |   **1**   |   D13  |    Alto     |
+|   1   |   1   |   1   |   0   |   **1**   |   D14  |    Alto     |
+|   1   |   1   |   1   |   1   |   **1**   |   D15  |    Alto     |
 </div>
 
-A tabela representa as entradas e possibilidades do sistema inteiro, entretanto, para compreender melhor o funcionamento da associação, é mais prático visualizar as tabelas-verdade de cada multiplexador individualmente.
+A tabela representa as entradas e possibilidades do sistema inteiro, entretanto, para compreender melhor o funcionamento da associação, é mais prático visualizar as tabelas-verdade de cada multiplexador individualmente. Para isso, vamos implementar nos multiplexadores de 3 entradas os 3 bits menos significativos da tabela-verdade.
 
 <div align="center">
-<p><strong>MUX 2 - Tabela-verdade e pinagem</strong></p>
+<p><strong>MUX 1 - Tabela-verdade e pinagem</strong></p>
 
-| **D** | **C** | **B** | **Y0** | **PIN** | *Ligada em* |
+| **B** | **C** | **D** | **Y0** | **PIN** | *Ligada em* |
 |:-----:|:-----:|:-----:|:-----:|:------:|:-----------:|
 |   0   |   0   |   0   | **0** |   D0   |    Baixo    |
-|   1   |   0   |   0   | **0** |   D1   |    Baixo    |
+|   0   |   0   |   1   | **0** |   D1   |    Baixo    |
 |   0   |   1   |   0   | **0** |   D2   |    Baixo    |
-|   1   |   1   |   0   | **0** |   D3   |    Baixo    |
-|   0   |   0   |   1   | **0** |   D4   |    Baixo    |
+|   0   |   1   |   1   | **0** |   D3   |    Baixo    |
+|   1   |   0   |   0   | **0** |   D4   |    Baixo    |
 |   1   |   0   |   1   | **0** |   D5   |    Baixo    |
-|   0   |   1   |   1   | **0** |   D6   |    Baixo    |
+|   1   |   1   |   0   | **0** |   D6   |    Baixo    |
 |   1   |   1   |   1   | **1** |   D7   |    Alto     |
 </div>
 
@@ -87,15 +103,15 @@ Na tabela acima, para ${A}\bar{B}{C}$ *(A = 1 e B = 0 e C = 1)* a saída é 0, p
 <div align="center">
 <p><strong>MUX 2 - Tabela-verdade e pinagem</strong></p>
 
-| **D** | **C** | **B** | **Y1** | **PIN** | *Ligada em* |
+| **B** | **C** | **D** | **Y1** | **PIN** | *Ligada em* |
 |:-----:|:-----:|:-----:|:-----:|:------:|:-----------:|
 |   0   |   0   |   0   | **0** |   D8   |    Baixo    |
-|   1   |   0   |   0   | **0** |   D9   |    Baixo    |
+|   0   |   0   |   1   | **0** |   D9   |    Baixo    |
 |   0   |   1   |   0   | **0** |   D10  |    Baixo    |
-|   1   |   1   |   0   | **1** |   D11  |    Alto     |
-|   0   |   0   |   1   | **0** |   D12  |    Baixo    |
+|   0   |   1   |   1   | **1** |   D11  |    Alto     |
+|   1   |   0   |   0   | **0** |   D12  |    Baixo    |
 |   1   |   0   |   1   | **1** |   D13  |    Alto     |
-|   0   |   1   |   1   | **1** |   D14  |    Alto     |
+|   1   |   1   |   0   | **1** |   D14  |    Alto     |
 |   1   |   1   |   1   | **1** |   D15  |    Alto     |
 </div>
 
@@ -104,31 +120,32 @@ As saídas Y dos multiplexadores, por sua vez, serão conectadas aos inputs do M
 <div align="center">
 <p><strong>MUX 3 - Tabela verdade</strong></p>
 
-| **A** | **Y** |
-|:-----:|:-----:|
-|   0   |   Y0  |
-|   1   |   Y1  |
+| **A** |   **Y**   |
+|:-----:|:---------:|
+|   0   |   **Y0**  |
+|   1   |   **Y1**  |
 </div>
 
-Em que Y é a saída final do circuito lógico. Neste sistema o Mux 1 e o Mux 2 compartilharão as variáveis B, C e D (bits mais significativos) nas caixas de seleção SELECT A, SELECT B, SELECT C, respectivamente, enquanto a variável A estará na caixa de seleção do Mux 3 (bit menos significativo). Veja abaixo o esquema de associação dos 3 multiplexadores.
+Em que Y é a saída final do circuito lógico. Neste sistema o Mux 1 e o Mux 2 compartilharão as variáveis B, C e D (bits menos significativos) nas caixas de seleção SELECT A, SELECT B, SELECT C, respectivamente, enquanto a variável A estará na caixa de seleção do Mux 3 (bit mais significativo). Veja abaixo o esquema de associação dos 3 multiplexadores.
 
 <div align="center">
   
   ![Diagrama circuito lógico com 4 variáveis usando mux 74151-74157](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/023d81eb-0851-44d9-a168-7c4f8c32480a)
 </div>
 
-A montagem final no simulador de circuitos:
+
 
 <div align="center">
   
+  #### Montagem final no simulador:
+
   ![circ-comb-mux-74151_74158_legendado](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/a1c9b17c-a3ec-478f-b631-9838a91ec409)
 </div>
 
 <div align="center">
 
-**Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1.2-circ-combin-mux-74151-%26-74157/1.2-circ-combin-mux-74151-%26-74157.txt).**
+#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1.2-circ-combin-mux-74151-%26-74157/1.2-circ-combin-mux-74151-%26-74157.txt).
 </div>
-
 
 ___
 ## Referências:

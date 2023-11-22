@@ -8,7 +8,7 @@ Este repositório contém códigos-fonte escritos para as disciplinas relacionad
 
 |     | Disciplina  | Assuntos       |
 | --- | ----------- | ---------------|
-| [IPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IAPEE) | Introdução à Programação          | **Portugol**, algoritmos, vetores, matrizes, laços de repetição, funções, subrotinas |
+| [IPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IPEE) | Introdução à Programação          | **Portugol**, algoritmos, vetores, matrizes, laços de repetição, funções, subrotinas |
 | [LABCD](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD) | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, Multiplexadores                                          |
 | [LPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE)   | Linguagem de Programação          | **Linguagem C**, vetores, matrizes, strings                                          |
 
