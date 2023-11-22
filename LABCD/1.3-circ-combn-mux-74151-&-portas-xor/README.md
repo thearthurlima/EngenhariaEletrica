@@ -1,4 +1,4 @@
-### 1.2. Elabore um projeto de sistema digital que possua 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
+### 1.3. Circuito combinacional com 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1 usando um multiplexador 8-to-1 e portas xor.
 
 <div align="center">
   
