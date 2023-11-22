@@ -134,5 +134,5 @@ Assim, quando a variável A estiver ativa, uma nova tabela-verdade entrará em v
 
 <div align="center">
 
-#### Para acessar o arquivo .txt para o simulador, [clique aqui](------).
+#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1.3-circ-combn-mux-74151-%26-portas-xor/1.3-circ-combn-mux-74151-%26-portas-xor.txt).
 </div>
