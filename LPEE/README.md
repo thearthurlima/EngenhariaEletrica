@@ -28,22 +28,23 @@
 |22ª|[le-&-exibe-string-sem-usar-fgets.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/le-%26-exibe-string-sem-usar-fgets.c)| **Funções**, **Strings**|
 |23ª|[adiciona-asteriscos-em-caractere.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adiciona-asteriscos-em-caractere.c)| ⚡ **Funções**, **Vetores**, manipulação de vetores|
 |24ª|||⚡|
+|25ª|[cadastro-de-alunos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/cadastro-de-alunos.c)| **Structures**, **Funções**, **Vetores**|
 
 ### 1) Dado um vetor com valores digitados pelo usuário, encontre:
 
-a) Frequência que cada elemento aparece no vetor
+a) Frequência que cada elemento aparece no vetor;
 
-b) A média, a mediana (organizar o vetor) e a moda
+b) A média, a mediana (organizar o vetor) e a moda;
 
-c) Maior e menor valor
+c) Maior e menor valor.
 
 ### 2) Dada uma matriz de inteiros com valores digitados pelo usuário:
 
-a) Achar a matriz transposta (sem alterar a matriz original)
+a) Achar a matriz transposta (sem alterar a matriz original);
 
-b) Organizar a diagonal principal da matriz original de forma crescente
+b) Organizar a diagonal principal da matriz original de forma crescente;
 
-c) Organizar a diagonal principal da matriz original de forma decrescente
+c) Organizar a diagonal principal da matriz original de forma decrescente.
 
 ### 3) Dada uma matriz A, verificar se uma matriz B está contida na matriz A. Se sim, mostrar as coordenadas e dizer quantas vezes a matriz aparece.
 
@@ -112,9 +113,9 @@ Ex.: "aAbBcC" - "ABCabc"
 
 ### 14) Dada uma string numérica. 
 
-a) Achar palíndromos de 3, 5 e 7 caracteres e contar quantos existem.
+a) Achar palíndromos de 3, 5 e 7 caracteres e contar quantos existem;
 
-b) Imprimir a string colocando asterisco onde **não** é palíndromo e organizando os palíndromos em ordem crescente.
+b) Imprimir a string colocando asterisco onde **não** é palíndromo e organizando os palíndromos em ordem crescente;
 
 c) Imprimir a string colocando asterisco nos palíndromos e organizando o resto em ordem decrescente.
 
@@ -154,7 +155,7 @@ A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
 
 ### 22) Crie um programa que tenha:
 
-a) Uma função para ler uma string, sem usar fgets, gets, scanf("%s", ...), entre outras funções que já realizam esse procedimento.
+a) Uma função para ler uma string, sem usar fgets, gets, scanf("%s", ...), entre outras funções que já realizam esse procedimento;
 
 b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre outras funções que já realizam esse procedimento. 
 
@@ -174,3 +175,8 @@ Entrada: vetor[] = 5 e a i e s f e a i f v
 
 Saída: vetor[] = 5 \* e s f \* f v
 
+### 25) Crie um programa que faça o cadastro de 3 alunos utilizado structures. O programa deve ter:
+
+a) Uma função para ler os dados dos alunos;
+
+b) Uma função para imprimir os dados dos alunos.
