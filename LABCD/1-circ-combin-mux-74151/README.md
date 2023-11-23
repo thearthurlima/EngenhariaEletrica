@@ -1,9 +1,18 @@
-## 1. Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
+## 1. Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151. 
 
 <div align="center">
   
   ![circ-comb-mux-74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/2b11ba2c-3ebb-4b17-baa1-db8aedb31c34)
 </div>
+
+## Sumário
+<!-- TOC -->
+- [1. Introdução](#1-introdução)
+- [2. Montagem](#2-montagem)
+  - [Montagem final no simulador](#montagem-final-no-simulador)
+  - [Arquivo .txt](#para-acessar-o-arquivo-txt-para-o-simulador-clique-aqui)
+<!-- /TOC -->
+___
 
 ### 1. Introdução
 
@@ -46,14 +55,14 @@ Os pins SELECT A, SELECT B, SELECT C são as 3 chaves de seleção que serão ut
 
 Na tabela acima, para $\bar{A}\bar{B}\bar{C}$ *(A = 0 e B = 0 e C = 0)* a saída é 0, portanto, vamos ligar a D0 em baixo; para $\bar{A}{B}{C}$ *(A = 0 e B = 1 e C = 1)* a saída é 1, então a conexão de D3 deve ser em alto e assim por diante, conforme a tabela.
 
-Montagem final no simulador:
-
 <div align="center">
   
+  ### Montagem final no simulador:
+
   ![circ-comb-mux-74151-legendado](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/79af8b3f-6dc3-43c6-b0a5-281a1ec95a09)
 </div>
 
 <div align="center">
 
-**Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt).**
+#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt).
 </div>

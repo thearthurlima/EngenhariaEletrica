@@ -1,8 +1,8 @@
-### 1.2. Elabore um projeto de sistema digital que possua 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151.
+### 1.3. Circuito combinacional com 4 entradas e uma saída que será 1 sempre que a maioria das entradas for 1 usando um multiplexador 8-to-1 e portas xor.
 
 <div align="center">
   
-  ![Simulação circuito lógico com 4 variáveis usando mux 74151](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/1192f100-c4f9-4b67-b1ea-c6fd4c143bc7)
+  ![1 3-circ-combn-mux-74151- -portas-xor](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/9d07c13c-24b9-4a26-b063-00c32b9b4c02)
 </div>
 
 ## Sumário
@@ -11,7 +11,7 @@
 - [2. Montagem](#2-montagem)
   - [Montagem final no simulador](#montagem-final-no-simulador)
   - [Arquivo .txt](#para-acessar-o-arquivo-txt-para-o-simulador-clique-aqui)
-- [Referências](#referências)
+
 <!-- /TOC -->
 ___
 
@@ -19,7 +19,7 @@ ___
 
 Um **mux** (multiplexador), é um dispositivo eletrônico que tem a função de combinar múltiplos sinais de entrada em um único canal de saída. É possível implementar funções lógicas usando multiplexadores, para isso, as entradas de seleção do mux serão utilizdas como variáveis lógicas e os dados de entrada serão ligadas permanentemente em baixo ou alto, a depender do que se pede na tabela-verdade, sem simplificá-la. Pela sua capacidade de implementação lógica, os multiplexadores são conhecidos como circuitos lógicos universais.
 
-Um mux com 8 entradas terá 3 chaves de seleção ($\log_2(8) = 3$), sendo chamado de multiplexador 1-de-8 (ou *8-of-1 multiplexor*), que significa 1 saída de 8 entradas. Para a implementação do circuito pedido, será necessário realizara a associação de dois multiplexadores 1-de-8 e um multiplexador 2-to-1.
+Um mux com 8 entradas terá 3 chaves de seleção ($\log_2(8) = 3$), sendo chamado de multiplexador 1-de-8 (ou *8-of-1 multiplexor*), que significa 1 saída de 8 entradas. Para a implementação de um circuito com 16 possíveis saídas, é possível implementar apenas uma multiplexador 8-to-1, mas será preciso fazer com que algumas das entradas de dados possam mudar de estado quando for necessário.
 
 ### 2. Montagem
 
@@ -32,7 +32,7 @@ Para implementar o circuito combinacional apresentado, é necessário que se con
 | Nome | Descição | Datasheet |
 |--|--|--|
 | 74LS151 | Multiplexador 8-para-1 |https://www.alldatasheet.com/datasheet-pdf/pdf/50940/FAIRCHILD/74151.html
-| 74LS157 | Multiplexador 2-para-1 | https://www.alldatasheet.com/datasheet-pdf/pdf/27402/TI/74LS157.html
+| 74LS157 | QUAD 2-INPUT EXCLUSIVE-OR GATE | https://www.datasheetcatalog.com/datasheets_pdf/S/N/5/4/SN54LS386.shtml
 </div>
 
 <div align="center">
@@ -46,15 +46,14 @@ Para implementar o circuito combinacional apresentado, é necessário que se con
 
 <div align="center">
   
-### 74LS157 - Diagrama de conexão e tabela de funções
+### 74LS386 - Pin-out
 
-  ![connection-diagram-2-to-1-mux-74LS157](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/4559f4bd-16e4-4dac-9239-e863793cde6d)
+  ![exclusive-or-gate-pinout-74LS386](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/b7379602-e114-4498-b42c-402a4055c576)
   
-  *Disponível em alldatasheet.com*
+  *Disponível em datasheetcatalog.com*
 </div>
 
-
-Segundo o datasheet e a *function table*, o ***Strobe*** dos dois multimplexadores está ativo em **nível baixo** e todas as entradas são desabilitadas quando o Strobe estiver em alto. Portando, o Strobe de ambos devem estar permanente ligados no nível baixo.
+Segundo o datasheet e a *function table*, o ***Strobe*** do multimplexador está ativo em **nível baixo** e todas as entradas são desabilitadas quando o Strobe estiver em alto. Portando, o Strobe deve estar permanente ligado no nível baixo.
 
 > "A Strobe input is provided which, when at the high level, disables all data inputs and forces the Y output to the LOW state and the W output to the HIGH state." General Description, DM74ALS151 datasheet, p. 1 
 
@@ -81,10 +80,10 @@ Segundo o datasheet e a *function table*, o ***Strobe*** dos dois multimplexador
 |   1   |   1   |   1   |   1   |   **1**   |   D15  |    Alto     |
 </div>
 
-A tabela representa as entradas e possibilidades do sistema inteiro, entretanto, para compreender melhor o funcionamento da associação, é mais prático visualizar as tabelas-verdade de cada multiplexador individualmente. Para isso, vamos implementar nos multiplexadores de 3 entradas os 3 bits menos significativos da tabela-verdade.
+A tabela representa as entradas e possibilidades do sistema inteiro, entretanto, para compreender melhor o funcionamento da associação, é mais prático visualizar as tabelas-verdade de cada multiplexador individualmente. Vamos ignorar o bit mais significante, que é a variável A, assim como foi feito no [projeto 1.2](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD/1.2-circ-combin-mux-74151-%26-74157).
 
 <div align="center">
-<p><strong>MUX 1 - Tabela-verdade e pinagem</strong></p>
+<p><strong>Tabela-verdade parte 1 e pinagem</strong></p>
 
 | **B** | **C** | **D** | **Y0** | **PIN** | *Ligada em* |
 |:-----:|:-----:|:-----:|:-----:|:------:|:-----------:|
@@ -98,10 +97,9 @@ A tabela representa as entradas e possibilidades do sistema inteiro, entretanto,
 |   1   |   1   |   1   | **1** |   D7   |    Alto     |
 </div>
 
-Na tabela acima, para ${A}\bar{B}{C}$ *(A = 1 e B = 0 e C = 1)* a saída é 0, portanto, vamos ligar a D5 em baixo; para ${A}{B}{C}$ *(A = 1 e B = 1 e C = 1)* a saída é 1, então a conexão de D7 deve ser em alto e assim por diante, conforme a tabela.
 
 <div align="center">
-<p><strong>MUX 2 - Tabela-verdade e pinagem</strong></p>
+<p><strong>Tabela-verdade parte 2 e pinagem</strong></p>
 
 | **B** | **C** | **D** | **Y1** | **PIN** | *Ligada em* |
 |:-----:|:-----:|:-----:|:-----:|:------:|:-----------:|
@@ -115,40 +113,26 @@ Na tabela acima, para ${A}\bar{B}{C}$ *(A = 1 e B = 0 e C = 1)* a saída é 0, p
 |   1   |   1   |   1   | **1** |   D15  |    Alto     |
 </div>
 
-As saídas Y dos multiplexadores, por sua vez, serão conectadas aos inputs do Mux 3, que terá a seguinte tabela-verdade:
+Ao comparar as duas tablas, vemos que o estado de D0 = D8, D1 = D9, D2 = D10, D4 = 12, D7 = D15, portanto, essas saídas podem ser permanentemente ligadas nesse estado no multiplexador. Já para as outras saídas, ligamos o estado da primeira parte tabela-verdade na primeira entrada da porta xor, a segunda entrada na xor na variável A e a saída na porta correspondente no multiplexador, assim, quando A estiver em 1 a saída será invertida. Veja um exemplo na tabela abaixo:
 
 <div align="center">
-<p><strong>MUX 3 - Tabela verdade</strong></p>
 
-| **A** |   **Y**   |
-|:-----:|:---------:|
-|   0   |   **Y0**  |
-|   1   |   **Y1**  |
+|D3|A|Saída da xor conectada ao multiplexador|
+|:--:|:--:|:--:|
+|0|0|0|
+|0|1|1|
 </div>
 
-Em que Y é a saída final do circuito lógico. Neste sistema o Mux 1 e o Mux 2 compartilharão as variáveis B, C e D (bits menos significativos) nas caixas de seleção SELECT A, SELECT B, SELECT C, respectivamente, enquanto a variável A estará na caixa de seleção do Mux 3 (bit mais significativo). Veja abaixo o esquema de associação dos 3 multiplexadores.
-
-<div align="center">
-  
-  ![Diagrama circuito lógico com 4 variáveis usando mux 74151-74157](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/023d81eb-0851-44d9-a168-7c4f8c32480a)
-</div>
-
-
+Assim, quando a variável A estiver ativa, uma nova tabela-verdade entrará em vigor no sistema, que será a parte 2 da tabela.
 
 <div align="center">
   
   #### Montagem final no simulador:
 
-  ![circ-comb-mux-74151_74158_legendado](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/a1c9b17c-a3ec-478f-b631-9838a91ec409)
+  ![circ-comb-mux-74151_74386_legendado](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/8a93b94d-e5c1-4a57-a9a1-0f02ab08f101)
 </div>
 
 <div align="center">
 
-#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1.2-circ-combin-mux-74151-%26-74157/1.2-circ-combin-mux-74151-%26-74157.txt).
+#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1.3-circ-combn-mux-74151-%26-portas-xor/1.3-circ-combn-mux-74151-%26-portas-xor.txt).
 </div>
-
-___
-## Referências:
-- https://endigital.orgfree.com/combinacional/EDMUX.htm
-- https://www.youtube.com/watch?v=BriODlzLEG0&t=308s
-- TOCCI, Ronald J.; WIDMER, Neal S.; MOSS, Gregory L.. Sistemas Digitais: Princípios e Aplicações. 10ª ed. São Paulo: Pearson, 2007.
