@@ -12,7 +12,7 @@ void explicarPrograma();
 int main() {
     char string[MAX], string2[MAX], stringConcat[MAX];
 
-	explicarPrograma();
+    explicarPrograma();
 	
     printf("\nDigite a primeira string: ");
     fgets(string, MAX, stdin);
