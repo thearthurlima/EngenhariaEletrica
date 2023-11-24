@@ -2,42 +2,35 @@
 
 #define MAX 100
 
-// Function prototypes
-void copiarString(char *p, char *p2);
 void concatString(char *p, char *p2);
 void removerEnter(char *p);
 int tamString(char *p);
 void ordenarCrescente(char *p);
+void ordenarDecrescente(char *p);
+void explicarPrograma();
 
 int main() {
     char string[MAX], string2[MAX], stringConcat[MAX];
 
+	explicarPrograma();
+	
+    printf("\nDigite a primeira string: ");
     fgets(string, MAX, stdin);
-    fgets(string2, MAX, stdin);
-
     removerEnter(string);
+    printf("Digite a segunda string: ");
+    fgets(string2, MAX, stdin);
     removerEnter(string2);
 
     concatString(string, string2);
-    tamString(string);
-
-    printf("\nstringConcat:\n%s", string);
+    
+    printf("\n\t+ String concatenada:\n\t%s", string);
 
     ordenarCrescente(string);
-
-    printf("\n\n%s", string);
+    printf("\n\t+ String em ordem crescente:\n\t%s", string);
+    ordenarDecrescente(string);
+    printf("\n\t+ String em ordem decrescente:\n\t%s", string);
 
     return 0;
-}
-
-// Function definitions
-void copiarString(char *p, char *p2) {
-    while (*p != '\0') {
-        *p2 = *p;
-        p++;
-        p2++;
-    }
-    *p2 = '\0';
 }
 
 void concatString(char *p, char *p2) {
@@ -70,14 +63,33 @@ int tamString(char *p) {
 }
 
 void ordenarCrescente(char *p) {
-    int i, j;
-    char *d, *primPos, aux;
+    int i, tam;
+    char *d, aux;
 
-    primPos = p;
+    tam = tamString(p);
 
-    for (i = 0; i < tamString(primPos); i++) {
-        d = primPos;
-        while (*d != '\0') {
+    for (i = 0; i < tam; i++) {
+        d = p;
+        while (*(d + 1) != '\0') {
+            if (*d > *(d + 1)) {
+                aux = *d;
+                *d = *(d + 1);
+                *(d + 1) = aux;
+            }
+            d++;
+        }
+    }
+}
+
+void ordenarDecrescente(char *p) {
+    int i, tam;
+    char *d, aux;
+
+    tam = tamString(p);
+
+    for (i = 0; i < tam; i++) {
+        d = p;
+        while (*(d + 1) != '\0') {
             if (*d < *(d + 1)) {
                 aux = *d;
                 *d = *(d + 1);
@@ -86,4 +98,10 @@ void ordenarCrescente(char *p) {
             d++;
         }
     }
+}
+
+void explicarPrograma() {
+    printf("\n\tEste programa concatena duas strings usando ponteiros.");
+	printf("\n\tDepois disso, ordena a string concatenada em ordem crescente");
+	printf("\n\te em seguida, em ordem decrescente.\n");
 }
