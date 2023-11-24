@@ -195,7 +195,7 @@ ___
 |24|||⚡|
 |25|[cadastro-de-alunos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/cadastro-de-alunos.c)| **Structures**, **Funções**, **Vetores**|
 26|||
-|27||
+|27|[concatena-duas-strings-com-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings-com-ponteiros.c)|
 
 ## 3. Funções e blocos de código úteis
 
