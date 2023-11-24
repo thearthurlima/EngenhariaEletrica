@@ -12,7 +12,7 @@
 | 6ª | [conta-vogais-consoantes-digit-caract-string.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/conta-vogais-consoantes-digit-caract-string.c)|**Strings**, vetor de caracteres|
 | 7ª | [remove-caracteres-string-exceto-letras](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/remove-caracteres-string-exceto-letras.c)|**Strings**, manipulação de strings|
 | 8ª | [busca-substring.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/busca-substring.c)|**Strings**, substrings|
-| 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c)||
+| 9ª | [imprime-padroes-de-asteriscos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-padroes-de-asteriscos.c)|Algoritmo|
 | 10ª |  ||
 | 11ª | [inverte-linhas-matriz.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-linhas-matriz.c) |**Matrizes**, manipulação de matrizes|
 | 12ª | [inverte-maiusculas-minusculas-&-censura-numeros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/inverte-maiusculas-minusculas-%26-censura-numeros.c) |**Strings**|

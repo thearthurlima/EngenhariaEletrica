@@ -1,4 +1,4 @@
-## 1. Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151. 
+## 1. Elabore um projeto de sistema digital que possua 3 entradas e uma saída que será 1 sempre que a maioria das entradas for 1. Implemente-o usando o multiplexador 74151
 
 <div align="center">
   
@@ -31,10 +31,9 @@ Para implementar o circuito combinacional apresentado, é necessário que se con
   *Disponível em alldatasheet.com*
 </div>
 
-
 O datasheet e a *function table* do DM74ALS151 nos informam que para o ***Strobe*** ligado em alto, todas as entradas resultarão em uma saída **nível baixo**, portanto o strobe deve estar ativo em baixo.
 
-> "A Strobe input is provided which, when at the high level, disables all data inputs and forces the Y output to the LOW state and the W output to the HIGH state." General Description, DM74ALS151 datasheet, p. 1 
+> "A Strobe input is provided which, when at the high level, disables all data inputs and forces the Y output to the LOW state and the W output to the HIGH state." General Description, DM74ALS151 datasheet, p. 1
 
 Os pins SELECT A, SELECT B, SELECT C são as 3 chaves de seleção que serão utilizadas como as variáveis lógicas. Já os pins D0 a D7 (que serão as 8 combinações possíveis) serão ligadas permanentemente em alto ou baixo dependendo da tabela-verdade.
 
@@ -57,12 +56,13 @@ Na tabela acima, para $\bar{A}\bar{B}\bar{C}$ *(A = 0 e B = 0 e C = 0)* a saída
 
 <div align="center">
   
-  ### Montagem final no simulador:
+### Montagem final no simulador
 
   ![circ-comb-mux-74151-legendado](https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/79af8b3f-6dc3-43c6-b0a5-281a1ec95a09)
 </div>
 
 <div align="center">
 
-#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt).
+#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt)
+
 </div>

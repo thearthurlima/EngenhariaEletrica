@@ -15,11 +15,14 @@ typedef struct CadastroDeAlunos cadastro;
 void limparBufferEntrada();
 void lerCadastro(cadastro Aluno[MAX_ALUNOS], int i);
 void imprimirCadastro(cadastro Aluno[MAX_ALUNOS], int i);
+void explicarPrograma();
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
     int numAlunos, i;
     cadastro Aluno[MAX_ALUNOS];
+
+    explicarPrograma();
     
     printf("\n	Quantos alunos deseja cadastrar?: ");
     scanf("%d", &numAlunos);
@@ -57,7 +60,7 @@ void lerCadastro(cadastro Aluno[MAX_ALUNOS], int i) {
     
     printf("	Idade: ");
     scanf("%d", &Aluno[i].idade);
-    printf("	Matrícula: ");
+    printf("	Matrícula (6 dígitos): ");
 
     for(j = 0; j < MAX_MATRICULA; j++)
         scanf("%1d", &Aluno[i].matricula[j]); // Lê um dígito por vez (%1d)
@@ -75,4 +78,12 @@ void imprimirCadastro(cadastro Aluno[MAX_ALUNOS], int i) {
     for(j = 0; j < MAX_MATRICULA; j++)
         printf("%d", Aluno[i].matricula[j]);
     printf("\n");
+}
+
+void explicarPrograma() {
+    printf("\n");
+    printf("	Esse programa cadastra alunos de uma turma usando uma structure.\n");
+    printf("	Para isso, ele pede o nome, a idade e a matrícula de cada aluno.\n");
+    printf("	Para a matrícula, ele pede um número de 6 dígitos.\n");
+    printf("	Depois de cadastrar todos os alunos, ele imprime os dados de cada um.\n\n");
 }
