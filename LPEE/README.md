@@ -2,7 +2,7 @@
 
 - [1. Exercícios propostos](#1-exercícios-propostos)
 - [2. Resoluções dos exercícios](#2-resoluções-dos-exercícios)
-- [3. Funções e blocos de texto úteis](#3-funções-e-blocos-de-código-úteis)
+- [3. Funções e blocos de código úteis](#3-funções-e-blocos-de-código-úteis)
 
 ## 1. Exercícios propostos
 
