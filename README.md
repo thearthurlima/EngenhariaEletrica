@@ -1,6 +1,11 @@
 # Engenharia Elétrica (UFMA)
 
-Este repositório contém códigos-fonte escritos para as disciplinas relacionadas à computação do curso de Engenharia Elétrica da Universidade Federal do Maranhão.
+<img
+src="https://portalpadrao.ufma.br/site/institucional/superintendencias/sce/manual-da-marca/png-logo-ufma-colorido.png/@@images/image.png"
+width="170" align="right">
+</a>
+
+Este repositório contém códigos-fonte escritos para as disciplinas relacionadas à computação do curso de Engenharia Elétrica da Universidade Federal do Maranhão, além de montagens de circuitos.
 
     "Não há outro recurso para o homem atual a não ser o de vencer a ignorância." - Júlio Minham
     
