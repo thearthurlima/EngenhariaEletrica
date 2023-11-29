@@ -194,7 +194,7 @@ ___
 |23|[adiciona-asteriscos-em-caractere.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adiciona-asteriscos-em-caractere.c)| ⚡ **Funções**, **Vetores**, manipulação de vetores|
 |24|||⚡|
 |25|[cadastro-de-alunos.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/cadastro-de-alunos.c)| **Structures**, **Funções**, **Vetores**|
-26|||
+26|[copia-string-com-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/copia-string-com-ponteiros.c)|**Funções**, **Ponteiros**, **Strings**|
 |27|[concatena-duas-strings-com-ponteiros.c](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings-com-ponteiros.c)|**Funções**, **Ponteiros**, **Strings**, manipulação de strings
 
 ## 3. Funções e blocos de código úteis
@@ -202,4 +202,5 @@ ___
 | Função | Descrição |
 |-------|-------|
 |[Limpar buffer de entrada](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/limparBufferEntrada.c)| Em algumas situações, quando uma leitura é realizada, o caractere de nova linha ('\n') pode permanecer no buffer de entrada. Isso pode impedir que leituras subsequentes sejam realizadas corretamente, interferindo no funcionamento adequado do algoritmo. **Utilize esta função caso encontre dificuldades para efetuar uma leitura corretamente após ter realizado uma leitura prévia.**
+|[fflush()](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/fflush.c)|Serve ao mesmo propósito da função limparBufferEntrada(), entretanto, a função fflush() pode não funcionar corretamente todas as vezes, porque seu propósito principal é limpar buffers de saída.
 |[Incluir caracteres da língua portuguesa](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adicionar-caracteres-portugues.c)| Por padrão, não é possível visualizar caracteres específicos da língua portuguesa, como acentos, cedilhas e tils. **Adicione este segmento de código no seu programa para conseguir ler e exibir esses caracteres adicionais.**
