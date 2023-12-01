@@ -16,22 +16,22 @@ ___
 
 ### 1. Introdução
 
-**
+<!-- texto -->
 
 ### 2. Montagem
 
-**
+<!-- texto -->
 
 [74LS283 Datasheet][74LS283_Datasheet].
 
 <div align="center">
   
-  imagem - pin-out
+  **Imagem** - pin-out
   
   *Disponível em alldatasheet.com*
 </div>
 
-**
+<!-- texto -->
 
 <div align="center">
   
