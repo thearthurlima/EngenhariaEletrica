@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  CAPA
+  ![somador-subtrator-74LS386-capa][CAPA]
 </div>
 
 ## Sumário
@@ -22,7 +22,7 @@ ___
 
 **
 
-[DM74ALS151 Datasheet](https://www.alldatasheet.com/datasheet-pdf/pdf/50940/FAIRCHILD/74151.html).
+[74LS283 Datasheet][74LS283_Datasheet].
 
 <div align="center">
   
@@ -37,12 +37,19 @@ ___
   
 ### Montagem final no simulador
 
-  imagem - montagem
+  ![somador-subtrator-74LS386-montagem][MONTAGEM]
 
 </div>
 
 <div align="center">
 
-#### Para acessar o arquivo .txt para o simulador, [clique aqui](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/1-circ-combin-mux-74151/1-circ-combin-mux-74151.txt)
+#### Para acessar o arquivo .txt para o simulador, [clique aqui][txt_file]
 
 </div>
+
+
+<!-- LINKS -->
+[CAPA]: https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/d1d1435f-46c7-4b4c-88f6-d77eef5d254c
+[74LS283_Datasheet]: https://www.alldatasheet.com/datasheet-pdf/pdf/1718875/ETC1/74LS283.html
+[MONTAGEM]: https://github.com/thearthurlima/EngenhariaEletrica/assets/115672061/4083c7e7-3ed3-4c81-a4ab-58d25c66248d
+[txt_file]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LABCD/somador-subtrator-74283%20-%26-portas-xor/somador-subtrator-74283%20-%26-portas-xor.txt
