@@ -12,4 +12,4 @@
 
 - ## Operações aritméticas
 
-    - ### [Projete um somador/subtratos utilizando o CI TTL 74283 e portas XOR. O circuito deverá ter duas palavras de 4 bits de entrada, uma entrada ADD/~SUB para indicar a operação desejada, uma saída de 4 bits e utilizar complemento de dois.](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD/somador-subtrator-74283%20-%26-portas-xor)
+    - ### [Projete um somador/subtratos utilizando o CI TTL 74283 e portas XOR. O circuito deverá ter duas palavras de 4 bits de entrada, uma entrada ADD/~SUB para indicar a operação desejada, uma saída de 4 bits e utilizar complemento de dois.](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD/somador-subtrator-74283-%26-portas-xor)
