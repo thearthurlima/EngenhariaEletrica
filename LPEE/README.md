@@ -223,7 +223,6 @@ Exemplo: 5 linhas e 4 colunas
 * * * *
 ```
 
-___
 ## 2. Resoluções dos exercícios
 
 |     | Código  | Assuntos  |
@@ -255,13 +254,10 @@ ___
 |25|[cadastro-de-alunos.c][QUESTAO_25]| **Structures**, **Funções**, **Vetores**|
 26|[copia-string-com-ponteiros.c][QUESTAO_26]|**Funções**, **Ponteiros**, **Strings**|
 |27|[concatena-duas-strings-com-ponteiros.c][QUESTAO_27]|**Funções**, **Ponteiros**, **Strings**, manipulação de strings|
-
-<!--
-|28|[nome-do-arquivo.c][QUESTAO_28]| Assuntos relacionados |
-|29|[nome-do-arquivo.c][QUESTAO_29]| Assuntos relacionados |
-|30|[nome-do-arquivo.c][QUESTAO_30]| Assuntos relacionados |
-|31|[nome-do-arquivo.c][QUESTAO_31]| Assuntos relacionados |
--->
+|28|||
+|29|||
+|30|[imprime-cruz-asteriscos.c][QUESTAO_30]| ⚡ **Funções**, **Ponteiros**, algoritmos |
+|31|[imprime-retangulo-asteriscos.c][QUESTAO_31]| ⚡ **Funções**, **Ponteiros**, algoritmos |
 
 ## 3. Funções e blocos de código úteis
 
@@ -294,10 +290,5 @@ ___
 [QUESTAO_25]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/cadastro-de-alunos.c
 [QUESTAO_26]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/copia-string-com-ponteiros.c
 [QUESTAO_27]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings-com-ponteiros.c
-
-<!--
-[QUESTAO_28]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-28.c
-[QUESTAO_29]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-29.c
-[QUESTAO_30]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-30.c
-[QUESTAO_31]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-31.c
--->
+[QUESTAO_30]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-cruz-asteriscos.c
+[QUESTAO_31]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-retangulo-asteriscos.c
