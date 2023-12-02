@@ -164,6 +164,65 @@ b) Uma função para imprimir os dados dos alunos.
 
 **27) Crie um programa que concatene duas strings e organize a string concatenada em ordem crescente e depois em ordem decrescente usando notação de ponteiros.**
 
+**⚡ 28) Crie um programa que ordene o(s) menor(es) palíndromo(s) de uma string de forma crescente e de forma decrescente. O programa deve ter as seguintes funções:**
+
+a) Uma função para ler a string;
+
+b) Uma função que ache o(s) menor(es) palíndromo(s);
+
+c) Uma função para ordenar o(s) menor(es) palíndromo(s) em ordem crescente;
+
+d) Uma função para ordenar o(s) menor(es) palíndromo(s) em ordem decrescente;
+
+e) Uma função para imprimir a string.
+
+**⚡ 29) Crie um programa que ordene o primeiro palíndromo de uma string de forma crescente e de forma decrescente. O programa deve ter as seguintes funções:**
+
+a) Uma função para ler a string;
+
+b) Uma função que ache o primeiro palíndromo;
+
+c) Uma função para ordenar o palíndromo em ordem crescente;
+
+d) Uma função para ordenar o palíndromo em ordem decrescente;
+
+e) Uma função para imprimir a string.
+
+**⚡ 30) Crie um programa que imprima uma cruz de asteriscos, com número de linhas definido pelo usuário (o número deve ser ímpar). O programa deve ter as seguintes funções:**
+
+a) Uma função para ler um número inteiro;
+
+b) Uma função que verifique se o número é ímpar;
+
+c) Função que imprime o padrão de asteriscos.
+
+```bash
+Exemplo: 5 linhas
+
+    *
+    *
+* * * * *
+    *
+    *
+```
+
+**⚡ 31) Crie um programa que imprima um retângulo de asteriscos, com número de linhas e colunas definido pelo usuário. O programa deve ter as seguintes funções:**
+
+a) Uma função para ler um número inteiro;
+
+c) Função que imprime o padrão de asteriscos.
+
+
+```bash
+Exemplo: 5 linhas e 4 colunas
+
+* * * *
+*     *
+*     *
+*     *
+* * * *
+```
+
 ___
 ## 2. Resoluções dos exercícios
 
@@ -197,6 +256,13 @@ ___
 26|[copia-string-com-ponteiros.c][QUESTAO_26]|**Funções**, **Ponteiros**, **Strings**|
 |27|[concatena-duas-strings-com-ponteiros.c][QUESTAO_27]|**Funções**, **Ponteiros**, **Strings**, manipulação de strings|
 
+<!--
+|28|[nome-do-arquivo.c][QUESTAO_28]| Assuntos relacionados |
+|29|[nome-do-arquivo.c][QUESTAO_29]| Assuntos relacionados |
+|30|[nome-do-arquivo.c][QUESTAO_30]| Assuntos relacionados |
+|31|[nome-do-arquivo.c][QUESTAO_31]| Assuntos relacionados |
+-->
+
 ## 3. Funções e blocos de código úteis
 
 | Função | Descrição |
@@ -228,3 +294,10 @@ ___
 [QUESTAO_25]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/cadastro-de-alunos.c
 [QUESTAO_26]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/copia-string-com-ponteiros.c
 [QUESTAO_27]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings-com-ponteiros.c
+
+<!--
+[QUESTAO_28]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-28.c
+[QUESTAO_29]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-29.c
+[QUESTAO_30]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-30.c
+[QUESTAO_31]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/nome-do-arquivo-31.c
+-->
