@@ -254,10 +254,10 @@ Exemplo: 5 linhas e 4 colunas
 |25|[cadastro-de-alunos.c][QUESTAO_25]| **Structures**, **Funções**, **Vetores**|
 26|[copia-string-com-ponteiros.c][QUESTAO_26]|**Funções**, **Ponteiros**, **Strings**|
 |27|[concatena-duas-strings-com-ponteiros.c][QUESTAO_27]|**Funções**, **Ponteiros**, **Strings**, manipulação de strings|
-|28|||
-|29|||
-|30|[imprime-cruz-asteriscos.c][QUESTAO_30]| ⚡ **Funções**, **Ponteiros**, algoritmos |
-|31|[imprime-retangulo-asteriscos.c][QUESTAO_31]| ⚡ **Funções**, **Ponteiros**, algoritmos |
+|28|[ordena-menores-palindromos-crescente-&-decrescente.c][QUESTAO_28]| ⚡ **Funções**, **Strings**, manipulação de strings|
+|29|[ordena-primeiro-palindromo-crescente-&-decrescente.c][QUESTAO_29]| ⚡ **Funções**, **Strings**, manipulação de strings|
+|30|[imprime-cruz-asteriscos.c][QUESTAO_30]| ⚡ **Funções**, **Ponteiros**, algoritmos|
+|31|[imprime-retangulo-asteriscos.c][QUESTAO_31]| ⚡ **Funções**, **Ponteiros**, algoritmos|
 
 ## 3. Funções e blocos de código úteis
 
@@ -290,5 +290,7 @@ Exemplo: 5 linhas e 4 colunas
 [QUESTAO_25]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/cadastro-de-alunos.c
 [QUESTAO_26]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/copia-string-com-ponteiros.c
 [QUESTAO_27]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings-com-ponteiros.c
+[QUESTAO_28]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-menores-palindromos-crescente-%26-decrescente.c
+[QUESTAO_29]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-primeiro-palindromo-crescente-%26-decrescente.c
 [QUESTAO_30]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-cruz-asteriscos.c
 [QUESTAO_31]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-retangulo-asteriscos.c
