@@ -24,7 +24,7 @@ int main() {
 
 void lerInt(int *numero) {
     while(scanf("%d", numero) != 1) {
-        printf("Entrada inválida. Digite um número inteiro: ");
+        printf("Entrada invalida. Digite um numero inteiro: ");
         while(getchar() != '\n'); // Limpa o buffer de entrada
     }
 }
@@ -52,7 +52,7 @@ void imprimirPadrao(int numero) {
 }
 
 void explicarPrograma() {
-	printf("\n\tEste programa imprime um padrão de asteriscos de acordo\n\tcom um número inteiro impar digitado pelo usuário.\n");
+	printf("\n\tEste programa imprime um padrao de asteriscos de acordo\n\tcom um numero inteiro impar digitado pelo usuario.\n");
 	printf("\tExemplo: ");
 	printf("Digite um inteiro impar: 5\n\n");
     printf("\t    *    \n");
