@@ -303,7 +303,7 @@ OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada
 |30|[imprime-cruz-asteriscos.c][QUESTAO_30]| ⚡ **Funções**, **Ponteiros**, algoritmos|
 |31|[imprime-retangulo-asteriscos.c][QUESTAO_31]| ⚡ **Funções**, **Ponteiros**, algoritmos|
 |32|||
-|33|||
+|33|[soma-itinerario-matriz.c][QUESTAO_33]| ⚡ **Funções**, **Matrizes**, algoritmos|
 ## 3. Funções e blocos de código úteis
 
 | Função | Descrição |
@@ -340,3 +340,4 @@ OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada
 [QUESTAO_29]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordena-primeiro-palindromo-crescente-%26-decrescente.c
 [QUESTAO_30]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-cruz-asteriscos.c
 [QUESTAO_31]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-retangulo-asteriscos.c
+[QUESTAO_33]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-itinerario-matriz.c
