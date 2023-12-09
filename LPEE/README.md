@@ -222,6 +222,50 @@ Exemplo: 5 linhas e 4 colunas
 *     *
 * * * *
 ```
+**⚡ 32) Crie um programa que, dada uma string:**
+
+a) Ache a(s) maior(es) palavra(s);
+
+b) Ordene a(s) maior(es) palavra(s) em ordem crescente;
+
+c) Coloque a(s) maior(es) palavra(s) no início da string;
+
+d) Imprima a string.
+
+```bash
+Exemplo: 
+
+Entrada: joana e bonita
+Saída: abinot joana e
+```
+
+**⚡ 33) Dada uma matriz e inteiros quadrada, faça um programa que:**
+
+a) Tenha uma função para ler um inteiro;
+
+b) O usuário digita um itinerário, que será as coordenadas dos números da matriz. Cada número obtido pelas coordenadas do itinerário é adicionado a uma soma, que é exibida ao final;
+
+```bash
+Exemplo:
+
+  matriz[3][3] = 1  2  3
+                 4  5  6
+                 7  8  9
+
+Itinerário: 02012
+
+  matriz[0][2] // 3
+  matriz[2][0] // 7
+  matriz[0][1] // 2
+  matriz[1][2] // 6
+
+Soma: 3 + 7 + 2 + 6 = 18
+Saída: 18
+```
+
+<p style="color:yellow;">
+OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada inteiro que será lido no programa.
+</p>
 
 ## 2. Resoluções dos exercícios
 
@@ -258,13 +302,15 @@ Exemplo: 5 linhas e 4 colunas
 |29|[ordena-primeiro-palindromo-crescente-&-decrescente.c][QUESTAO_29]| ⚡ **Funções**, **Strings**, manipulação de strings|
 |30|[imprime-cruz-asteriscos.c][QUESTAO_30]| ⚡ **Funções**, **Ponteiros**, algoritmos|
 |31|[imprime-retangulo-asteriscos.c][QUESTAO_31]| ⚡ **Funções**, **Ponteiros**, algoritmos|
-
+|32|||
+|33|||
 ## 3. Funções e blocos de código úteis
 
 | Função | Descrição |
 |-------|-------|
 |[Limpar buffer de entrada](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/limparBufferEntrada.c)| Em algumas situações, quando uma leitura é realizada, o caractere de nova linha ('\n') pode permanecer no buffer de entrada. Isso pode impedir que leituras subsequentes sejam realizadas corretamente, interferindo no funcionamento adequado do algoritmo. **Utilize esta função caso encontre dificuldades para efetuar uma leitura corretamente após ter realizado uma leitura prévia.**
 |[fflush()](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/fflush.c)|Serve ao mesmo propósito da função limparBufferEntrada(), entretanto, a função fflush() pode não funcionar corretamente todas as vezes, porque seu propósito principal é limpar buffers de saída.
+|[Palíndromo](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/isPalindrome-usando-funcao.c)| Algoritmo para verificar se uma palavra é um palíndromo sabendo as posições da sua primeira e última letra. **Adapte este código para percorrer uma string inteira e verificar se cada palavra é um palíndromo**
 |[Incluir caracteres da língua portuguesa](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adicionar-caracteres-portugues.c)| Por padrão, não é possível visualizar caracteres específicos da língua portuguesa, como acentos, cedilhas e tils. **Adicione este segmento de código no seu programa para conseguir ler e exibir esses caracteres adicionais.**
 
 <!-- links -->
