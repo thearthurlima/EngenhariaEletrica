@@ -7,8 +7,8 @@ width="170" align="right">
 
 Este repositório contém códigos-fonte escritos para as disciplinas relacionadas à computação do curso de Engenharia Elétrica da Universidade Federal do Maranhão, além de montagens de circuitos.
 
-    "Não há outro recurso para o homem atual a não ser o de vencer a ignorância." - Júlio Minham
-    
+    "Não há outro recurso para o homem atual a não ser o de vencer a ignorância." - Mário Ferreira dos Santos
+
 ## Índice
 
 [IPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IPEE
