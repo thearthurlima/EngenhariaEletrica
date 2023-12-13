@@ -28,11 +28,13 @@ c) Organizar a diagonal principal da matriz original de forma decrescente.
 
 **4) Dadas duas strings digitadas pelo usuário, o usuário digita um caractere que pode existir na string 1, caso exista, onde houver esse caractere na string 1, a string 2 é adicionada.**
 
-Ex.: String 1 - a a b a
+```bash
+Ex.: String 1: a a b a
 
-String 2 - xxxx
+String 2: xxxx
 
-String resultante - xxxx xxxx b xxxx
+Saída: xxxx xxxx b xxxx
+```
 
 **5) Concatenar duas strings.**
 
@@ -42,9 +44,11 @@ String resultante - xxxx xxxx b xxxx
 
 **8) Achar substring dentro de uma string maior e mostrar quantas vezes a substring aparece.**
 
+```bash
 Ex.: ana banana
 
 A substring "ana" aparece 3 vezes
+```
 
 **9) Imprimir padrões de asteriscos abaixo com número de linhas inserido pelo usuário:**
 
@@ -87,7 +91,12 @@ c) Números são substituídos por asteriscos.
 
 **13) Dada uma string do usuário, colocar as letras maiúsculas na frente e minúsculas atrás.**
 
-Ex.: "aAbBcC" - "ABCabc"
+```bash
+Exemplo:
+
+Entrada: "aAbBcC"
+Saída: "ABCabc"
+```
 
 **14) Dada uma string numérica.**
 
@@ -99,11 +108,21 @@ c) Imprimir a string colocando asterisco nos palíndromos e organizando o resto 
 
 **⚡ 15) Dada uma string, encontrar a maior palavra, toda palavra que tiver esse tamanho deve ser organizada alfabeticamente.**
 
-Ex.: "uma string qualquer" - "uma string aelqqruu"
+```bash
+Exemplo:
+
+Entrada: "uma string qualquer"
+Saída: "uma string aelqqruu"
+```
 
 **⚡ 16) Dada uma string, encontrar o maior palíndromo e substituí-lo por um asterisco.**
 
-Ex.: "arara ovo de arara" - "* ovo de *"
+```bash
+Exemplo:
+
+Entrada: "arara ovo de arara"
+Saída: "* ovo de *"
+```
 
 **17) Dada uma string, faça um programa que realize as ações abaixo:**
 
@@ -124,13 +143,16 @@ c) Função que mostre as posições que o caractere aparece na string.
 **⚡ 21) Dada uma matriz de caracteres, encontrar nas linhas e colunas uma palavra digitada pelo usuário. (BÔNUS: encontrar nas diagonais)**
 
 
-Ex.: 
+
 ```bash
+Exemplo: 
+
  a  n  a
  n  a  n
  a  n  a
-```
+
 A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
+```
 
 **22) Crie um programa que tenha:**
 
@@ -140,19 +162,21 @@ b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre
 
 **⚡ 23) Crie um programa que leia um vetor char e adicione uma certa quantidade de asteriscos sempre que um certo caractere aparecer no vetor.**
 
+```bash
 Ex.: Adicionar **4** asteriscos quando o caractere **'2'** 
 
 Entrada: vetor[] = e 2 u f v a 2 m
-
-Saída: vetor[] = e \* \* \* \* u f v a \* \* \* \* m
+Saída: vetor[] = e * * * * u f v a * * * * m
+```
 
 **⚡ 24) Crie um programa que leia um vetor char e adicione um único asterisco sempre que um conjunto de caracteres aparecer no vetor.**
 
+```bash
 Ex.: Adicionar '*' sempre que "eai" aparecer
 
 Entrada: vetor[] = 5 e a i e s f e a i f v
-
-Saída: vetor[] = 5 \* e s f \* f v
+Saída: vetor[] = 5 * e s f * f v
+```
 
 **25) Crie um programa que faça o cadastro de 3 alunos utilizando structures. O programa deve ter:**
 
@@ -263,13 +287,12 @@ Soma: 3 + 7 + 2 + 6 = 18
 Saída: 18
 ```
 
-<p style="color:yellow;">
-OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada inteiro que será lido no programa.
-</p>
+> OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada inteiro que será lido no programa.
+
 
 ## 2. Resoluções dos exercícios
 
-|     | Código  | Assuntos  |
+|     | Código-fonte  | Assuntos  |
 | :--: | ----------- | --------- |
 | 1 |  ||
 | 2 | [matriz-transposta-&-ordena-diagonal-principal.c][QUESTAO_02] |**Funções**, **Matrizes**|
