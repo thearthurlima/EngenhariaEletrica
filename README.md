@@ -11,14 +11,15 @@ Este repositório contém códigos-fonte escritos para as disciplinas relacionad
 
 ## Índice
 
+|        | Disciplina  | Assuntos       |
+| ------ | ----------- | ---------------|
+| [IACOM] | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
+| [IPEE] | Introdução à Programação | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas
+| [LABCD] | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, multiplexadores
+| [LPEE] | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings, funções, structures
+
+
+[IACOM]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM
 [IPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IPEE
 [LABCD]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD
 [LPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE
-
-|        | Disciplina  | Assuntos       |
-| ------ | ----------- | ---------------|
-| [IPEE] | Introdução à Programação | **Portugol**, algoritmos, vetores, matrizes, laços de repetição, funções, subrotinas
-| [LABCD] | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, Multiplexadores
-| [LPEE] | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings
-
-<!-- | [IACOM](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM) | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A | -->

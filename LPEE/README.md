@@ -163,7 +163,7 @@ b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre
 **⚡ 23) Crie um programa que leia um vetor char e adicione uma certa quantidade de asteriscos sempre que um certo caractere aparecer no vetor.**
 
 ```bash
-Ex.: Adicionar **4** asteriscos quando o caractere **'2'** 
+Ex.: Adicionar 4 asteriscos quando o caractere '2' 
 
 Entrada: vetor[] = e 2 u f v a 2 m
 Saída: vetor[] = e * * * * u f v a * * * * m
