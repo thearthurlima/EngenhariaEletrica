@@ -289,6 +289,9 @@ Saída: 18
 
 > OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada inteiro que será lido no programa.
 
+**⚡ 34) Dada uma string inserida pelo usuário, converter todas as letras maiúsculas para minúsculas e imprimir as palavras que contenham a maior quantidade de vogais.**
+
+**⚡ 35) Dada uma string inserida pelo usuário, converter todas as letras maiúsculas para minúsculas e imprimir as palavras que contenham a menor quantidade de vogais.**
 
 ## 2. Resoluções dos exercícios
 
@@ -327,6 +330,9 @@ Saída: 18
 |31|[imprime-retangulo-asteriscos.c][QUESTAO_31]| ⚡ **Funções**, **Ponteiros**, algoritmos|
 |32|||
 |33|[soma-itinerario-matriz.c][QUESTAO_33]| ⚡ **Funções**, **Matrizes**, algoritmos|
+|34|[palavras-com-mais-vogais.c][QUESTAO_34]| ⚡ **Funções**, algoritmos|
+|35|[palavras-com-menos-vogais.c][QUESTAO_35]| ⚡ **Funções**, algoritmos|
+
 ## 3. Funções e blocos de código úteis
 
 | Função | Descrição |
@@ -364,3 +370,5 @@ Saída: 18
 [QUESTAO_30]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-cruz-asteriscos.c
 [QUESTAO_31]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-retangulo-asteriscos.c
 [QUESTAO_33]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-itinerario-matriz.c
+[QUESTAO_34]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-mais-vogais.c
+[QUESTAO_35]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-menos-vogais.c

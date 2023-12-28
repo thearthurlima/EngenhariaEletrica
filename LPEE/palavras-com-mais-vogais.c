@@ -3,8 +3,14 @@
 
 #define MAX 100
 
+void converterMinuscula(char string[MAX]) {
+    for(int i = 0; string[i] != '\0'; i++)
+        if(string[i] >= 'A' && string[i] <= 'Z')
+            string[i] = string[i] + 32;
+}
+
 int ehVogal(char letra) {
-	char vogais[] = "AaEeIiOoUu";
+	char vogais[] = "aeiou";
 	
 	for(int i = 0; vogais[i] != '\0'; i++)
 		if(letra == vogais[i])
@@ -83,6 +89,8 @@ int main() {
 	
 	printf("Digite uma string: ");
 	fgets(str, MAX, stdin);
+	converterMinuscula(str);
+	printf("\n\tString: %s", str);
 	imprimirPalavras(str);
 	
 	return 0;
