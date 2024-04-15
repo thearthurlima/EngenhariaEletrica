@@ -11,12 +11,21 @@ Este repositório contém códigos-fonte escritos para as disciplinas relacionad
 
 ## Índice
 
+| 1º PERÍODO | Disciplina  | Assuntos       |
+| ------ | ----------- | ---------------|
+| [IACOM] | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
+| [IPEE] | Introdução à Programação | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas
+| [LABCD] | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, multiplexadores
+| [LPEE] | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings, funções, structures
+
 |        | Disciplina  | Assuntos       |
 | ------ | ----------- | ---------------|
 | [IACOM] | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
 | [IPEE] | Introdução à Programação | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas
 | [LABCD] | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, multiplexadores
 | [LPEE] | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings, funções, structures
+
+
 
 
 [IACOM]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM
