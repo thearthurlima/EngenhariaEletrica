@@ -11,24 +11,19 @@ Este repositório contém códigos-fonte escritos para as disciplinas relacionad
 
 ## Índice
 
-| 1º PERÍODO | Disciplina  | Assuntos       |
-| ------ | ----------- | ---------------|
-| [IACOM] | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
-| [IPEE] | Introdução à Programação | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas
-| [LABCD] | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, multiplexadores
-| [LPEE] | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings, funções, structures
-
-|        | Disciplina  | Assuntos       |
-| ------ | ----------- | ---------------|
-| [IACOM] | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
-| [IPEE] | Introdução à Programação | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas
-| [LABCD] | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++**, multiplexadores
-| [LPEE] | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings, funções, structures
+| Sigla | Disciplina  | Período | Assuntos       |
+| ------ | ----------- | --------- | ---------------|
+| [IPEE] | Introdução à Programação | 1º | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas |
+| [LPEE] | Linguagem de Programação | 2º | **Linguagem C**, vetores, matrizes, strings, funções, structures |
+| [LABCD] | Laboratório de Circuitos Digitais |3º| **Arduino, Linguagem C++**, multiplexadores |
+| [IACOM] | Introdução à Arquitetura de Computadores | 3º | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
+<!-- | [CNEE] | Cálculo Numérico |3º| **Python**, Algoritmos Numéricos | -->
+<!--| [LABAPMIC] | Laboratório de Aplicações com Microcomputadores |4º| **Linguagem C**, HCS12 | -->
 
 
-
-
-[IACOM]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM
 [IPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IPEE
-[LABCD]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD
 [LPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE
+[CNEE]: add_link
+[LABCD]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD
+[IACOM]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM
+[LABAPMIC]: add_link
