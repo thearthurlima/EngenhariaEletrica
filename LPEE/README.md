@@ -353,7 +353,7 @@ Exemplo:
 |34|[palavras-com-mais-vogais.c][QUESTAO_34]| ⚡ **Funções**, algoritmos|
 |35|[palavras-com-menos-vogais.c][QUESTAO_35]| ⚡ **Funções**, algoritmos|
 |36|[palavras-com-menos-vogais.c][QUESTAO_36]| **Matrizes**, algoritmos|
-|37|[ordenar_linhas_exibir_frequencia.c][QUESTAO_37]| **Funções**, algoritmos|
+|37|[ordenar_linhas_exibir_frequencia.c][QUESTAO_37]| **Funções**, algoritmos, manipulação de matrizes|
 
 ## 3. Funções e blocos de código úteis
 
@@ -394,5 +394,5 @@ Exemplo:
 [QUESTAO_33]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-itinerario-matriz.c
 [QUESTAO_34]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-mais-vogais.c
 [QUESTAO_35]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-menos-vogais.c
-
+[QUESTAO_36]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/README.md
 [QUESTAO_37]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar_linhas_exibir_frequencia.c
