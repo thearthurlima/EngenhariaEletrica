@@ -293,7 +293,20 @@ Saída: 18
 
 **⚡ 35) Dada uma string inserida pelo usuário, converter todas as letras maiúsculas para minúsculas e imprimir as palavras que contenham a menor quantidade de vogais.**
 
-**36) Dada uma matriz quadrada digitada pelo usuário, verificar se os elementos espelhados em relação à diagonal principal são iguais, caso sejam, exiba qual é o valor repetido.**
+**36) Dada uma matriz quadrada digitada pelo usuário, verificar se os elementos nas extremidades são espelhados em relação à diagonal principal, caso sejam, exiba qual é o valor repetido.**
+
+```bash
+Exemplo:
+
+  matriz[3][3] =  1  '9'  3   4
+                 '9'  7   6  '5'
+                  2   1   8   8
+                  2  '5'  1   6
+
+  O elemento '9' é espelhado
+  O elemento '5' é espelhado
+
+```
 
 **37) Dada uma matriz qualquer digitada pelo usuário, exibir as linhas pares em ordem crescente e as linhas ímpares em ordem decrescente. Se houverem valores repetidos, exibir quais valores repetem e com que frequência.**
 
@@ -352,7 +365,7 @@ Exemplo:
 |33|[soma-itinerario-matriz.c][QUESTAO_33]| ⚡ **Funções**, **Matrizes**, algoritmos|
 |34|[palavras-com-mais-vogais.c][QUESTAO_34]| ⚡ **Funções**, algoritmos|
 |35|[palavras-com-menos-vogais.c][QUESTAO_35]| ⚡ **Funções**, algoritmos|
-|36|[palavras-com-menos-vogais.c][QUESTAO_36]| **Matrizes**, algoritmos|
+|36|[valores_espelhados_matriz.c][QUESTAO_36]| **Matrizes**, algoritmos|
 |37|[ordenar_linhas_exibir_frequencia.c][QUESTAO_37]| **Funções**, algoritmos, manipulação de matrizes|
 
 ## 3. Funções e blocos de código úteis
@@ -394,5 +407,5 @@ Exemplo:
 [QUESTAO_33]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/soma-itinerario-matriz.c
 [QUESTAO_34]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-mais-vogais.c
 [QUESTAO_35]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-menos-vogais.c
-[QUESTAO_36]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/README.md
+[QUESTAO_36]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/valores_espelhados_matriz.c
 [QUESTAO_37]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar_linhas_exibir_frequencia.c
