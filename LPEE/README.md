@@ -1,4 +1,4 @@
-> [!TIP]
+> [!Aviso]
 > Se notar qualquer erro em alguma das resoluções, por favor, entre em contato:
 ```santos.arthur@discente.ufma.br```
 
