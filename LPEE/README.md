@@ -1,3 +1,7 @@
+> [!TIP]
+> Se notar qualquer erro em alguma das resoluções, por favor, entre em contato:
+```santos.arthur@discente.ufma.br```
+
 # Sumário
 
 - [1. Exercícios propostos](#1-exercícios-propostos)
@@ -8,13 +12,7 @@
 
 Nesta lista estão alguns exercícios propostos pelo professor da disciplina, por alunos e por mim. As questões marcadas com "⚡" já foram questões de prova ou estão no nível de questões de prova. Após esta seção você encontrará resoluções para estes exercícios.
 
-**1) Dado um vetor com valores digitados pelo usuário, encontre:**
-
-a) Frequência que cada elemento aparece no vetor;
-
-b) A média, a mediana (organizar o vetor) e a moda;
-
-c) Maior e menor valor.
+**1) Dado um vetor com valores digitados pelo usuário, encontre a frequência com que cada elemento aparece nele.**
 
 **2) Dada uma matriz de inteiros com valores digitados pelo usuário:**
 
@@ -142,8 +140,6 @@ c) Função que mostre as posições que o caractere aparece na string.
 
 **⚡ 21) Dada uma matriz de caracteres, encontrar nas linhas e colunas uma palavra digitada pelo usuário. (BÔNUS: encontrar nas diagonais)**
 
-
-
 ```bash
 Exemplo: 
 
@@ -236,7 +232,6 @@ a) Uma função para ler um número inteiro;
 
 c) Função que imprime o padrão de asteriscos.
 
-
 ```bash
 Exemplo: 5 linhas e 4 colunas
 
@@ -246,6 +241,7 @@ Exemplo: 5 linhas e 4 colunas
 *     *
 * * * *
 ```
+
 **⚡ 32) Crie um programa que, dada uma string:**
 
 a) Ache a(s) maior(es) palavra(s);
@@ -326,11 +322,17 @@ Exemplo:
 
 ```
 
+**⚡ 38) Dada uma matriz de inteiros:**
+
+a) Ordenar a diagonal principal de forma decrescente;
+
+b) Verificar se os elementos espelhados em relação à diagonal principal são iguais. Se forem, substituir ambos por '*'. Se não forem, inverter a posição de ambos.
+
 ## 2. Resoluções dos exercícios
 
 |     | Código-fonte  | Assuntos  |
 | :--: | ----------- | --------- |
-| 1 |  ||
+| 1 | [frequencia_elementos_vetor.c][QUESTAO_01] |**Vetores**, algoritmos|
 | 2 | [matriz-transposta-&-ordena-diagonal-principal.c][QUESTAO_02] |**Funções**, **Matrizes**|
 | 3 |  ||
 | 4 | [imprime-string-quando-caractere-aparece.c][QUESTAO_04]|**Strings**|
@@ -366,7 +368,8 @@ Exemplo:
 |34|[palavras-com-mais-vogais.c][QUESTAO_34]| ⚡ **Funções**, algoritmos|
 |35|[palavras-com-menos-vogais.c][QUESTAO_35]| ⚡ **Funções**, algoritmos|
 |36|[valores_espelhados_matriz.c][QUESTAO_36]| **Matrizes**, algoritmos|
-|37|[ordenar_linhas_exibir_frequencia.c][QUESTAO_37]| **Funções**, algoritmos, manipulação de matrizes|
+|37|[ordenar_linhas_exibir_frequencia.c][QUESTAO_37]| **Matrizes**, manipulação de matrizes, algoritmos|
+|38|Resolução 1: [substitui-espelhados-iguais-por-asteriscos-e-inverte-diferentes.c][QUESTAO_38] Resolução 2 por Manoella: [substitui-espelhados-iguais-por-asteriscos-e-inverte-diferentes_por_Manoella_Conceicao.c][QUESTAO_38.2] | ⚡ **Matrizes**, manipulação de matrizes, algoritmos|
 
 ## 3. Funções e blocos de código úteis
 
@@ -378,6 +381,7 @@ Exemplo:
 |[Incluir caracteres da língua portuguesa](https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/adicionar-caracteres-portugues.c)| Por padrão, não é possível visualizar caracteres específicos da língua portuguesa, como acentos, cedilhas e tils. **Adicione este segmento de código no seu programa para conseguir ler e exibir esses caracteres adicionais.**
 
 <!-- links -->
+[QUESTAO_01]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/frequencia_elementos_vetor.C
 [QUESTAO_02]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/matriz-transposta-%26-ordena-diagonal-principal.c
 [QUESTAO_04]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/imprime-string-quando-caractere-aparece.c
 [QUESTAO_05]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/concatena-duas-strings.c
@@ -409,3 +413,5 @@ Exemplo:
 [QUESTAO_35]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/palavras-com-menos-vogais.c
 [QUESTAO_36]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/valores_espelhados_matriz.c
 [QUESTAO_37]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/ordenar_linhas_exibir_frequencia.c
+[QUESTAO_38]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-espelhados-iguais-por-asteriscos-e-inverte-diferentes.c
+[QUESTAO_38.2]: https://github.com/thearthurlima/EngenhariaEletrica/blob/main/LPEE/substitui-espelhados-iguais-por-asteriscos-e-inverte-diferentes_por_Manoella_Conceicao.c
