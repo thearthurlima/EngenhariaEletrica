@@ -19,13 +19,13 @@ Ao notar qualquer erro neste repositório, por favor, entre em contato: ```santo
 | [LPEE] | Linguagem de Programação | 2º | **Linguagem C**, vetores, matrizes, strings, funções, structures |
 | [LABCD] | Laboratório de Circuitos Digitais |3º| **Arduino, Linguagem C++**, multiplexadores |
 | [IACOM] | Introdução à Arquitetura de Computadores | 3º | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
-<!-- | [CNEE] | Cálculo Numérico |3º| **Python**, Algoritmos Numéricos | -->
+| [CNEE] | Cálculo Numérico |3º| **MATLAB**, Algoritmos Numéricos |
 <!--| [LABAPMIC] | Laboratório de Aplicações com Microcomputadores |4º| **Linguagem C**, HCS12 | -->
 
 
 [IPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IPEE
 [LPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE
-[CNEE]: add_link
+[CNEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/CNEE
 [LABCD]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD
 [IACOM]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM
 [LABAPMIC]: add_link
