@@ -7,7 +7,7 @@ width="170" align="right">
 
 Este repositório contém códigos-fonte escritos para as disciplinas relacionadas à computação do curso de Engenharia Elétrica da Universidade Federal do Maranhão, além de montagens de circuitos.
 
-Ao notar qualquer erro neste repositório, por favor, entre em contato: ```santos.arthur@discente.ufma.br```
+Ao notar qualquer erro neste repositório, por favor, entre em contato através do e-mail ```santos.arthur@discente.ufma.br```
 
 > **"Não há outro recurso para o homem atual a não ser o de vencer a ignorância."** - Mário Ferreira dos Santos
 
