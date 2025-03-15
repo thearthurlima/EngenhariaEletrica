@@ -1,0 +1,23 @@
+programa
+{
+	funcao inicio()
+	{
+		real salario, percentualDeReajuste, salarioReajustado
+
+		escreva("Qual o salário?: ")
+		leia(salario)
+
+		se(salario < 500)
+		{
+			 percentualDeReajuste = 0.15
+		}
+		senao se(salario < 1000)
+		{
+			percentualDeReajuste = 0.1
+		}
+		senao
+		{
+			percentualDeReajuste = 0.05
+		}
+	}
+}

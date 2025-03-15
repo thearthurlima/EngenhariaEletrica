@@ -1,14 +1,31 @@
 # Engenharia Elétrica (UFMA)
 
-Este repositório contém códigos-fonte escritos para as disciplinas relacionadas à computação do curso de Engenharia Elétrica da Universidade Federal do Maranhão.
+<img
+src="https://portalpadrao.ufma.br/site/institucional/superintendencias/sce/manual-da-marca/png-logo-ufma-colorido.png/@@images/image.png"
+width="170" align="right">
+</a>
 
-    "Não há outro recurso para o homem atual a não ser o de vencer a ignorância." - Júlio Minham
-    
+Este repositório contém códigos-fonte escritos para as disciplinas relacionadas à computação do curso de Engenharia Elétrica da Universidade Federal do Maranhão, além de montagens de circuitos.
+
+Ao notar qualquer erro neste repositório, por favor, entre em contato através do e-mail ```santos.arthur@discente.ufma.br```
+
+> **"Não há outro recurso para o homem atual a não ser o de vencer a ignorância."** - Mário Ferreira dos Santos
+
 ## Índice
 
-|     | Disciplina  | Assuntos       |
-| --- | ----------- | ---------------|
-| [IAPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IAPEE) | Introdução à Programação | **Portugol**, vetores, matrizes, laços de repetição |
-| [LPEE](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE) | Linguagem de Programação | **Linguagem C**, vetores, matrizes, strings |
-| [IACOM](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM) | Introdução à Arquitetura de Computadores | **Assembly, Linguagem C**, PIC16F84A |
-| [LABCD](https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD) | Laboratório de Circuitos Digitais | **Arduino, Linguagem C++** |
+| Sigla | Disciplina  | Período | Assuntos       |
+| ------ | ----------- | --------- | ---------------|
+| [IPEE] | Introdução à Programação | 1º | **Portugol**, algoritmos, vetores, matrizes, strings, laços de repetição, funções, subrotinas |
+| [LPEE] | Linguagem de Programação | 2º | **Linguagem C**, vetores, matrizes, strings, funções, structures |
+| [LABCD] | Laboratório de Circuitos Digitais |3º| **Arduino, Linguagem C++**, multiplexadores |
+| [IACOM] | Introdução à Arquitetura de Computadores | 3º | **Assembly, Linguagem C**, PIC16F84A, HCS12 |
+| [CNEE] | Cálculo Numérico |3º| **MATLAB**, Algoritmos Numéricos |
+<!--| [LABAPMIC] | Laboratório de Aplicações com Microcomputadores |4º| **Linguagem C**, HCS12 | -->
+
+
+[IPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IPEE
+[LPEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LPEE
+[CNEE]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/CNEE
+[LABCD]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/LABCD
+[IACOM]: https://github.com/thearthurlima/EngenhariaEletrica/tree/main/IACOM
+[LABAPMIC]: add_link
