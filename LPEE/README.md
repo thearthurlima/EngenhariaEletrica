@@ -1,6 +1,22 @@
-> [!TIP]
-> Se notar qualquer erro em alguma das resoluções, por favor, entre em contato:
-```santos.arthur@discente.ufma.br```
+# Linguagem de Programação (DEIN0022)
+
+<img
+src="https://portalpadrao.ufma.br/site/institucional/superintendencias/sce/manual-da-marca/png-logo-ufma-colorido.png/@@images/image.png"
+width="170" align="right">
+</a>
+
+A disciplina Linguagem de Programação (EE) utiliza a linguagem C, uma linguagem de grande relevância na engenharia pela sua versatilidade. Em uma disciplina como essa, a prática é fundamental para um bom desempenho, por isso, ao longo do semestre, reuni um acervo significativo de atividades que desempenharam papel essencial na minha aprovação.
+
+O material a seguir foi muito utilizado pelos meus colegas de turma e também serviu como base para as aulas de monitoria que ministrei no semestre seguinte. Além disso, continua sendo uma fonte de apoio para os novos alunos de LP.
+
+Neste material, você encontrará exercícios e questões de prova, para que você pratique algoritmos que envolvem vetores, strings e matrizes, ponteiros, além de se familiarizar com bugs recorrentes na resolução desses problemas. 
+
+|Outros repositórios para essa disciplina|
+|------------------|
+|[Repositório de Eduardo Fonseca](https://github.com/edubr029/ufma/tree/main/LPEE)|
+|[Repositório de Maísa Garcia](https://github.com/maisagarcx/LP)|
+
+> **Se você encontrar algum erro, tiver sugestões de resolução ou quiser indicar novos exercícios, entre em contato pelo e-mail:** [santos.arthur@discente.ufma.br](mailto:aadasdasd@gmail.com)
 
 # Sumário
 
@@ -12,7 +28,11 @@
 
 Nesta lista estão alguns exercícios propostos pelo professor da disciplina, por alunos e por mim. As questões marcadas com "⚡" já foram questões de prova ou estão no nível de questões de prova. Após esta seção você encontrará resoluções para estes exercícios.
 
+---
+
 **1) Dado um vetor com valores digitados pelo usuário, encontre a frequência com que cada elemento aparece nele.**
+
+---
 
 **2) Dada uma matriz de inteiros com valores digitados pelo usuário:**
 
@@ -22,7 +42,11 @@ b) Organizar a diagonal principal da matriz original de forma crescente;
 
 c) Organizar a diagonal principal da matriz original de forma decrescente.
 
+---
+
 **3) Dada uma matriz A, verificar se uma matriz B está contida na matriz A. Se sim, mostrar as coordenadas e dizer quantas vezes a matriz aparece.**
+
+---
 
 **4) Dadas duas strings digitadas pelo usuário, o usuário digita um caractere que pode existir na string 1, caso exista, onde houver esse caractere na string 1, a string 2 é adicionada.**
 
@@ -34,11 +58,19 @@ String 2: xxxx
 Saída: xxxx xxxx b xxxx
 ```
 
+---
+
 **5) Concatenar duas strings.**
+
+---
 
 **6) Contar quantas vogais, consoantes, dígitos e caracteres especiais aparecem na string.**
 
+---
+
 **7) Remover todos os caracteres de uma string, exceto as letras.**
+
+---
 
 **8) Achar substring dentro de uma string maior e mostrar quantas vezes a substring aparece.**
 
@@ -47,6 +79,8 @@ Ex.: ana banana
 
 A substring "ana" aparece 3 vezes
 ```
+
+---
 
 **9) Imprimir padrões de asteriscos abaixo com número de linhas inserido pelo usuário:**
 
@@ -74,10 +108,15 @@ Padrão 3:
   * * * * *
 * * * * * * *
 ```
+---
 
 **10) Dada uma matriz de caracteres, achar palíndromos de no máximo 3 caracteres (horizontal, vertical). (Bônus: encontrar nas diagonais)**
 
+---
+
 **11) Inverter uma matriz dada pelo usuário.**
+
+---
 
 **12) Dada uma string fornecida pelo usuário:**
 
@@ -86,6 +125,8 @@ a) As letras maiúsculas ficam minúsculas;
 b) As letras minúsculas ficam maiúsculas;
 
 c) Números são substituídos por asteriscos.
+
+---
 
 **13) Dada uma string do usuário, colocar as letras maiúsculas na frente e minúsculas atrás.**
 
@@ -96,6 +137,8 @@ Entrada: "aAbBcC"
 Saída: "ABCabc"
 ```
 
+---
+
 **14) Dada uma string numérica.**
 
 a) Achar palíndromos de 3, 5 e 7 caracteres e contar quantos existem;
@@ -103,6 +146,8 @@ a) Achar palíndromos de 3, 5 e 7 caracteres e contar quantos existem;
 b) Imprimir a string colocando asterisco onde **não** é palíndromo e organizando os palíndromos em ordem crescente;
 
 c) Imprimir a string colocando asterisco nos palíndromos e organizando o resto em ordem decrescente.
+
+---
 
 **⚡ 15) Dada uma string, encontrar a maior palavra, toda palavra que tiver esse tamanho deve ser organizada alfabeticamente.**
 
@@ -113,6 +158,8 @@ Entrada: "uma string qualquer"
 Saída: "uma string aelqqruu"
 ```
 
+---
+
 **⚡ 16) Dada uma string, encontrar o maior palíndromo e substituí-lo por um asterisco.**
 
 ```bash
@@ -121,6 +168,8 @@ Exemplo:
 Entrada: "arara ovo de arara"
 Saída: "* ovo de *"
 ```
+
+---
 
 **17) Dada uma string, faça um programa que realize as ações abaixo:**
 
@@ -132,11 +181,19 @@ c) Função que mostre as posições que o caractere aparece na string.
 
  OBS.: As funções dos itens **b** e **c** devem chamar a função do item **a**.
 
+---
+
 **18) Um programa que some duas matrizes.**
+
+---
 
 **19) Um programa que use uma função que troque o valor de x por y que estão declaradas na main.**
 
+---
+
 **20) Usando funções, faça um programa que ordene um vetor de inteiros de forma crescente e decrescente.**
+
+---
 
 **⚡ 21) Dada uma matriz de caracteres, encontrar nas linhas e colunas uma palavra digitada pelo usuário. (BÔNUS: encontrar nas diagonais)**
 
@@ -150,11 +207,15 @@ Exemplo:
 A palavra "ana" aparece 2 vezes nas linhas e 2 vezes nas colunas.
 ```
 
+---
+
 **22) Crie um programa que tenha:**
 
 a) Uma função para ler uma string, sem usar fgets, gets, scanf("%s", ...), entre outras funções que já realizam esse procedimento;
 
 b) Uma função para exibir essa string, sem usar puts, printf("%s", ...), entre outras funções que já realizam esse procedimento.
+
+---
 
 **⚡ 23) Crie um programa que leia um vetor char e adicione uma certa quantidade de asteriscos sempre que um certo caractere aparecer no vetor.**
 
@@ -165,6 +226,8 @@ Entrada: vetor[] = e 2 u f v a 2 m
 Saída: vetor[] = e * * * * u f v a * * * * m
 ```
 
+---
+
 **⚡ 24) Crie um programa que leia um vetor char e adicione um único asterisco sempre que um conjunto de caracteres aparecer no vetor.**
 
 ```bash
@@ -174,15 +237,23 @@ Entrada: vetor[] = 5 e a i e s f e a i f v
 Saída: vetor[] = 5 * e s f * f v
 ```
 
+---
+
 **25) Crie um programa que faça o cadastro de 3 alunos utilizando structures. O programa deve ter:**
 
 a) Uma função para ler os dados dos alunos;
 
 b) Uma função para imprimir os dados dos alunos.
 
+---
+
 **26) Crie um programa que copie uma string em uma string secundária usando notação de ponteiros.**
 
+---
+
 **27) Crie um programa que concatene duas strings e organize a string concatenada em ordem crescente e depois em ordem decrescente usando notação de ponteiros.**
+
+---
 
 **⚡ 28) Crie um programa que ordene o(s) menor(es) palíndromo(s) de uma string de forma crescente e de forma decrescente. O programa deve ter as seguintes funções:**
 
@@ -196,6 +267,8 @@ d) Uma função para ordenar o(s) menor(es) palíndromo(s) em ordem decrescente;
 
 e) Uma função para imprimir a string.
 
+---
+
 **⚡ 29) Crie um programa que ordene o primeiro palíndromo de uma string de forma crescente e de forma decrescente. O programa deve ter as seguintes funções:**
 
 a) Uma função para ler a string;
@@ -207,6 +280,8 @@ c) Uma função para ordenar o palíndromo em ordem crescente;
 d) Uma função para ordenar o palíndromo em ordem decrescente;
 
 e) Uma função para imprimir a string.
+
+---
 
 **⚡ 30) Crie um programa que imprima uma cruz de asteriscos, com número de linhas definido pelo usuário (o número deve ser ímpar). O programa deve ter as seguintes funções:**
 
@@ -226,6 +301,8 @@ Exemplo: 5 linhas
     *
 ```
 
+---
+
 **⚡ 31) Crie um programa que imprima um retângulo de asteriscos, com número de linhas e colunas definido pelo usuário. O programa deve ter as seguintes funções:**
 
 a) Uma função para ler um número inteiro;
@@ -241,6 +318,8 @@ Exemplo: 5 linhas e 4 colunas
 *     *
 * * * *
 ```
+
+---
 
 **⚡ 32) Crie um programa que, dada uma string:**
 
@@ -258,6 +337,8 @@ Exemplo:
 Entrada: joana e bonita
 Saída: abinot joana e
 ```
+
+---
 
 **⚡ 33) Dada uma matriz e inteiros quadrada, faça um programa que:**
 
@@ -285,9 +366,15 @@ Saída: 18
 
 > OBS.: Certifique-se de colocar as verificações corretas para a leitura de cada inteiro que será lido no programa.
 
+---
+
 **⚡ 34) Dada uma string inserida pelo usuário, converter todas as letras maiúsculas para minúsculas e imprimir as palavras que contenham a maior quantidade de vogais.**
 
+---
+
 **⚡ 35) Dada uma string inserida pelo usuário, converter todas as letras maiúsculas para minúsculas e imprimir as palavras que contenham a menor quantidade de vogais.**
+
+---
 
 **36) Dada uma matriz quadrada digitada pelo usuário, verificar se os elementos nas extremidades são espelhados em relação à diagonal principal, caso sejam, exiba qual é o valor repetido.**
 
@@ -303,6 +390,8 @@ Exemplo:
   O elemento '5' é espelhado
 
 ```
+
+---
 
 **37) Dada uma matriz qualquer digitada pelo usuário, exibir as linhas pares em ordem crescente e as linhas ímpares em ordem decrescente. Se houverem valores repetidos, exibir quais valores repetem e com que frequência.**
 
@@ -322,11 +411,15 @@ Exemplo:
 
 ```
 
+---
+
 **⚡ 38) Dada uma matriz de inteiros:**
 
 a) Ordenar a diagonal principal de forma decrescente;
 
 b) Verificar se os elementos espelhados em relação à diagonal principal são iguais. Se forem, substituir ambos por '*'. Se não forem, inverter a posição de ambos.
+
+---
 
 ## 2. Resoluções dos exercícios
 
