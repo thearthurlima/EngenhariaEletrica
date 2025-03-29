@@ -7,9 +7,7 @@ width="170" align="right">
 
 A disciplina Linguagem de Programação (EE) utiliza a linguagem C, uma linguagem de grande relevância na engenharia pela sua versatilidade. Em uma disciplina como essa, a prática é fundamental para um bom desempenho, por isso, ao longo do semestre, reuni um acervo significativo de atividades que desempenharam papel essencial na minha aprovação.
 
-O material a seguir foi muito utilizado pelos meus colegas de turma e também serviu como base para as aulas de monitoria que ministrei no semestre seguinte. Além disso, continua sendo uma fonte de apoio para os novos alunos de LP.
-
-Neste material, você encontrará exercícios e questões de prova, para que você pratique algoritmos que envolvem vetores, strings e matrizes, ponteiros, além de se familiarizar com bugs recorrentes na resolução desses problemas. 
+O material a seguir foi muito utilizado pelos meus colegas de turma e também serviu como base para as aulas de monitoria que ministrei no semestre seguinte. Além disso, continua sendo uma fonte de apoio para os novos alunos de LP. Neste material, você encontrará exercícios e questões de prova, para que você pratique algoritmos que envolvem vetores, strings e matrizes, ponteiros, além de se familiarizar com bugs recorrentes na resolução desses problemas. 
 
 |Outros repositórios para essa disciplina|
 |------------------|
